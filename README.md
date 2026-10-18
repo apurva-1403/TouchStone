@@ -54,7 +54,7 @@ as two different people to see role-scoped answers.
 
 ## Demo video
 
-[![Watch the TouchStone demo](https://img.shields.io/badge/▶%20Watch-3--minute%20demo-0e6b67?style=for-the-badge)](VIDEO_URL)
+[![Watch the TouchStone demo](https://img.shields.io/badge/▶%20Watch-3--minute%20demo-0e6b67?style=for-the-badge)](https://drive.google.com/file/d/12mexTx3TRjKHJlpPjUMwaaIaDJSCKD15/view?usp=sharing)
 
 <!-- Replace VIDEO_URL above with the YouTube (unlisted) or GitHub Release link to "TouchStone - Demo Video.mp4". -->
 
@@ -120,8 +120,7 @@ All model calls use Gemini on Vertex AI through a service account; there are no 
 
 ## Results
 
-Measured on 18 Oct 2026 with the project's own test scripts against the live system; raw outputs and arithmetic are in
-[docs/BENCHMARKS.md](docs/BENCHMARKS.md).
+Measured on 18 Oct 2026 with the project's own test scripts against the live system
 
 | Measure | Result |
 |---|---|
@@ -129,39 +128,10 @@ Measured on 18 Oct 2026 with the project's own test scripts against the live sys
 | Right policy found | **93%**: governing policy in the top 8 search results for 25 of 27 test questions |
 | Drift / conflict flags | **6 / 8** demo questions with both flags right |
 | Access control | **70 / 70** automated checks pass (role rules, session forgery, sign-in rate limit, leak checks across search, tools, agent answers and chat history) |
-| Cost | **about ₹1 (≈ $0.011) per question** in Gemini tokens; see [docs/COST_PER_QUESTION.md](docs/COST_PER_QUESTION.md) |
+| Cost | **about ₹1 (≈ $0.011) per question** in Gemini tokens |
 
 ---
 
-## Run it yourself
-
-You need Python 3.11, the Google Cloud CLI, and a Google Cloud project with the Vertex AI API enabled. The search
-index is already built and committed, so no re-indexing is needed.
-
-```bash
-git clone <this repository's URL>
-cd <repository folder>
-python -m venv .venv
-.venv/Scripts/python -m pip install -r requirements.txt      # on macOS/Linux: .venv/bin/python
-cp .env.example .env                                          # then set GOOGLE_CLOUD_PROJECT, DEMO_PASSWORD, SESSION_SECRET
-gcloud auth application-default login
-.venv/Scripts/python -m uvicorn app.main:app --port 8010
-```
-
-Open http://localhost:8010. Without Firestore access, chat history falls back to in-memory storage.
-
-Useful commands:
-
-```bash
-python -m scripts.test_access            # access-control checks (add --agent for live Gemini checks)
-python -m scripts.eval_agent             # answer quality on the demo questions
-python -m app.ingest                     # rebuild the index after changing data/
-python generate/build.py && python generate/validate.py   # regenerate the synthetic dataset
-```
-
-Deploying to Cloud Run is described step by step in [docs/BUILD_GUIDE.md](docs/BUILD_GUIDE.md) §4.4–4.5.
-
----
 
 ## Repository layout
 
@@ -174,10 +144,6 @@ index/          prebuilt search index (chunks, embeddings, personal-data verdict
 scripts/        evaluation and access-control tests
 docs/           build guide (every step with commands) and cost calculation
 ```
-
-More detail: [docs/BUILD_GUIDE.md](docs/BUILD_GUIDE.md) (how it was built, step by step),
-[CHUNK_SCHEMA.md](CHUNK_SCHEMA.md) (data contract and access model), [data_README.md](data_README.md) (the dataset),
-[PROJECT_HANDOVER.md](PROJECT_HANDOVER.md) (goals, constraints and progress log).
 
 ---
 
