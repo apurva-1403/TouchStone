@@ -1,0 +1,865 @@
+[
+  {
+    "policy_id": "POL-01",
+    "title": "Application Access Request Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-15",
+      "SYS-04",
+      "SYS-05",
+      "SYS-07",
+      "SYS-30",
+      "SYS-17"
+    ],
+    "version": "v3",
+    "last_updated": "2025-05-12",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Application Access Request Policy (v3)\n\n**Owner:** Identity & Access Management (IT & Infrastructure) | **Approved by:** Head of IT & Infrastructure | **Effective:** 12 May 2025\n\n## 1. Purpose\nThis policy defines how AlgoWorks employees obtain access to business applications (Salesforce, Zendesk, HubSpot, Metabase, Jira, shared mailboxes and any other Okta-integrated application) and how Identity & Access Management (IAM) fulfils those requests. It exists to make sure every access grant is authorised, recorded and reviewable.\n\n## 2. Scope\nAll employees, contractors and interns. Applies to every application that is not part of the default new-joiner bundle (Microsoft 365, Slack, Confluence, Darwinbox self-service, Zoho Expense, LearnHub).\n\n## 3. Policy\n3.1 All application access must be requested through ServiceNow (Employee Service Portal > Request Access). Requests made only over Slack, email or in person are not valid and will not be fulfilled.\n3.2 Every request requires approval from the requester's **line manager** as recorded in Darwinbox. The approval must be recorded on the ServiceNow ticket.\n3.3 If the line manager is unavailable (leave, travel) for more than **2 business days**, the requester or IAM must escalate the approval to the **Department Head**. No other person may approve on the manager's behalf.\n3.4 IAM will fulfil an approved request within **3 business days** of approval (the fulfilment SLA). The SLA clock starts only when approval is recorded.\n3.5 IAM must **not** provision access without a recorded approval, regardless of how long the request has been pending. A pending approval is not an authorisation.\n3.6 Where an application has a designated system owner (see the Systems Directory in Confluence), the system owner or their administrator performs the in-application role assignment after IAM adds the user to the Okta group.\n3.7 Access is granted at the lowest privilege level that meets the stated business need. Administrative roles require an additional approval from the system's owning team lead.\n3.8 Temporary access must have an end date on the ticket; IAM removes it on that date.\n\n## 4. Procedure\n1. Requester raises \"Request Access\" in ServiceNow, selecting the application and the business justification.\n2. ServiceNow routes the approval to the line manager (auto-populated from Darwinbox).\n3. On approval, the ticket is assigned to the IAM queue. IAM adds the user to the relevant Okta group and, where applicable, notifies the system administrator for role assignment.\n4. IAM closes the ticket with a note of the group/role granted.\n\n## 5. Exceptions\nExceptions to 3.2-3.5 require written approval from the Head of IT & Infrastructure and must be attached to the ticket.\n\n## 6. Review\nThis policy is reviewed annually by IAM. Quarterly access reviews are performed for high-criticality applications.\n\n_Revision history: v1 (Mar 2023) initial; v2 (Feb 2024) added Okta group model; v3 (May 2025) added 3-business-day fulfilment SLA and Department Head escalation rule._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-05-12",
+      "last_referenced_date": "2026-08-27"
+    }
+  },
+  {
+    "policy_id": "POL-02",
+    "title": "VPN & Remote Connectivity Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-11",
+      "SYS-10"
+    ],
+    "version": "v2",
+    "last_updated": "2025-05-26",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# VPN & Remote Connectivity Policy (v2)\n\n**Owner:** Identity & Access Management | **Effective:** 26 May 2025\n\n## 1. Purpose\nDefines who may use the GlobalProtect VPN, how access is granted and renewed, and the controls applied to remote connectivity into the AlgoWorks network.\n\n## 2. Policy\n2.1 VPN is required to reach internal-only services: the AlgoWorks Admin Console, Metabase, the Snowflake private link, restricted Confluence spaces and office file shares.\n2.2 VPN access is requested through the ServiceNow \"VPN access\" item and requires line manager approval. IAM adds the user to the `vpn-employees` Okta group.\n2.3 **VPN access is granted for a fixed period of 90 days.** Continued access requires a new, manager-approved renewal request before expiry. Access that is not renewed is removed automatically.\n2.4 Contractors and agency staff may **not** be added to `vpn-employees`. Contractor connectivity is provided exclusively through the **contractor jump host** (bastion) with a 30-day expiry, sponsored by a AlgoWorks employee.\n2.5 Split tunnelling is enabled by default; full-tunnel profiles are available on request for staff travelling to high-risk locations.\n2.6 Personal devices may not connect to the VPN. Only Intune-enrolled, compliant company devices are permitted.\n2.7 VPN sessions time out after 12 hours; re-authentication with Okta MFA is required.\n\n## 3. Responsibilities\n- IAM: group management, renewals, contractor jump-host accounts, quarterly review of active VPN users.\n- Cloud Infrastructure: gateway availability, certificate renewal, capacity.\n- Users: keep the GlobalProtect client updated; report suspected compromise within 1 hour.\n\n## 4. Exceptions\nExceptions require approval from the IAM & Security Lead and are logged in the Security exceptions register.\n\n_Revision history: v1 (Jan 2024) initial; v2 (May 2025) formalised 90-day expiry and contractor jump-host requirement._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-05-26",
+      "last_referenced_date": "2026-06-30"
+    }
+  },
+  {
+    "policy_id": "POL-03",
+    "title": "Password & MFA Standard",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-12"
+    ],
+    "version": "v4",
+    "last_updated": "2026-05-04",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Password & MFA Standard (v4)\n\n**Owner:** Identity & Access Management | **Effective:** 4 May 2026\n\n## 1. Requirements\n1.1 Okta is the single sign-on identity provider. Where an application supports SSO, local passwords must be disabled.\n1.2 The Okta password must be at least 14 characters, not contain the user's name or \"algoworks\", and must not be reused from the previous 12 passwords. Passwords do not expire on a schedule; they are rotated on suspicion of compromise.\n1.3 Multi-factor authentication is mandatory for every account. Accepted factors: Okta Verify push with number matching, FIDO2 security keys and platform authenticators (Touch ID / Windows Hello). SMS is not an accepted factor.\n1.4 Service accounts and shared credentials (demo environments, vendor portals, social media accounts) must be stored in a **1Password shared vault**, never in Slack messages, email, Confluence pages or spreadsheets. Each vault has a named owner responsible for membership.\n1.5 Credentials found in Slack, email or a repository will be rotated by IAM without prior notice and the owner informed.\n1.6 Break-glass local administrator credentials for Okta outages are held in a sealed 1Password vault accessible to the IAM & Security Lead and the Head of IT & Infrastructure, and their use is logged and reviewed.\n\n## 2. Lost or compromised factors\nUsers who lose their MFA device must contact the IT Service Desk, who verify identity (video call + manager confirmation) before IAM resets the factor. Self-service factor reset is available if a second enrolled factor exists.\n\n## 3. Enforcement\nNon-compliant applications are blocked in Okta. Repeated credential sharing is treated as a Code of Conduct matter.\n\n_Revision history: v3 (Jun 2025); v4 (May 2026) added number matching, removed SMS, added 1Password vault ownership rule._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-05-04",
+      "last_referenced_date": "2026-07-01"
+    }
+  },
+  {
+    "policy_id": "POL-04",
+    "title": "Laptop & Endpoint Provisioning SOP",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-05",
+    "related_system_ids": [
+      "SYS-18",
+      "SYS-15"
+    ],
+    "version": "v4",
+    "last_updated": "2025-08-18",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Laptop & Endpoint Provisioning SOP (v4)\n\n**Owner:** IT Service Desk & Endpoint | **Effective:** 18 August 2025\n\n## 1. Standard devices\n| Role family | Standard device |\n|---|---|\n| Engineering, Data, Design | MacBook Pro 14\" (M-series, 16 GB / 512 GB) |\n| All other roles | Lenovo ThinkPad T14 (16 GB / 512 GB) or MacBook Air on request |\nNon-standard configurations (32 GB RAM, larger storage) require a written justification approved by the requester's Department Head.\n\n## 2. Lead times\n2.1 New-joiner laptops are ordered when the onboarding ticket is received and are provisioned and ready on Day 1.\n2.2 For replacement or additional device requests, the Service Desk **delivers the device within 5 business days** of the request being approved by the line manager. The Service Desk maintains a buffer stock of 4 MacBook Pros and 4 ThinkPads to meet this.\n2.3 Where a device is under repair for more than 2 business days, a loaner device is issued.\n\n## 3. Provisioning steps\n1. Asset tagged and recorded in the ServiceNow CMDB (asset tag, serial, assigned user).\n2. Enrolled in Microsoft Intune; compliance policy applied (disk encryption, OS updates, screen lock, Defender).\n3. Okta Verify, Slack, GlobalProtect, 1Password and Microsoft 365 apps installed via the Company Portal.\n4. Local admin rights are **not** granted by default; engineers may request admin rights via ServiceNow (manager approval).\n5. Handover form signed in ServiceNow by the user.\n\n## 4. Refresh and return\nDevices are refreshed on a **4-year cycle** or when repair cost exceeds 50% of replacement. Devices are returned to the Service Desk on the last working day (see the Offboarding SOP) and wiped within 5 business days.\n\n## 5. Peripherals\nOne external monitor, keyboard and mouse per desk are provided from stock on request; no approval needed. Second monitors require manager approval.\n\n_Revision history: v3 (Nov 2024); v4 (Aug 2025) updated standard models and confirmed 5-business-day delivery SLA and buffer stock._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-08-18",
+      "last_referenced_date": "2026-09-09"
+    }
+  },
+  {
+    "policy_id": "POL-05",
+    "title": "Employee Offboarding & Access Revocation SOP",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-19",
+      "SYS-15",
+      "SYS-25",
+      "SYS-12"
+    ],
+    "version": "v3",
+    "last_updated": "2026-04-06",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Employee Offboarding & Access Revocation SOP (v3)\n\n**Owner:** Identity & Access Management with People Operations | **Effective:** 6 April 2026\n\n## 1. Trigger\nPeople Operations records the exit in Darwinbox, which creates an offboarding ticket in ServiceNow assigned to IAM at least 5 business days before the last working day (same day for involuntary exits).\n\n## 2. Timeline\n| When | Action | Owner |\n|---|---|---|\n| LWD - 5 days | Manager completes the \"knowledge & ownership transfer\" checklist in the ticket: documents, approvals/queues, shared vaults, on-call rotations, recurring meetings, system-owner roles. | Line manager |\n| LWD 18:00 IST | Okta account disabled; all sessions revoked; mail forwarding to manager for 30 days. | IAM |\n| LWD + 1 business day | Removal from all Okta groups, GitHub org, AWS Identity Center, Slack deactivation, shared vault ownership transferred. | IAM |\n| LWD + 5 business days | Laptop returned and wiped; asset record updated. | Service Desk |\n| LWD + 30 days | Mailbox converted to shared and archived; OneDrive transferred to manager. | Service Desk |\n\n## 3. Ownership transfer\n3.1 Any approval role held by the leaver (e.g. ServiceNow approver, Jira approval step, Snowflake role owner, system owner in the Systems Directory) **must be reassigned before LWD** and the new owner named on the offboarding ticket. IAM will not close the ticket until this section is complete.\n3.2 Leavers who are named in a policy or SOP as an approver: the policy owner must update the document within 10 business days.\n\n## 4. Contractors\nContractor accounts follow the same timeline, triggered by the sponsor's notice or the account expiry date, whichever is earlier.\n\n_Revision history: v2 (Jul 2025); v3 (Apr 2026) added section 3 (ownership transfer) after the February 2026 DPO exit left approval queues unowned._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-04-06",
+      "last_referenced_date": "2026-04-06"
+    }
+  },
+  {
+    "policy_id": "POL-06",
+    "title": "Production Access & Break-Glass Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-06",
+    "related_system_ids": [
+      "SYS-26",
+      "SYS-27",
+      "SYS-28"
+    ],
+    "version": "v2",
+    "last_updated": "2026-06-15",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Production Access & Break-Glass Policy (v2)\n\n**Owner:** Cloud Infrastructure & Security | **Effective:** 15 June 2026 | **Classification:** Restricted\n\n## 1. Standing access\n1.1 Engineers in Platform Backend, Frontend & Mobile, Data Engineering and Cloud Infrastructure receive **read-only** access to the AWS production account (IAM Identity Center permission set `ProdReadOnly`) via their Okta group.\n1.2 No individual holds standing write or administrator access to production. Production changes are made through ArgoCD (application workloads) or reviewed infrastructure-as-code pull requests.\n\n## 2. Elevated (break-glass) access\n2.1 Elevated access (`ProdOperator` or `ProdAdmin`) is time-bound to a **4-hour session** and must be requested in ServiceNow using the \"Production elevated access\" item, stating the incident or change reference.\n2.2 Approval: the Cloud Infrastructure Lead, or during a declared Sev1/Sev2 incident, the on-call incident commander. Approval must be recorded on the ticket before the session is activated.\n2.3 All elevated sessions are logged to CloudTrail and Datadog; a **post-hoc review** is performed by the Cloud Infrastructure Lead within 2 business days and recorded on the ticket.\n2.4 Elevated access is never used to bypass ArgoCD for routine deployments.\n\n## 3. Database access\nDirect production database access is via the bastion with per-user credentials issued for 24 hours. Query logs are retained for 1 year. Bulk exports of customer data require Data Protection review.\n\n## 4. Violations\nAny use of elevated access without a ticket is a security incident and is reported to the Head of IT & Infrastructure.\n\n_Revision history: v1 (Sep 2025); v2 (Jun 2026) shortened sessions from 8h to 4h and added the incident-commander approval path._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "restricted",
+      "created_date": "2026-06-15",
+      "last_referenced_date": "2026-06-15"
+    }
+  },
+  {
+    "policy_id": "POL-07",
+    "title": "Software Procurement & SaaS Approval Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-15",
+      "SYS-23"
+    ],
+    "version": "v3",
+    "last_updated": "2026-04-20",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Software Procurement & SaaS Approval Policy (v3)\n\n**Owner:** IAM & Security (with Finance Procurement) | **Effective:** 20 April 2026\n\n## 1. Purpose\nPrevents unmanaged SaaS sprawl and ensures every tool that holds AlgoWorks data is security-reviewed, SSO-integrated where possible and budgeted.\n\n## 2. Approval thresholds (annual contract value)\n| Value | Approver |\n|---|---|\n| Up to Rs 1,00,000 | Team lead + Security review |\n| Rs 1,00,001 - 5,00,000 | Department Head + Security review + Procurement |\n| Above Rs 5,00,000 | CFO + Department Head + Security review + Procurement (competitive quotes per the Vendor Onboarding SOP) |\n\n## 3. Requirements for any new SaaS tool\n3.1 A ServiceNow \"New software / SaaS\" request naming the business owner, data to be stored and expected users.\n3.2 Security review by IAM & Security: SSO (SAML/OIDC) support, data residency, SOC 2 / ISO 27001 report, DPA where personal data is processed. Tools that cannot integrate with Okta need a documented exception.\n3.3 Procurement adds the vendor in NetSuite and records the renewal date; auto-renewals must be flagged 60 days before renewal.\n3.4 Free tiers and personal-card purchases of software that will hold company data are not permitted.\n\n## 4. Renewals\nRenewals of existing tools follow the same thresholds but do not require a new security review unless scope or data changes.\n\n_Revision history: v2 (Aug 2025); v3 (Apr 2026) raised the team-lead threshold from Rs 50,000 to Rs 1,00,000._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-04-20",
+      "last_referenced_date": "2026-09-01"
+    }
+  },
+  {
+    "policy_id": "POL-08",
+    "title": "Incident Management & Severity Classification SOP",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-06",
+    "related_system_ids": [
+      "SYS-28",
+      "SYS-15",
+      "SYS-14",
+      "SYS-01"
+    ],
+    "version": "v4",
+    "last_updated": "2026-04-01",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Incident Management & Severity Classification SOP (v4)\n\n**Owner:** Cloud Infrastructure & Security | **Effective:** 1 April 2026\n\n## 1. Severity levels\n| Sev | Definition | Response | Update cadence |\n|---|---|---|---|\n| Sev1 | Production platform down or degraded for >25% of customers; data breach; payment processing down | Acknowledge in 15 min, incident commander assigned, #incidents channel + status page | Every 30 min |\n| Sev2 | Major feature unavailable, single large customer down, internal critical system (Okta, VPN, M365) down for all staff | Acknowledge in 30 min | Every 60 min |\n| Sev3 | Minor feature degraded, workaround exists, internal tool down for a team | Next business day | Daily |\n| Sev4 | Cosmetic / single user | Standard ticket SLA | - |\n\n## 2. Process\n1. Anyone can declare an incident by posting in **#incidents** with `!incident` or by paging via PagerDuty. A ServiceNow INC is opened (or linked) for every Sev1-Sev3.\n2. The incident commander (on-call lead for the affected system) coordinates, assigns a scribe and posts updates at the cadence above.\n3. Customer-facing Sev1/Sev2: Customer Success posts to the status page and drafts customer comms; Marketing reviews external wording.\n4. Resolution is announced in #incidents and on the ticket with a summary and time-to-resolve.\n\n## 3. Postmortems\nA blameless postmortem is **mandatory for Sev1 and Sev2 within 5 business days**, published in the Engineering Confluence space, with action items tracked in Jira. Sev3 postmortems are at the team's discretion.\n\n## 4. Vendor incidents\nOutages of vendor systems (Okta, Slack, AWS regional events) are handled as incidents for communication purposes; the runbook for each critical vendor is linked from the IT Runbooks page.\n\n_Revision history: v3 (Sep 2025); v4 (Apr 2026) added Sev2 definition for internal critical systems and the 5-day postmortem deadline._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-04-01",
+      "last_referenced_date": "2026-09-07"
+    }
+  },
+  {
+    "policy_id": "POL-09",
+    "title": "Change Management Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-06",
+    "related_system_ids": [
+      "SYS-15",
+      "SYS-26",
+      "SYS-27",
+      "SYS-01"
+    ],
+    "version": "v2",
+    "last_updated": "2025-06-09",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Change Management Policy (v2)\n\n**Owner:** Cloud Infrastructure & Security | **Approved by:** Head of IT & Infrastructure | **Effective:** 9 June 2025\n\n## 1. Purpose\nTo ensure changes to production systems are planned, reviewed, approved and reversible.\n\n## 2. Scope\nAll changes to production infrastructure and **all production application deployments** of the AlgoWorks Fleet platform, customer portal, mobile backend services, and internal systems (Okta configuration, VPN gateways, ServiceNow workflows, network equipment).\n\n## 3. Policy\n3.1 Every production change requires a **Change Request (CHG) record in ServiceNow** describing the change, risk, test evidence, rollback plan and implementation window.\n3.2 Change Requests are reviewed and approved by the **Change Advisory Board (CAB)**, which meets on **Tuesdays and Thursdays at 15:00 IST**. Changes must be submitted at least one business day before the CAB meeting at which they are to be reviewed.\n3.3 CAB membership: Cloud Infrastructure Lead (chair), IAM & Security Lead, Engineering Manager (Platform), IT Service Desk Manager, Head of Customer Success (for customer-impacting changes).\n3.4 **Emergency changes** (to restore service during an incident) may be approved verbally by the Cloud Infrastructure Lead and must have a CHG raised retrospectively within 1 business day and reviewed at the next CAB.\n3.5 Changes are implemented only within the approved window. Unapproved changes are treated as incidents.\n3.6 The CHG record must be updated with the outcome (successful / rolled back / failed) within 1 business day of implementation.\n\n## 4. Change categories\n- **Standard**: pre-approved, repeatable, low-risk (e.g. adding a user to a group). Logged but not reviewed at CAB.\n- **Normal**: everything else, including application deployments. Requires CAB approval.\n- **Emergency**: see 3.4.\n\n_Revision history: v1 (Feb 2024) initial; v2 (Jun 2025) moved CAB to twice weekly and clarified that application deployments are Normal changes._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-06-09",
+      "last_referenced_date": "2026-07-24"
+    }
+  },
+  {
+    "policy_id": "POL-10",
+    "title": "Data Classification & Handling Standard",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-29",
+      "SYS-13",
+      "SYS-16",
+      "SYS-09"
+    ],
+    "version": "v2",
+    "last_updated": "2026-05-18",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Data Classification & Handling Standard (v2)\n\n**Owner:** IAM & Security | **Effective:** 18 May 2026\n\n## 1. Classes\n| Class | Examples | Handling |\n|---|---|---|\n| Public | Website content, published pricing, press releases | No restrictions |\n| Internal | Most Confluence pages, Slack channels, tickets, internal reports | AlgoWorks staff and sponsored contractors only; no public sharing |\n| Restricted | Payroll, compensation, performance reviews, security runbooks, customer contracts, source code | Named-group access only; encrypted at rest; no personal devices; no external sharing without DPA |\n| Confidential-PII | Customer driver and end-user personal data, employee personal data | Restricted controls plus access logging, purpose limitation and Data Protection review for new uses |\n\n## 2. Labelling\nConfluence spaces, SharePoint libraries and Snowflake schemas must carry a classification label. Snowflake schemas containing PII are tagged `pii=true` and gated by the Snowflake Data Access Policy.\n\n## 3. Handling rules\n3.1 Restricted and Confidential-PII data may not be pasted into Slack public channels, personal email, or third-party AI tools that are not on the approved list.\n3.2 Exports of PII from production systems (Admin Console, Snowflake, Zendesk) require a ticket stating purpose and retention period.\n3.3 Customer data used for demos must be anonymised or come from the demo tenant.\n\n## 4. Data Protection role\nData Protection review is performed by the Data Protection Officer. (See the Snowflake Data Access Policy and the Offboarding SOP regarding ownership transfer of this role.)\n\n_Revision history: v1 (Oct 2024); v2 (May 2026) added Confidential-PII class and AI-tool restriction._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-05-18",
+      "last_referenced_date": "2026-05-18"
+    }
+  },
+  {
+    "policy_id": "POL-11",
+    "title": "Privileged Access & Admin Console Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-09",
+      "SYS-10",
+      "SYS-24"
+    ],
+    "version": "v2",
+    "last_updated": "2026-04-27",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Privileged Access & Admin Console Policy (v2)\n\n**Owner:** IAM & Security with Platform Backend | **Effective:** 27 April 2026 | **Classification:** Restricted\n\n## 1. Scope\nThe AlgoWorks Admin Console (tenant lookup, feature flags, subscription state, user impersonation) and any other internal tool that exposes customer PII or allows changes to customer tenants.\n\n## 2. Access levels\n- `console-readonly`: view tenant configuration, devices, subscription state. No impersonation.\n- `console-operator`: read-only plus feature-flag changes and customer-user impersonation (logged).\n- `console-admin`: Platform Backend engineers only.\n\n## 3. Requirements for access\n3.1 The requester must have **completed the \"Handling Customer Data\" course in LearnHub within the last 12 months** before access is granted. IAM verifies completion on the ticket.\n3.2 The request is raised in ServiceNow and requires approval from the requester's line manager **and** the **Engineering Manager, Platform** (as system owner).\n3.3 `console-operator` additionally requires approval from the IAM & Security Lead.\n3.4 IAM adds the user to the Okta group only after 3.1-3.3 are recorded on the ticket. **There are no exceptions to the training requirement**; urgent customer issues are handled by an existing operator on the requester's behalf.\n\n## 4. Review and revocation\nAccess is reviewed quarterly by the Platform Engineering Manager; users with no console login in 90 days are removed. Impersonation sessions are logged and sampled monthly.\n\n_Revision history: v1 (Nov 2025) initial; v2 (Apr 2026) made the training requirement explicit and removed the \"manager attestation in lieu of training\" option._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "restricted",
+      "created_date": "2026-04-27",
+      "last_referenced_date": "2026-05-14"
+    }
+  },
+  {
+    "policy_id": "POL-12",
+    "title": "BYOD & Mobile Device Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-05",
+    "related_system_ids": [
+      "SYS-18",
+      "SYS-13",
+      "SYS-14"
+    ],
+    "version": "v1",
+    "last_updated": "2025-06-23",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# BYOD & Mobile Device Policy (v1)\n\n**Owner:** IT Service Desk & Endpoint | **Effective:** 23 June 2025\n\n## 1. Policy\n1.1 **Personal mobile devices (phones and tablets) are not permitted to access corporate email, calendar, OneDrive or Slack.**\n1.2 Employees whose role requires mobile access to email (Sales, Customer Success, leadership, on-call engineers) are issued a **company-owned mobile device** enrolled in Microsoft Intune with full device management.\n1.3 Company mobile devices are requested through ServiceNow with Department Head approval and are subject to the same return rules as laptops.\n1.4 Personal laptops may never be used for AlgoWorks work; see the Laptop & Endpoint Provisioning SOP.\n1.5 Exceptions to 1.1 require written approval from the Head of IT & Infrastructure and are limited to 30 days.\n\n## 2. Rationale\nIntune application-protection policies for unmanaged devices were evaluated in 2025 and not adopted at that time pending a licence review.\n\n## 3. Security requirements for company mobiles\nDevice PIN/biometric, automatic OS updates, remote wipe enabled, no jailbroken/rooted devices.\n\n_Revision history: v1 (Jun 2025) initial policy._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-06-23",
+      "last_referenced_date": "2026-04-02"
+    }
+  },
+  {
+    "policy_id": "POL-13",
+    "title": "Contractor & Guest Access Policy",
+    "owner_department_id": "DEPT-02",
+    "owner_team_id": "TEAM-04",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-11",
+      "SYS-14",
+      "SYS-08",
+      "SYS-25"
+    ],
+    "version": "v2",
+    "last_updated": "2026-06-01",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Contractor & Guest Access Policy (v2)\n\n**Owner:** IAM & Security | **Effective:** 1 June 2026\n\n## 1. Sponsorship\nEvery contractor, agency or vendor user must have a named AlgoWorks **sponsor** (a team lead or above) who is accountable for the account. Sponsors request accounts in ServiceNow using the \"Contractor account\" item, attaching the signed NDA/MSA reference.\n\n## 2. Account lifecycle\n2.1 Contractor Okta accounts are created with the `ext-` prefix and a **90-day expiry**. Sponsors may extend in 90-day increments; IAM sends a reminder 10 days before expiry.\n2.2 Accounts are disabled automatically on expiry and deleted after 30 days.\n2.3 Contractors are assigned only the applications named on the request; the default new-joiner bundle does not apply.\n\n## 3. Connectivity\n3.1 Contractors who need internal services are added to the **`vpn-contractors` Okta group**, which provides GlobalProtect access scoped to the subnets listed on the request. A security review by IAM is required before the group is assigned.\n3.2 Contractors must use a device that meets the endpoint baseline; the sponsor attests to this on the request.\n\n## 4. Guest Wi-Fi\nOffice visitors use the `AlgoWorks-Guest` network (captive portal, 24-hour access) which has no route to internal systems.\n\n_Revision history: v1 (Feb 2025); v2 (Jun 2026) introduced the `vpn-contractors` group model for contractor connectivity._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-06-01",
+      "last_referenced_date": "2026-06-08"
+    }
+  },
+  {
+    "policy_id": "POL-14",
+    "title": "Code Review & Branch Protection Standard",
+    "owner_department_id": "DEPT-01",
+    "owner_team_id": "TEAM-01",
+    "related_system_ids": [
+      "SYS-25"
+    ],
+    "version": "v3",
+    "last_updated": "2026-05-11",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Code Review & Branch Protection Standard (v3)\n\n**Owner:** Platform Backend (Engineering) | **Effective:** 11 May 2026\n\n## 1. Branch protection (all repositories under the algoworks-tech GitHub org)\n- `main` is protected: no direct pushes, linear history, required status checks (build, unit tests, lint, security scan).\n- At least **one approving review** from a CODEOWNER is required. Repositories tagged `payments`, `auth` or `data-pipeline` require **two** approvals.\n- Stale approvals are dismissed on new commits. Force-pushes are disabled.\n\n## 2. Review expectations\n2.1 Reviewers respond within one business day; authors keep PRs under ~400 changed lines where possible.\n2.2 PR description must link the Jira issue and state test evidence and rollback approach for production-affecting changes.\n2.3 Infrastructure and deployment repositories (`algoworks-deploy`, `algoworks-infra`) follow the same rules; a merged PR to an environment directory is the record of approval for that deployment.\n\n## 3. Exceptions\nEmergency hotfixes may be merged with one approval from the on-call lead and must be followed by a retrospective review within 2 business days.\n\n_Revision history: v2 (Oct 2025); v3 (May 2026) added security-scan status check and two-approval rule for data-pipeline repos._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-05-11",
+      "last_referenced_date": "2026-07-24"
+    }
+  },
+  {
+    "policy_id": "POL-15",
+    "title": "Deployment & Release Process SOP",
+    "owner_department_id": "DEPT-01",
+    "owner_team_id": "TEAM-01",
+    "related_system_ids": [
+      "SYS-27",
+      "SYS-25",
+      "SYS-01",
+      "SYS-02"
+    ],
+    "version": "v3",
+    "last_updated": "2025-04-14",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Deployment & Release Process SOP (v3)\n\n**Owner:** Platform Backend (Engineering) | **Effective:** 14 April 2025\n\n## 1. Deployment windows\n1.1 Production deployments of the AlgoWorks Fleet platform, customer portal and mobile backend services take place **Monday to Thursday between 10:00 and 16:00 IST**.\n1.2 **No production deployments on Fridays**, on the day before a public holiday, or during the last two business days of a month (billing run).\n1.3 Deployments outside the window require approval from the VP Engineering and must have an engineer on standby for 2 hours afterwards.\n\n## 2. Release roles\nA weekly **release manager** (rotating within Platform Backend) coordinates the release train, confirms staging sign-off from QA, announces in #eng-announcements and monitors Datadog for 30 minutes post-deploy.\n\n## 3. Steps\n1. Merge to `main`; CI builds and publishes the image.\n2. Release manager promotes the image to staging; QA runs the regression suite.\n3. Release manager raises the production change (see Change Management Policy) and, once approved, promotes to production.\n4. Post-deploy checks: error rate, p95 latency, queue depth. Roll back immediately on regression.\n\n## 4. Feature flags\nRisky changes should ship dark behind a feature flag and be enabled progressively (1% -> 10% -> 100%).\n\n## 5. Mobile releases\nDriver App releases go to the Play internal track / TestFlight for 48 hours before staged rollout (10% -> 50% -> 100%) over 3 days.\n\n_Revision history: v2 (Sep 2024); v3 (Apr 2025) added Friday deployment freeze and month-end freeze._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2025-04-14",
+      "last_referenced_date": "2026-08-20"
+    }
+  },
+  {
+    "policy_id": "POL-16",
+    "title": "On-Call & Escalation Policy",
+    "owner_department_id": "DEPT-01",
+    "owner_team_id": "TEAM-06",
+    "related_system_ids": [
+      "SYS-28",
+      "SYS-14",
+      "SYS-01"
+    ],
+    "version": "v2",
+    "last_updated": "2026-07-06",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# On-Call & Escalation Policy (v2)\n\n**Owner:** Engineering with Cloud Infrastructure | **Effective:** 6 July 2026\n\n## 1. Rotations\nWeekly rotations in PagerDuty for: Platform Backend, Frontend & Mobile (business hours only), Data Engineering (business hours only) and Cloud Infrastructure (24x7). Handover is Monday 10:00 IST.\n\n## 2. Escalation ladder\nPrimary on-call (ack within 5 minutes for Sev1, 15 for Sev2) -> secondary on-call (after 10 minutes) -> team lead / Engineering Manager (after 20 minutes) -> VP Engineering / Head of IT (after 30 minutes).\n\n## 3. Expectations\nOn-call engineers have a company mobile with PagerDuty installed, keep their laptop reachable and do not deploy non-urgent changes while on call. Time off in lieu: half a day per overnight page.\n\n## 4. Alert hygiene\nEvery paging alert must have a linked runbook. Alerts that page more than 3 times in a week without action are reviewed at the weekly SRE sync and downgraded or fixed.\n\n_Revision history: v1 (Jan 2025); v2 (Jul 2026) added business-hours rotations for Frontend and Data, and the alert-hygiene rule after the May 2026 alert storm._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-07-06",
+      "last_referenced_date": "2026-07-06"
+    }
+  },
+  {
+    "policy_id": "POL-17",
+    "title": "Feature Flag & Rollback Guidelines",
+    "owner_department_id": "DEPT-01",
+    "owner_team_id": "TEAM-01",
+    "related_system_ids": [
+      "SYS-09",
+      "SYS-01",
+      "SYS-27"
+    ],
+    "version": "v1",
+    "last_updated": "2026-06-22",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Feature Flag & Rollback Guidelines (v1)\n\n**Owner:** Platform Backend | **Effective:** 22 June 2026\n\n1. Feature flags are managed in the AlgoWorks Admin Console (flags service). Every flag has an owner, a Jira reference and an expiry date; flags older than 90 days are reviewed monthly.\n2. New customer-visible behaviour ships dark and is enabled for internal tenants first, then 5% of customers, then 25%, then 100%, with at least 24 hours at each stage unless the change is a bug fix.\n3. Rollback preference order: disable the flag; roll back the ArgoCD application to the previous revision; restore data from backup (requires incident commander approval).\n4. Any deployment that cannot be rolled back within 10 minutes must be called out in the PR and the release announcement.\n5. Flag changes on production tenants by `console-operator` users are logged and included in the weekly release notes.\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-06-22",
+      "last_referenced_date": "2026-06-22"
+    }
+  },
+  {
+    "policy_id": "POL-18",
+    "title": "Snowflake Data Access Policy",
+    "owner_department_id": "DEPT-01",
+    "owner_team_id": "TEAM-03",
+    "related_system_ids": [
+      "SYS-29",
+      "SYS-30",
+      "SYS-17",
+      "SYS-10"
+    ],
+    "version": "v2",
+    "last_updated": "2025-07-21",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Snowflake Data Access Policy (v2)\n\n**Owner:** Data & Analytics Engineering | **Effective:** 21 July 2025\n\n## 1. Access model\nSnowflake access is role-based. Okta groups map to Snowflake roles: `snowflake-analyst` (curated marts, read), `snowflake-engineer` (raw + curated, read/write in dev), `snowflake-pii-reader` (PII-tagged schemas), `snowflake-admin` (Data Engineering only).\n\n## 2. Requesting access\n2.1 Curated (non-PII) schema access: raise a Jira ticket in the **DATA** project using the \"Data access request\" issue type. Approval by the **Data Engineering Manager**. Data Engineering adds the Okta group.\n2.2 **PII-tagged schemas** (customer contact details, driver identities, employee data): the DATA ticket must additionally carry **written sign-off from the Data Protection Officer (DPO)**, recorded as a comment on the ticket, before the `snowflake-pii-reader` role is granted. Purpose and retention must be stated.\n2.3 Native SQL access for non-engineering teams is discouraged; use Metabase curated collections where possible.\n\n## 3. Reviews\nMembership of `snowflake-pii-reader` is reviewed every 6 months by the DPO and the Data Engineering Manager. Unused roles (no query in 90 days) are revoked.\n\n## 4. Service accounts\nService accounts (dbt, Metabase, Fivetran) are owned by Data Engineering, use key-pair auth and are rotated annually.\n\n_Revision history: v1 (Nov 2024); v2 (Jul 2025) introduced the pii-reader role and DPO sign-off requirement._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2025-07-21",
+      "last_referenced_date": "2026-09-10"
+    }
+  },
+  {
+    "policy_id": "POL-19",
+    "title": "Employee Onboarding SOP",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-11",
+    "related_system_ids": [
+      "SYS-19",
+      "SYS-10",
+      "SYS-15",
+      "SYS-13",
+      "SYS-14"
+    ],
+    "version": "v3",
+    "last_updated": "2025-08-04",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Employee Onboarding SOP (v3)\n\n**Owner:** People Operations | **Effective:** 4 August 2025\n\n## 1. Before Day 1\n| When | Action | Owner |\n|---|---|---|\n| Offer accepted | Candidate record created in Darwinbox pre-boarding; documents collected | Talent Acquisition / HR Ops |\n| Start date - 5 business days | HR Ops **emails IT-Helpdesk** with the new joiner's name, role, team, manager, location and start date; IT raises the onboarding ticket | HR Ops |\n| Start date - 5 business days | Laptop ordered/allocated per the Laptop & Endpoint Provisioning SOP | Service Desk |\n| Start date - 1 business day | Okta account, Microsoft 365 mailbox, Slack, Confluence, Darwinbox self-service, Zoho Expense and LearnHub created (the default bundle) | IAM / Service Desk |\n| Start date - 1 business day | Buddy assigned; manager prepares 30-60-90 plan | Line manager |\n\n## 2. Day 1\n2.1 HR induction (09:30-11:00), ID card and desk allocation, laptop handover.\n2.2 **The line manager raises a separate ServiceNow access request for each business application the new joiner needs** (Salesforce, Zendesk, GitHub, Jira, Metabase, etc.) following the Application Access Request Policy. Applications are not provisioned automatically based on role.\n2.3 Mandatory trainings (Security Awareness, Code of Conduct, Handling Customer Data where relevant) assigned in LearnHub; due within 30 days.\n\n## 3. First 30 days\nBuddy check-ins weekly; manager 30-day review recorded in Darwinbox; HR Ops 30-day survey.\n\n## 4. Hybrid work orientation\nNew joiners are briefed on the Hybrid Work Policy (in-office days) during induction.\n\n_Revision history: v2 (Jan 2025); v3 (Aug 2025) moved the IT notification to 5 business days before start and added the buddy programme._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2025-08-04",
+      "last_referenced_date": "2026-09-15"
+    }
+  },
+  {
+    "policy_id": "POL-20",
+    "title": "Leave & Time-Off Policy",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-11",
+    "related_system_ids": [
+      "SYS-19"
+    ],
+    "version": "v4",
+    "last_updated": "2026-04-13",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Leave & Time-Off Policy (v4)\n\n**Owner:** People Operations | **Effective:** 13 April 2026 (FY27)\n\n## 1. Entitlements (per financial year, April-March)\n- **Privilege Leave (PL):** 24 days, accrued at 2 days per month. Up to **12 days** may be carried forward to the next financial year; the balance above 12 lapses on 31 March. Encashment only at exit.\n- **Sick Leave:** 10 days; a medical certificate is required for more than 3 consecutive days.\n- **Public holidays:** 12 per year per location (list published each January).\n- **Parental leave:** 26 weeks maternity; 4 weeks paternity/secondary caregiver; adoption 12 weeks.\n- **Bereavement:** 5 days. **Marriage:** 3 days.\n\n## 2. Applying\nAll leave is applied for and approved in Darwinbox. Notice: at least twice the duration of the leave for PL (e.g. 10 working days' notice for a 5-day leave); sick leave should be logged on the day. Leave without a Darwinbox record is treated as unauthorised absence.\n\n## 3. Approvals\nLine manager approves; leaves longer than 10 consecutive working days also require Department Head approval. Managers should nominate a delegate in Darwinbox when they are on leave so approvals (including application access approvals) do not stall.\n\n## 4. Comp-off\nWork on a weekend or public holiday approved in advance by the manager earns a compensatory off to be used within 60 days.\n\n_Revision history: v3 (Apr 2025); v4 (Apr 2026) increased carry-forward from 10 to 12 days and added the delegate guidance._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-04-13",
+      "last_referenced_date": "2026-08-28"
+    }
+  },
+  {
+    "policy_id": "POL-21",
+    "title": "Hybrid Work Policy",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-11",
+    "related_system_ids": [
+      "SYS-19"
+    ],
+    "version": "v2",
+    "last_updated": "2025-09-08",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Hybrid Work Policy (v2)\n\n**Owner:** People Operations | **Approved by:** Chief People Officer | **Effective:** 8 September 2025\n\n## 1. Policy\n1.1 AlgoWorks operates a hybrid model. Employees assigned to an office (Bengaluru, Pune, Hyderabad, Singapore) are expected in the office a **minimum of 3 days per week**.\n1.2 **Tuesday, Wednesday and Thursday are anchor days** on which all office-based employees are expected on site, so that teams overlap. Monday and Friday may be worked remotely.\n1.3 Attendance is recorded via the Darwinbox badge integration and reviewed monthly by HR Business Partners with Department Heads.\n1.4 Employees hired into designated remote roles (location \"Remote\" in Darwinbox) are exempt from 1.1-1.2 and are expected to visit their nearest office once per quarter.\n1.5 Temporary exceptions (caregiving, medical, relocation) of up to 30 days may be approved by the HR Business Partner with the line manager; longer exceptions require the Chief People Officer.\n\n## 2. Working hours\nCore collaboration hours are 11:00-16:00 IST; teams may flex around them. Singapore and US-based staff follow local core hours and overlap with India for at least 3 hours.\n\n## 3. Equipment\nRemote-day equipment (monitor, chair) is not reimbursed; the office provides hot-desks and meeting rooms bookable in Outlook.\n\n_Revision history: v1 (Apr 2024) 2 days/week; v2 (Sep 2025) increased to 3 days/week with anchor days._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2025-09-08",
+      "last_referenced_date": "2026-08-05"
+    }
+  },
+  {
+    "policy_id": "POL-22",
+    "title": "Performance Review Process",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-11",
+    "related_system_ids": [
+      "SYS-19"
+    ],
+    "version": "v3",
+    "last_updated": "2026-08-03",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Performance Review Process (v3)\n\n**Owner:** People Operations | **Effective:** 3 August 2026\n\n1. Two cycles per year: mid-year (October, development-focused) and annual (April, ratings and compensation). Both run in Darwinbox.\n2. Steps: self-review (1 week) -> peer feedback (up to 4 peers nominated by the employee, approved by the manager) -> manager review -> department calibration -> conversation.\n3. Ratings are on a 5-point scale; distribution guidance (not a forced curve) is shared with Department Heads. Ratings are Restricted data and are visible only to the employee, the manager chain and HR.\n4. Promotions are proposed in the annual cycle with a written case reviewed by a cross-department panel.\n5. Employees who joined less than 90 days before a cycle opens receive a check-in instead of a rating.\n6. Performance improvement plans are 60 days, agreed with the HRBP, and documented in Darwinbox.\n\n_Revision history: v2 (Mar 2025); v3 (Aug 2026) added peer feedback step and clarified new-joiner eligibility._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-08-03",
+      "last_referenced_date": "2026-08-03"
+    }
+  },
+  {
+    "policy_id": "POL-23",
+    "title": "Employee Referral Bonus Policy",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-10",
+    "related_system_ids": [
+      "SYS-20",
+      "SYS-19",
+      "SYS-21"
+    ],
+    "version": "v2",
+    "last_updated": "2026-04-13",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Employee Referral Bonus Policy (v2)\n\n**Owner:** Talent Acquisition | **Effective:** 13 April 2026\n\n1. Employees who refer a candidate through the Greenhouse referral link who is subsequently hired receive a referral bonus: **Rs 50,000** for Engineering, Data and IT roles; **Rs 25,000** for all other roles; Rs 75,000 for roles flagged \"hard-to-fill\" on the job posting.\n2. **The bonus is paid in the payroll cycle following the referred employee's completion of 90 days of employment**, provided both referrer and referee are active employees on that date.\n3. Not eligible: Talent Acquisition team members, the hiring manager and interview panel for that role, Department Heads for roles in their department, and referrals of former employees who left within the last 12 months.\n4. The referral must be logged in Greenhouse before the candidate applies through any other channel; Greenhouse timestamps decide ownership.\n5. Payment is processed by Payroll on confirmation from Talent Acquisition; the bonus is taxable.\n\n_Revision history: v1 (Jun 2024) 6-month vesting; v2 (Apr 2026) reduced the payout trigger from 6 months to 90 days and introduced the hard-to-fill tier._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-04-13",
+      "last_referenced_date": "2026-07-14"
+    }
+  },
+  {
+    "policy_id": "POL-24",
+    "title": "Learning & Development Reimbursement Policy",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-12",
+    "related_system_ids": [
+      "SYS-24",
+      "SYS-22"
+    ],
+    "version": "v2",
+    "last_updated": "2025-12-01",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Learning & Development Reimbursement Policy (v2)\n\n**Owner:** Learning & Development | **Effective:** 1 December 2025\n\n## 1. Entitlement\nEach employee may claim up to **Rs 25,000 per financial year** for external courses, certifications, conferences and books relevant to their current or next role.\n\n## 2. Pre-approval\n2.1 **Pre-approval is mandatory.** Before enrolling or paying, the employee submits an L&D request in LearnHub stating the course, cost, dates and relevance; the line manager and the L&D team both approve.\n2.2 **Claims without pre-approval are not reimbursed.**\n\n## 3. Claiming\n3.1 Submit the claim in Zoho Expense under category \"Learning & Development\" within 30 days of course completion, attaching the invoice and the completion certificate (or exam pass report for certifications).\n3.2 Failed certification exams are reimbursed once; the retake is at the employee's cost.\n3.3 Conference travel follows the Travel & Expense Reimbursement Policy and counts against the L&D cap only for the registration fee.\n\n## 4. Clawback\nIf the employee resigns within 6 months of a reimbursement above Rs 15,000, the amount is recovered from the final settlement.\n\n_Revision history: v1 (Apr 2024) Rs 20,000 cap; v2 (Dec 2025) raised to Rs 25,000 and moved requests into LearnHub._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2025-12-01",
+      "last_referenced_date": "2026-09-03"
+    }
+  },
+  {
+    "policy_id": "POL-25",
+    "title": "Code of Conduct & Anti-Harassment Policy",
+    "owner_department_id": "DEPT-04",
+    "owner_team_id": "TEAM-11",
+    "related_system_ids": [
+      "SYS-19",
+      "SYS-24"
+    ],
+    "version": "v3",
+    "last_updated": "2026-07-20",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Code of Conduct & Anti-Harassment Policy (v3)\n\n**Owner:** People Operations | **Effective:** 20 July 2026\n\n1. AlgoWorks expects professional, respectful behaviour in all work settings including Slack, email, video calls, customer sites and company events.\n2. Harassment, discrimination and retaliation are prohibited. The Internal Committee constituted under the POSH Act handles complaints of sexual harassment; contact details are on the HR Confluence space and every office noticeboard.\n3. Conflicts of interest (outside employment, vendor relationships, hiring relatives) must be disclosed to HR in Darwinbox.\n4. Confidential and customer information must be handled per the Data Classification & Handling Standard.\n5. Gifts from vendors or customers above Rs 5,000 in value must be declared; cash gifts are never accepted.\n6. Concerns may be raised with a manager, any HRBP, the Chief People Officer, or anonymously via the ethics form; reports are investigated within 30 days.\n7. Annual acknowledgement and the LearnHub Code of Conduct module are mandatory for all employees.\n\n_Revision history: v2 (Jul 2025); v3 (Jul 2026) added AI-tool and social media guidance references._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-07-20",
+      "last_referenced_date": "2026-07-20"
+    }
+  },
+  {
+    "policy_id": "POL-26",
+    "title": "Travel & Expense Reimbursement Policy",
+    "owner_department_id": "DEPT-05",
+    "owner_team_id": "TEAM-13",
+    "related_system_ids": [
+      "SYS-22",
+      "SYS-23",
+      "SYS-21"
+    ],
+    "version": "v5",
+    "last_updated": "2025-11-10",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Travel & Expense Reimbursement Policy (v5)\n\n**Owner:** Accounts Payable & Procurement (Finance) | **Approved by:** CFO | **Effective:** 10 November 2025\n\n## 1. Submission\n1.1 All claims are submitted in **Zoho Expense**. Paper or email claims are not accepted.\n1.2 **Claims must be submitted within 30 days of the expense date.** Claims older than 30 days are rejected automatically by Zoho Expense and are not eligible for reimbursement.\n1.3 **Itemised receipts are mandatory for every single expense above Rs 500.** Claims without receipts above this threshold are rejected.\n1.4 Claims are approved by the line manager and then by Finance AP. Approved claims are reimbursed with the next monthly payroll (cut-off: 20th of the month).\n\n## 2. Travel\n2.1 Flights: economy class for all domestic and international travel under 8 hours; premium economy allowed above 8 hours with Department Head approval. Book through the corporate travel desk.\n2.2 Hotels: up to Rs 6,000/night metro, Rs 4,000/night non-metro, USD 180/night international.\n2.3 **Per diem (meals & incidentals): Rs 2,000 per day domestic; USD 60 per day international.** Per diem is claimed without receipts; no other meal claims are permitted on per-diem days.\n2.4 Local travel: metered taxi/ride-hailing at actuals; personal vehicle at Rs 12/km (car) or Rs 5/km (two-wheeler).\n\n## 3. Non-travel expenses\n3.1 Team meals and celebrations: up to Rs 1,500 per person, manager pre-approval, attendee list required.\n3.2 Mobile phone bills: reimbursed up to Rs 1,000/month for roles designated by the Department Head.\n3.3 Software and subscriptions may not be expensed; see the Software Procurement & SaaS Approval Policy.\n3.4 Items not listed in this policy are not reimbursable unless approved in writing by the CFO before the expense is incurred.\n\n## 4. Corporate cards\nSee the Corporate Card Usage Policy. Card transactions must still be submitted in Zoho Expense with receipts.\n\n_Revision history: v4 (Feb 2025); v5 (Nov 2025) updated hotel caps and confirmed the 30-day submission window and Rs 500 receipt threshold._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2025-11-10",
+      "last_referenced_date": "2026-08-31"
+    }
+  },
+  {
+    "policy_id": "POL-27",
+    "title": "Procurement & Purchase Order Policy",
+    "owner_department_id": "DEPT-05",
+    "owner_team_id": "TEAM-13",
+    "related_system_ids": [
+      "SYS-23",
+      "SYS-15"
+    ],
+    "version": "v3",
+    "last_updated": "2026-05-25",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Procurement & Purchase Order Policy (v3)\n\n**Owner:** Accounts Payable & Procurement | **Effective:** 25 May 2026\n\n## 1. When a PO is required\nA purchase order raised in NetSuite is required for any single purchase or annual commitment **above Rs 25,000**. Invoices without a matching PO are returned to the requester.\n\n## 2. Approval matrix (per purchase / annual contract value)\n| Value | Approvals |\n|---|---|\n| Up to Rs 25,000 | Team lead (no PO; expense or card) |\n| Rs 25,001 - 1,00,000 | Department Head |\n| Rs 1,00,001 - 5,00,000 | Department Head + AP & Procurement Manager |\n| Rs 5,00,001 - 25,00,000 | Above + CFO; competitive quotes per the Vendor Onboarding SOP |\n| Above Rs 25,00,000 | Above + CEO |\n\n## 3. Process\n1. Requester raises a \"Purchase request\" in ServiceNow (Finance queue) with quotes and business case.\n2. Procurement confirms the vendor is onboarded (or starts onboarding), checks budget with FP&A, and raises the PO.\n3. Goods/services receipt is confirmed by the requester in NetSuite before AP releases payment.\n\n## 4. Split purchases\nSplitting a purchase to stay under a threshold is a policy violation.\n\n_Revision history: v2 (Jun 2025); v3 (May 2026) added the ServiceNow Finance queue as the intake channel._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-05-25",
+      "last_referenced_date": "2026-08-31"
+    }
+  },
+  {
+    "policy_id": "POL-28",
+    "title": "Corporate Card Usage Policy",
+    "owner_department_id": "DEPT-05",
+    "owner_team_id": "TEAM-13",
+    "related_system_ids": [
+      "SYS-22",
+      "SYS-23"
+    ],
+    "version": "v2",
+    "last_updated": "2026-06-08",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Corporate Card Usage Policy (v2)\n\n**Owner:** Accounts Payable & Procurement | **Effective:** 8 June 2026\n\n1. Corporate cards are issued to Department Heads, team leads who travel frequently, the travel desk and designated Marketing/IT purchasers. Requests go through ServiceNow with CFO approval.\n2. Card limits: Rs 2,00,000/month standard; temporary increases via Finance AP.\n3. Permitted: travel, team events, approved SaaS renewals under Rs 1,00,000, event sponsorships, office supplies. Not permitted: personal expenses, cash withdrawals, gift cards, cryptocurrency, expenses for other employees' personal use.\n4. Every transaction must be reconciled in Zoho Expense with a receipt within 15 days of the statement date. Unreconciled transactions after 30 days are deducted from salary after notice.\n5. Lost or stolen cards are reported to the bank and Finance AP immediately.\n\n_Revision history: v1 (Mar 2025); v2 (Jun 2026) allowed SaaS renewals under Rs 1,00,000 on card._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-06-08",
+      "last_referenced_date": "2026-06-08"
+    }
+  },
+  {
+    "policy_id": "POL-29",
+    "title": "Vendor Onboarding & Payment Terms SOP",
+    "owner_department_id": "DEPT-05",
+    "owner_team_id": "TEAM-13",
+    "related_system_ids": [
+      "SYS-23",
+      "SYS-15"
+    ],
+    "version": "v2",
+    "last_updated": "2026-01-19",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Vendor Onboarding & Payment Terms SOP (v2)\n\n**Owner:** Accounts Payable & Procurement | **Effective:** 19 January 2026\n\n## 1. Vendor onboarding checklist\n1. Vendor registration form (legal name, address, contact, GSTIN, PAN, MSME status).\n2. Cancelled cheque or bank letter for account verification; a call-back to a number obtained independently of the invoice to confirm bank details.\n3. For SaaS/IT vendors: the IAM & Security questionnaire and DPA where personal data is processed.\n4. Vendor created in NetSuite by Procurement; AP verifies bank details before the first payment.\n\n## 2. Competitive quotes\n2.1 **Any new vendor engagement with an annual value above Rs 5,00,000 requires three competitive quotes** (or a documented single-source justification approved by the CFO) attached to the purchase request. **This applies equally to SaaS subscriptions, hosting and professional services.**\n2.2 Renewals of existing contracts above Rs 5,00,000 require a benchmark check by Procurement every 2 years.\n\n## 3. Payment terms\n3.1 **Standard payment terms are Net-45** from receipt of a valid invoice.\n3.2 Net-30 or shorter terms may be agreed only with **CFO approval**, recorded in the vendor record.\n3.3 Advance payments require CFO approval and a proforma invoice.\n3.4 Payment runs happen every Wednesday; invoices must be received by AP by Monday 17:00 to be included.\n\n## 4. Invoicing\nInvoices must quote the PO number and be sent to ap@algoworks.io. Invoices without PO reference are returned.\n\n_Revision history: v1 (Mar 2025); v2 (Jan 2026) added the bank call-back control and made the three-quote rule explicit for SaaS and hosting._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-01-19",
+      "last_referenced_date": "2026-08-14"
+    }
+  },
+  {
+    "policy_id": "POL-30",
+    "title": "Month-End Close Checklist",
+    "owner_department_id": "DEPT-05",
+    "owner_team_id": "TEAM-14",
+    "related_system_ids": [
+      "SYS-23",
+      "SYS-06",
+      "SYS-22",
+      "SYS-21"
+    ],
+    "version": "v6",
+    "last_updated": "2026-08-31",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Month-End Close Checklist (v6)\n\n**Owner:** FP&A with Billing, Payroll & Compliance | **Effective:** 31 August 2026 | **Classification:** Restricted\n\n| Day | Task | Owner |\n|---|---|---|\n| BD-2 | Freeze: no new vendor bills dated in the closing month after this point; expense claims for the month due in Zoho Expense | AP |\n| BD-1 | Chargebee invoice run reconciled to NetSuite AR; failed webhooks re-driven | Billing |\n| BD+1 | Payroll journal from Keka posted; PF/PT/TDS accruals | Payroll |\n| BD+2 | Expense journal posted from Zoho Expense (automated daily posting from June 2026; verify no duplicates) | AP |\n| BD+2 | Prepaid/SaaS amortisation and fixed-asset depreciation | FP&A |\n| BD+3 | Revenue recognition schedules reviewed; deferred revenue roll-forward | Billing / FP&A |\n| BD+3 | Bank and credit-card reconciliations | AP |\n| BD+4 | Intercompany (Singapore entity) and FX revaluation | FP&A |\n| BD+5 | Management pack: P&L vs budget, cash, ARR, headcount | FP&A |\n| BD+6 | CFO review and close lock in NetSuite | CFO |\n\nNotes: production deployments that touch billing are frozen on BD-2 to BD+1 (coordinate with Engineering). Any integration incident (Chargebee, Zoho Expense) during close is Sev2 for Finance.\n\n_Revision history: v5 (May 2026); v6 (Aug 2026) added the duplicate-journal check after the August 2026 Zoho integration incident._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-05",
+      "sensitivity": "restricted",
+      "created_date": "2026-08-31",
+      "last_referenced_date": "2026-08-31"
+    }
+  },
+  {
+    "policy_id": "POL-31",
+    "title": "Discount Approval Matrix",
+    "owner_department_id": "DEPT-03",
+    "owner_team_id": "TEAM-08",
+    "related_system_ids": [
+      "SYS-04",
+      "SYS-06"
+    ],
+    "version": "v3",
+    "last_updated": "2025-10-20",
+    "status": "active",
+    "is_stale_by_design": true,
+    "full_text": "# Discount Approval Matrix (v3)\n\n**Owner:** Sales Operations & Deal Desk | **Approved by:** VP Sales and CFO | **Effective:** 20 October 2025\n\n## 1. Purpose\nSets who may approve pricing discounts on AlgoWorks Fleet subscriptions and services, to protect margin and keep pricing consistent across regions.\n\n## 2. Matrix (discount from list price, per deal)\n| Discount | Approver |\n|---|---|\n| Up to 10% | Account Executive (self-approved, recorded on the opportunity) |\n| 10.01% - 20% | Sales Manager (Enterprise Sales Manager or Head of Customer Success for renewals) |\n| **20.01% - 30%** | **CFO** |\n| Above 30% | CEO |\nMulti-year deals: the discount is measured on total contract value. Free months count as discount.\n\n## 3. Process\n3.1 Every discount above 10% requires a **Deal Desk ticket** (ServiceNow, Sales Ops queue) raised by the AE with the business case, competitor context and the proposed terms.\n3.2 The Deal Desk Analyst validates the calculation and routes the approval to the approver above. Approval must be recorded on the ticket **and** on the Salesforce opportunity before the quote is sent.\n3.3 Chargebee subscriptions are created only from an approved quote.\n\n## 4. Non-standard terms\nPayment terms beyond Net-45, custom SLAs, or liability changes require Legal and CFO review regardless of discount level.\n\n_Revision history: v2 (Mar 2025); v3 (Oct 2025) lowered the Sales Manager ceiling from 25% to 20%._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2025-10-20",
+      "last_referenced_date": "2026-07-10"
+    }
+  },
+  {
+    "policy_id": "POL-32",
+    "title": "CRM Data Hygiene & Lead Ownership Policy",
+    "owner_department_id": "DEPT-03",
+    "owner_team_id": "TEAM-08",
+    "related_system_ids": [
+      "SYS-04",
+      "SYS-07"
+    ],
+    "version": "v2",
+    "last_updated": "2026-07-13",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# CRM Data Hygiene & Lead Ownership Policy (v2)\n\n**Owner:** Sales Operations | **Effective:** 13 July 2026\n\n1. Salesforce is the system of record for accounts, contacts, opportunities and renewals. HubSpot is the system of record for marketing engagement and lead scoring.\n2. Lead ownership: inbound leads are created in HubSpot and synced to Salesforce; the SDR round-robin assigns ownership within 1 business hour. Marketing may not reassign a lead once it is synced; Sales may not delete leads (mark \"Disqualified\" with a reason instead).\n3. Required fields on every opportunity: amount, close date, stage, next step, competitor, region. Opportunities without a next-step update in 21 days are flagged in the weekly pipeline review.\n4. Duplicates: report to Sales Ops via #sales-ops; only the Salesforce Administrator merges records. Do not create accounts without searching first.\n5. Exports of contact data from Salesforce or HubSpot for use outside the tools require the Sales Operations Manager's approval (see the Data Classification & Handling Standard).\n6. Field mappings between HubSpot and Salesforce are owned jointly by Marketing Ops and the Salesforce Administrator; changes require a Jira ticket and a test in the sandbox.\n\n_Revision history: v1 (Jan 2026, after the lead sync cleanup); v2 (Jul 2026) added the field-mapping ownership rule._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-07-13",
+      "last_referenced_date": "2026-07-29"
+    }
+  },
+  {
+    "policy_id": "POL-33",
+    "title": "Customer Support SLA & Escalation Policy",
+    "owner_department_id": "DEPT-03",
+    "owner_team_id": "TEAM-09",
+    "related_system_ids": [
+      "SYS-05",
+      "SYS-09",
+      "SYS-14"
+    ],
+    "version": "v3",
+    "last_updated": "2026-05-04",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Customer Support SLA & Escalation Policy (v3)\n\n**Owner:** Customer Success & Support | **Effective:** 4 May 2026\n\n## 1. Priorities and SLAs (Zendesk)\n| Priority | Definition | First response | Update | Target resolution |\n|---|---|---|---|---|\n| P1 | Customer's fleet operations stopped | 30 min (24x7) | 1 hour | 4 hours |\n| P2 | Major function impaired, workaround exists | 2 business hours | 4 hours | 1 business day |\n| P3 | Minor issue / question | 8 business hours | daily | 3 business days |\n| P4 | Feature request / cosmetic | 2 business days | - | backlog |\n\n## 2. Escalation to Engineering\n2.1 Tier 2 escalates to Engineering by creating a linked Jira issue in the SUP project and posting in #customer-success with the Zendesk link. P1s are also declared in #incidents per the Incident Management SOP.\n2.2 Support Engineers use the AlgoWorks Admin Console (read-only) for diagnosis; impersonation (`console-operator`) is limited to designated Tier 2 staff with the required training.\n\n## 3. Customer communication\nTemplates in Zendesk macros; any commitment on timelines beyond the SLA table needs the Head of Customer Success. Credits or refunds follow the Discount Approval Matrix thresholds.\n\n_Revision history: v2 (Nov 2025); v3 (May 2026) tightened P1 first response from 1 hour to 30 minutes._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-05-04",
+      "last_referenced_date": "2026-09-07"
+    }
+  },
+  {
+    "policy_id": "POL-34",
+    "title": "Brand & External Communications Policy",
+    "owner_department_id": "DEPT-06",
+    "owner_team_id": "TEAM-16",
+    "related_system_ids": [
+      "SYS-08",
+      "SYS-07",
+      "SYS-14"
+    ],
+    "version": "v2",
+    "last_updated": "2026-04-27",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Brand & External Communications Policy (v2)\n\n**Owner:** Content & Brand (Marketing) | **Effective:** 27 April 2026\n\n1. Only designated spokespeople (CEO, VP Marketing, VP Sales, VP Engineering) speak to press and analysts. Media enquiries go to press@algoworks.io.\n2. All external material (website, decks, one-pagers, social posts, event booths) uses the AlgoWorks brand system: approved logo files, colour palette, typography and templates in the Brand Portal (Confluence \"Brand\" space).\n3. Customer names, logos and quotes may be used externally only with a signed reference agreement recorded in Salesforce.\n4. Employees may share company posts on personal social media and identify themselves as AlgoWorks employees, but may not disclose unreleased features, customer information, financial results or security incidents.\n5. Incident and outage communications to customers are drafted by Customer Success and reviewed by Marketing before publication (see Incident Management SOP).\n6. Open-source contributions and conference talks by engineers are encouraged; slides that mention AlgoWorks systems are reviewed by the engineer's manager and Marketing for confidentiality.\n\n_Revision history: v1 (Aug 2024); v2 (Apr 2026) refreshed brand system references for the new website._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-06",
+      "sensitivity": "public",
+      "created_date": "2026-04-27",
+      "last_referenced_date": "2026-08-17"
+    }
+  },
+  {
+    "policy_id": "POL-35",
+    "title": "Marketing Content Approval & Publishing SOP",
+    "owner_department_id": "DEPT-06",
+    "owner_team_id": "TEAM-16",
+    "related_system_ids": [
+      "SYS-08",
+      "SYS-07",
+      "SYS-17"
+    ],
+    "version": "v2",
+    "last_updated": "2026-08-17",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Marketing Content Approval & Publishing SOP (v2)\n\n**Owner:** Content & Brand | **Effective:** 17 August 2026\n\n1. Every content piece (blog, web page, email campaign, social post, video) is tracked as an issue in the Jira **MKT** project with owner, channel, target date and approval status.\n2. Approvals: blog/web copy - Content & Brand Manager; product claims - Product Marketing Lead; pricing or legal statements - VP Marketing and Finance/Legal; customer references - Sales owner of the account.\n3. Email campaigns are built in HubSpot, sent to the internal test list first, and scheduled only after the approver ticks \"Approved\" on the Jira issue. No sends on public holidays in the recipient region.\n4. Website changes are staged on the WordPress staging site and reviewed by the Content & Brand Manager; the agency publishes to production only after written approval on the Jira issue.\n5. Accessibility (alt text, contrast) and SEO checklist must be completed before publishing.\n6. Urgent corrections (broken links, factual errors) may be made directly by the Content & Brand Manager and logged afterwards.\n\n_Revision history: v1 (Feb 2025); v2 (Aug 2026) moved tracking from a spreadsheet to Jira MKT._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-08-17",
+      "last_referenced_date": "2026-08-17"
+    }
+  },
+  {
+    "policy_id": "POL-36",
+    "title": "Access Roles & Need-to-Know Standard",
+    "owner_department_id": "DEPT-08",
+    "owner_team_id": "TEAM-62",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-19",
+      "SYS-16",
+      "SYS-15"
+    ],
+    "version": "v1",
+    "last_updated": "2026-08-31",
+    "status": "active",
+    "is_stale_by_design": false,
+    "full_text": "# Access Roles & Need-to-Know Standard (v1)\n\n**Owner:** Privacy, Compliance & Audit (Legal & Compliance) | **Approved by:** General Counsel and Head of IT & Infrastructure | **Effective:** 31 August 2026\n\n## 1. Purpose\nDefines who may see confidential information in AlgoWorks's knowledge systems (Confluence, ServiceNow, email archives, Slack exports and TouchStone). Access follows two principles: **need to know** (you see confidential information only when your work requires it) and **least privilege** (roles grant the narrowest data category and scope that the job needs). Seniority alone grants nothing.\n\n## 2. Classification\n2.1 **Non-confidential** (public or internal): policies, Confluence pages, tickets, emails and public Slack channels that contain no personal data. Visible to every employee and intern.\n2.2 **Confidential - personal data**: information about an identifiable person that they would not expect colleagues to read: pay, bonus and reimbursement amounts; health details and reasons for leave; performance and disciplinary matters; exit details; personal contact details and ID numbers. Records are checked for personal data automatically when they are indexed, whatever label they carry.\n2.3 **Confidential - business**: records labelled restricted by their owner (for example privileged-access requests, security incidents, contract negotiations, month-end close material). Each has a domain: security, finance, HR, commercial, legal or general.\n\n## 3. Baseline rules (everyone)\n3.1 Employees and interns see all non-confidential content.\n3.2 Contractors see policies and Confluence documentation, plus any record they are personally involved in. They do not see other tickets, emails or Slack conversations.\n3.3 Anyone involved in a record (requester, on-behalf-of, assignee, approver, participant or author) may see it, whatever its classification.\n3.4 Business-confidential policies and Confluence pages are visible to employees of the owning department.\n3.5 Employees who have left lose all access on their last working day.\n\n## 4. Access roles\nRoles are assigned from Darwinbox (job and team) and synchronised to Okta groups. Each role adds the grants below.\n\n| Role | Grants |\n|---|---|\n| people_manager (team leads and above) | Confidential records involving anyone in their reporting line, except health/leave reasons and personal contact details |\n| department_head | Business-confidential records owned by their department |\n| executive (CEO, COO, CFO) | Business-confidential records company-wide; no personal data |\n| hr_business_partner | All personal data for employees in the departments they support |\n| hr_operations (People Operations, Employee Relations) | Leave, health, exit and personal-contact data company-wide; HR business-confidential records |\n| compensation_admin (Total Rewards, Chief People Officer) | Pay and performance data company-wide |\n| payroll_admin (Billing, Payroll & Compliance) | Pay data company-wide |\n| finance_controller (CFO, FP&A and Accounting leads) | Finance business-confidential records company-wide |\n| security_admin (IAM, Security Operations, IT Governance & Risk, Head of IT) | Security business-confidential records company-wide |\n| legal_counsel (Commercial Legal, General Counsel) | Legal and commercial business-confidential records company-wide |\n| compliance_auditor (Privacy, Compliance & Audit, General Counsel) | All confidential records, read-only, for audits and investigations |\n\n## 5. Controls\n5.1 Every access to a confidential record through TouchStone is written to the audit log with the user, the record and the rule that allowed it.\n5.2 Access by compliance_auditor is additionally flagged for monthly review by the General Counsel.\n5.3 Role membership is reviewed quarterly by department heads; removals take effect within one business day.\n5.4 When TouchStone withholds a record, it tells the user that confidential records exist and who owns them, never their content.\n\n## 6. Requesting access\nRaise \"Request Access - confidential data\" in ServiceNow with the business reason. The owning department head approves; Privacy, Compliance & Audit records the grant. Temporary grants must have an end date.\n\n_Revision history: v1 (Aug 2026) introduced role-based access with the 1,000-person organisation and TouchStone._\n",
+    "metadata": {
+      "source_type": "policy",
+      "source_system": "confluence",
+      "department": "DEPT-08",
+      "sensitivity": "internal",
+      "created_date": "2026-08-31",
+      "last_referenced_date": "2026-08-31"
+    }
+  }
+]

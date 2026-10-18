@@ -1,0 +1,13 @@
+# Only ship what the container needs; everything else stays local.
+.git/
+.gitignore
+.venv/
+__pycache__/
+*.pyc
+.env
+generate/
+scripts/
+*.md
+!data/*.md
+Frontend reference/
+*.pptx

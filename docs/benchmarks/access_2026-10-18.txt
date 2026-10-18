@@ -1,0 +1,87 @@
+﻿### test_access 2026-10-18T00:20:10
+python.exe : E:\GenAI Project\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using 
+`httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+At line:1 char:770
++ ... arks\access_2026-10-18.txt; & $py -m scripts.test_access 2>&1 | Out-F ...
++                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (E:\GenAI Projec...ttpx2` instead.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  from starlette.testclient import TestClient as TestClient  # noqa
+role-based and need-to-know rules (POL-36)
+  ok    referral-bonus ticket RITM-22210 is confidential personal data (pay)
+  ok    requester sees his own referral-bonus ticket (Aditya Rao -> RITM-22210)
+  ok    HR partner handling it sees it (involved) (Fatima Sheikh -> RITM-22210)
+  ok    requester's manager sees it (people_manager, pay is not excluded) (Meera Krishnan -> RITM-22210)
+  ok    head of Engineering sees it (reporting line) (Arjun Venkataraman -> RITM-22210)
+  ok    HRBP for Engineering sees an Engineering employee's personal data (Swati Kulkarni -> RITM-22210)
+  ok    compliance auditor sees it (Revathi Krishnaswamy -> RITM-22210)
+  ok    unrelated engineer does not (Harish Gowda -> RITM-22210)
+  ok    CFO does not: executives get no personal data (Vivek Anand -> RITM-22210)
+  ok    head of another department does not (Sandeep Malhotra -> RITM-22210)
+  ok    requester sees his access request (Kunal Shah -> RITM-21908)
+  ok    security admin sees a restricted access request (Nikhil Bhatt -> RITM-21908)
+  ok    executive sees business-confidential records company-wide (Vivek Anand -> RITM-21908)
+  ok    IT engineer without a security role does not (Harish Gowda -> RITM-21908)
+  ok    HRBP does not see security records (Swati Kulkarni -> RITM-21908)
+  ok    IT employee sees IT's restricted policy (Harish Gowda -> POL-11)
+  ok    Sales employee does not (Kunal Shah -> POL-11)
+  ok    contractor does not see restricted documents (Chetan Suri -> POL-11)
+  ok    participant sees a restricted email (Sunita Raghavan -> EMAIL-0017)
+  ok    non-participant without a role does not (Harish Gowda -> EMAIL-0017)
+  ok    everyone sees a non-confidential policy (Kunal Shah -> POL-01)
+  ok    contractor sees non-confidential policies (Chetan Suri -> POL-01)
+  ok    employees see a non-confidential ticket (Aditya Rao -> RITM-22510)
+  ok    contractor does not see other people's tickets (Chetan Suri -> RITM-22510)
+  ok    payroll admin sees pay data company-wide (Vijay Kumar -> RITM-22210)
+  ok    requester sees their own leave/health ticket RITM-20065
+  ok    their manager does NOT see the health/leave reason
+  ok    HR operations sees leave/health data
+  ok    payroll does not see leave/health data
+  ok    an employee who has left cannot be a principal (EMP-021)
+  ok    auditor access is attributed to the auditor role (compliance_auditor role)
+sign-in, sessions and audit
+  ok    DEMO_PASSWORD is configured
+  ok    chat without a session -> 401
+  ok    search without a session -> 401
+  ok    me without a session -> 401
+  ok    garbage session cookie -> 401
+  ok    session edited to another employee (bad signature) -> 401
+  ok    wrong password -> 401
+  ok    employee who left cannot sign in -> 401
+  ok    after 10 failures from one IP, even the right password is refused -> 429
+  ok    correct sign-in -> 200
+  ok    session cookie is HttpOnly and SameSite=Lax
+  ok    me returns the employee and their roles
+  ok    audit log refused to a non-auditor -> 403
+  ok    record viewer: a confidential record outside scope looks exactly like a missing one -> 404
+  ok    record viewer opens a record in scope
+  ok    role catalogue is available
+  ok    after sign-out -> 401
+{"severity": "INFO", "log": "touchstone-audit", "ts": "2026-10-17T18:50:13+00:00", "event": "audit_log_viewed", "user": "EMP-304", "user_name": "Revathi Krishnaswamy"}
+  ok    compliance auditor can read the audit log
+retrieval and tool leak checks
+  ok    Harish Gowda: nothing outside scope in search results, links or similar cases 
+  ok    Kunal Shah: nothing outside scope in search results, links or similar cases 
+  ok    Aditya Rao: nothing outside scope in search results, links or similar cases 
+  ok    Swati Kulkarni: nothing outside scope in search results, links or similar cases 
+  ok    Vivek Anand: nothing outside scope in search results, links or similar cases 
+  ok    Vijay Kumar: nothing outside scope in search results, links or similar cases 
+  ok    Nikhil Bhatt: nothing outside scope in search results, links or similar cases 
+  ok    Chetan Suri: nothing outside scope in search results, links or similar cases 
+  ok    get_record refuses a confidential record outside scope
+  ok    get_related only lists records in scope
+  ok    leave reason and dates hidden from colleagues (Abhishek Yadav)
+  ok    HR operations sees the leave reason
+chat history (in-memory store; no Gemini calls)
+  ok    a follow-up with the chat_id stays in the same chat
+  ok    chat list shows one conversation with 4 turns (chat-wise, not question-wise)
+  ok    reopening shows stored answers, but hides ones built on records now out of scope or from another access scope
+  ok    follow-up context uses only answers the user may still see
+  ok    another employee can't open the chat (404)
+  ok    another employee doesn't see it listed
+  ok    another employee can't delete it
+  ok    the owner can delete it
+  ok    chat list requires sign-in
+
+ALL PASSED

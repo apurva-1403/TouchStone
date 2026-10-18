@@ -1,0 +1,23 @@
+﻿### eval_agent 2026-10-18T00:20:48
+python.exe : Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we 
+recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not 
+recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+At line:1 char:980
++ ... -10-18.txt; & $py -m scripts.eval_agent --workers 1 --out docs\benchm ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Direct use of a...message_stream.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+model=gemini-3.8-flash thinking=LOW as=system
+
+id      drift  confl  pol   prec   rec judge  secs tools  query
+DQ-01   MISS   ok     N     0.00  0.00     1  21.0     2  How do I get access to Salesforce?
+DQ-03   ok     ok     Y     1.00  0.14     4  18.1     2  Do I need a change request (CHG) to deploy to productio
+DQ-05   ok     ok     Y     1.00  0.31     5  16.6     2  Who approves Snowflake PII access now that the DPO has 
+DQ-07   ok     ok     Y     0.60  0.17     5  19.4     2  What is the deadline for submitting expense claims?
+DQ-14   ok     ok     N     1.00  0.50     4  18.5     1  Has the VPN disconnecting every 30 minutes on Wi-Fi bee
+DQ-18   ok     MISS   Y     0.50  0.18     1  11.8     3  Can Customer Success get access to the AlgoWorks Admin 
+DQ-25   ok     ok     Y     1.00  0.75     5   4.2     1  How many leave days can I carry forward to next year?
+OUTAGE  ok     ok     -     0.33  0.11     5   4.8     1  What caused the March API outage and how was it fixed?
+
+flags correct 6/8 · policy cited 5/7 · precision 0.68 · recall 0.27 · judge 3.8/5 · median latency 18.1s

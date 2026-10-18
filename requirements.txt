@@ -1,0 +1,6 @@
+google-genai==2.25.0
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+python-dotenv==1.2.3
+numpy==2.4.6
+google-cloud-firestore==2.34.0

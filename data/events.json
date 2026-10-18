@@ -1,0 +1,3916 @@
+[
+  {
+    "event_id": "EVT-001",
+    "type": "access_request",
+    "subtype": "new_joiner_onboarding_bundle",
+    "date": "2026-08-03",
+    "involved_employee_ids": [
+      "EMP-094",
+      "EMP-006",
+      "EMP-044",
+      "EMP-034",
+      "EMP-029",
+      "EMP-064",
+      "EMP-022",
+      "EMP-025",
+      "EMP-043"
+    ],
+    "team_id": "TEAM-01",
+    "related_system_id": "SYS-25",
+    "related_policy_id": "POL-19",
+    "related_project_id": "PROJ-01",
+    "summary": "New joiner Tanvi Deshpande (Software Engineer, Platform Backend) onboarded on 2026-08-03. Darwinbox auto-created the onboarding ticket 10 business days ahead; default bundle and laptop were ready on Day 1. Rohan Mehta raised GitHub and AWS access on Day 1; GitHub was same-day, AWS read-only took 3 days because the Identity Center assignment waited for Varun Chandra's approval while he was at the Mumbai data-centre visit.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22250",
+        "RITM-22344",
+        "RITM-22345"
+      ],
+      "emails": [
+        "EMAIL-0084"
+      ],
+      "slack": [
+        "SLACK-0248",
+        "SLACK-0252"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "onboarding",
+      "new-joiner",
+      "engineering"
+    ]
+  },
+  {
+    "event_id": "EVT-002",
+    "type": "access_request",
+    "subtype": "standard_data_access",
+    "date": "2026-07-21",
+    "involved_employee_ids": [
+      "EMP-092",
+      "EMP-016",
+      "EMP-032"
+    ],
+    "team_id": "TEAM-03",
+    "related_system_id": "SYS-29",
+    "related_policy_id": "POL-18",
+    "related_project_id": "PROJ-10",
+    "summary": "Pooja Hegde (new Data Analyst) requested curated Snowflake access and Metabase on her second day. Handled exactly per the Snowflake Data Access Policy: Jira DATA ticket, Data Engineering Manager approval, snowflake-analyst role granted next day. No PII schemas requested.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22256"
+      ],
+      "emails": [
+        "EMAIL-0076",
+        "EMAIL-0077"
+      ],
+      "slack": [
+        "SLACK-0237"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "data-access",
+      "new-joiner",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-003",
+    "type": "access_request",
+    "subtype": "privileged_access_with_training_gate",
+    "date": "2026-05-14",
+    "involved_employee_ids": [
+      "EMP-040",
+      "EMP-017",
+      "EMP-006",
+      "EMP-029",
+      "EMP-055",
+      "EMP-049"
+    ],
+    "team_id": "TEAM-09",
+    "related_system_id": "SYS-09",
+    "related_policy_id": "POL-11",
+    "related_project_id": null,
+    "summary": "Kunal Shah (CSM) requested read-only AlgoWorks Admin Console access. IAM put the request on hold because he had not completed the 'Handling Customer Data' course; he completed it on 18-May, Anita Desai and Rohan Mehta approved, and IAM granted console-readonly on 20-May. Followed the policy as written. (Contrast: EVT-067, where the same access was handled inconsistently for two Support Engineers.)",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21908"
+      ],
+      "emails": [
+        "EMAIL-0046",
+        "EMAIL-0045"
+      ],
+      "slack": [
+        "SLACK-0183"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-067"
+    ],
+    "tags": [
+      "privileged-access",
+      "policy-consistent",
+      "admin-console"
+    ]
+  },
+  {
+    "event_id": "EVT-004",
+    "type": "access_request",
+    "subtype": "contractor_sponsored_accounts",
+    "date": "2026-06-08",
+    "involved_employee_ids": [
+      "EMP-030",
+      "EMP-029",
+      "EMP-034",
+      "EMP-045",
+      "EMP-054"
+    ],
+    "team_id": "TEAM-16",
+    "related_system_id": "SYS-08",
+    "related_policy_id": "POL-13",
+    "related_project_id": "PROJ-21",
+    "summary": "Ankit Chawla sponsored two Pixelcraft Studio (agency) contractor accounts for the website redesign: ext- Okta accounts with 90-day expiry, WordPress editor role, and a Slack Connect channel. Processed under the new Contractor & Guest Access Policy (v2, effective 1 June 2026).",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22013",
+        "RITM-22016"
+      ],
+      "emails": [
+        "EMAIL-0057"
+      ],
+      "slack": [
+        "SLACK-0205"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "contractor",
+      "marketing",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-005",
+    "type": "access_request",
+    "subtype": "offboarding_with_unowned_approval_role",
+    "date": "2026-02-27",
+    "involved_employee_ids": [
+      "EMP-021",
+      "EMP-010",
+      "EMP-029",
+      "EMP-044",
+      "EMP-004",
+      "EMP-003",
+      "EMP-016",
+      "EMP-041"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-05",
+    "related_project_id": null,
+    "summary": "Pradeep Chauhan (Data Protection Officer & Compliance Lead) left on 27-Feb-2026. Access revocation ran on time, but his role as DPO sign-off for Snowflake PII access and data-protection reviews was never formally reassigned: the follow-up ticket was put on hold pending a hiring decision and is still open. This is the root cause of the later Snowflake PII approval drift (EVT-054) and prompted section 3 of the Offboarding SOP v3.",
+    "outcome": "partially_resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21525",
+        "RITM-21566"
+      ],
+      "emails": [
+        "EMAIL-0017"
+      ],
+      "slack": [
+        "SLACK-0132"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-054"
+    ],
+    "tags": [
+      "offboarding",
+      "dpo",
+      "ownership-gap"
+    ]
+  },
+  {
+    "event_id": "EVT-006",
+    "type": "access_request",
+    "subtype": "new_joiner_onboarding_bundle",
+    "date": "2026-08-24",
+    "involved_employee_ids": [
+      "EMP-097",
+      "EMP-014",
+      "EMP-044",
+      "EMP-034",
+      "EMP-039",
+      "EMP-020",
+      "EMP-029",
+      "EMP-056"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-23",
+    "related_policy_id": "POL-19",
+    "related_project_id": null,
+    "summary": "Zara Ahmed (Procurement Associate) joined 24-Aug-2026. Default bundle was ready; NetSuite access took 4 days because no licence was free - Payal Shah reassigned a licence flagged as unused in the Q2 access review (EVT-016). Zoho Expense finance-admin role granted next day.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22396",
+        "RITM-22475",
+        "RITM-22476"
+      ],
+      "emails": [
+        "EMAIL-0096"
+      ],
+      "slack": [
+        "SLACK-0270"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-016"
+    ],
+    "tags": [
+      "onboarding",
+      "new-joiner",
+      "finance",
+      "licence"
+    ]
+  },
+  {
+    "event_id": "EVT-007",
+    "type": "access_request",
+    "subtype": "cross_department_admin_role",
+    "date": "2026-04-09",
+    "involved_employee_ids": [
+      "EMP-026",
+      "EMP-015",
+      "EMP-038",
+      "EMP-060"
+    ],
+    "team_id": "TEAM-08",
+    "related_system_id": "SYS-07",
+    "related_policy_id": "POL-01",
+    "related_project_id": "PROJ-22",
+    "summary": "Megha Patil (Salesforce Administrator) requested HubSpot super-admin to fix a connector field mapping. Admin roles need the requester's manager (Vinod) and the owning team's lead (Manoj Venkatesh); both approved within a day and Aparna Das granted it. Cross-department, by the book.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21754"
+      ],
+      "emails": [
+        "EMAIL-0032",
+        "EMAIL-0029"
+      ],
+      "slack": [
+        "SLACK-0159"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "cross-department",
+      "admin-role",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-008",
+    "type": "access_request",
+    "subtype": "break_glass_elevated_access",
+    "date": "2026-03-19",
+    "involved_employee_ids": [
+      "EMP-046",
+      "EMP-022",
+      "EMP-006"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-26",
+    "related_policy_id": "POL-06",
+    "related_project_id": "PROJ-01",
+    "summary": "Two days after the March API outage, Harish Gowda needed ProdOperator to clear a stuck Kinesis consumer. Requested via the 'Production elevated access' item, approved by Varun Chandra, 8-hour session (policy v1 at the time), post-hoc review recorded, and a retrospective emergency CHG raised the next day. Policy-consistent break-glass.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21647",
+        "CHG-21662"
+      ],
+      "emails": [
+        "EMAIL-0024",
+        "EMAIL-0023"
+      ],
+      "slack": [
+        "SLACK-0148"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-021"
+    ],
+    "tags": [
+      "break-glass",
+      "aws",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-009",
+    "type": "access_request",
+    "subtype": "vpn_remote_employee_timezone",
+    "date": "2026-06-25",
+    "involved_employee_ids": [
+      "EMP-088",
+      "EMP-038",
+      "EMP-029",
+      "EMP-061",
+      "EMP-060"
+    ],
+    "team_id": "TEAM-17",
+    "related_system_id": "SYS-11",
+    "related_policy_id": "POL-02",
+    "related_project_id": null,
+    "summary": "Ethan Brooks (Growth Analyst, remote US) requested VPN to reach Metabase. Approval and group assignment were quick, but connection failures caused by his home router's MTU took three days to diagnose across the 12.5-hour time difference. Resolved by Lakshmi Narayanan with a client-side MTU change; runbook updated.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22110"
+      ],
+      "emails": [
+        "EMAIL-0065",
+        "EMAIL-0064"
+      ],
+      "slack": [
+        "SLACK-0224"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "vpn",
+      "remote",
+      "troubleshooting"
+    ]
+  },
+  {
+    "event_id": "EVT-010",
+    "type": "access_request",
+    "subtype": "restricted_finance_system_access",
+    "date": "2026-05-20",
+    "involved_employee_ids": [
+      "EMP-051",
+      "EMP-016",
+      "EMP-019",
+      "EMP-002",
+      "EMP-039"
+    ],
+    "team_id": "TEAM-14",
+    "related_system_id": "SYS-23",
+    "related_policy_id": "POL-01",
+    "related_project_id": "PROJ-19",
+    "summary": "Manish Tiwari (Analytics Engineer) was embedded with FP&A for the FY27 plan and needed NetSuite read-only. Non-Finance access requires FP&A Manager approval plus CFO sign-off; Ashwin approved same day, Vivek signed off two days later, Payal granted a reporting-only role. Restricted access, quarterly review noted.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21932"
+      ],
+      "emails": [
+        "EMAIL-0048",
+        "EMAIL-0047"
+      ],
+      "slack": [
+        "SLACK-0187"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "restricted",
+      "finance",
+      "cross-team",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-011",
+    "type": "access_request",
+    "subtype": "new_joiner_onboarding_bundle_licence_shortfall",
+    "date": "2026-09-01",
+    "involved_employee_ids": [
+      "EMP-098",
+      "EMP-017",
+      "EMP-007",
+      "EMP-044",
+      "EMP-079",
+      "EMP-029",
+      "EMP-056",
+      "EMP-006",
+      "EMP-014",
+      "EMP-055"
+    ],
+    "team_id": "TEAM-09",
+    "related_system_id": "SYS-05",
+    "related_policy_id": "POL-07",
+    "related_project_id": null,
+    "summary": "Tara Sequeira (Support Engineer, Pune) joined 1-Sep-2026. Default bundle and laptop were ready, but no Zendesk agent seat was free: Anita Desai raised a purchase request for two seats (Rs 1.2L/yr -> Department Head + Procurement), Rahul Kapoor approved, Kritika Jain processed, and the seat was added on 7-Sep. Tara worked as a light agent meanwhile. Admin Console read-only followed the training gate and was granted on 4-Sep.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22445",
+        "RITM-22528",
+        "RITM-22530",
+        "RITM-22532"
+      ],
+      "emails": [
+        "EMAIL-0102",
+        "EMAIL-0101"
+      ],
+      "slack": [
+        "SLACK-0277"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "onboarding",
+      "new-joiner",
+      "licence",
+      "procurement"
+    ]
+  },
+  {
+    "event_id": "EVT-012",
+    "type": "access_request",
+    "subtype": "restricted_billing_read_access",
+    "date": "2026-01-22",
+    "involved_employee_ids": [
+      "EMP-052",
+      "EMP-027",
+      "EMP-009",
+      "EMP-063",
+      "EMP-036"
+    ],
+    "team_id": "TEAM-07",
+    "related_system_id": "SYS-06",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Simran Kaur (Enterprise AE) requested Chargebee access to see invoice status for her accounts before renewal calls. Chargebee is Finance-restricted; the 'Invoice Viewer (read-only)' role needs Payroll & Compliance Manager approval. Granted after a scope clarification (the role is global read, not per-account).",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21393"
+      ],
+      "emails": [
+        "EMAIL-0010",
+        "EMAIL-0009"
+      ],
+      "slack": [
+        "SLACK-0118"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "restricted",
+      "billing",
+      "sales",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-013",
+    "type": "access_request",
+    "subtype": "shared_mailbox_and_queue_membership",
+    "date": "2026-07-08",
+    "involved_employee_ids": [
+      "EMP-055",
+      "EMP-017",
+      "EMP-034",
+      "EMP-029",
+      "EMP-040"
+    ],
+    "team_id": "TEAM-09",
+    "related_system_id": "SYS-13",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Preeti Nambiar moved up to Tier 2 and needed the support@ shared mailbox and the Zendesk Tier 2 group. Two straightforward requests approved by Anita Desai and fulfilled by the Service Desk and IAM the next day.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22169",
+        "RITM-22170"
+      ],
+      "emails": [
+        "EMAIL-0070",
+        "EMAIL-0071"
+      ],
+      "slack": [
+        "SLACK-0228"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "shared-mailbox",
+      "zendesk",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-014",
+    "type": "access_request",
+    "subtype": "non_engineering_github_seat",
+    "date": "2026-02-11",
+    "involved_employee_ids": [
+      "EMP-045",
+      "EMP-030",
+      "EMP-006",
+      "EMP-029",
+      "EMP-018"
+    ],
+    "team_id": "TEAM-16",
+    "related_system_id": "SYS-25",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Omar Farooq (Brand Designer) needed GitHub access to maintain the brand-assets repository used by the product UI. Non-engineering GitHub access needs an Engineering Manager's approval and a paid seat; Rohan Mehta approved write on the single repo, IAM confirmed seat availability (2 left) and granted it.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21467"
+      ],
+      "emails": [
+        "EMAIL-0014",
+        "EMAIL-0013"
+      ],
+      "slack": [
+        "SLACK-0126"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "github",
+      "cross-department",
+      "licence"
+    ]
+  },
+  {
+    "event_id": "EVT-015",
+    "type": "access_request",
+    "subtype": "monitoring_viewer_for_tam",
+    "date": "2026-08-27",
+    "involved_employee_ids": [
+      "EMP-049",
+      "EMP-017",
+      "EMP-022",
+      "EMP-064"
+    ],
+    "team_id": "TEAM-09",
+    "related_system_id": "SYS-28",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Sameer Khan (TAM) requested Datadog read-only to show customer-specific API latency dashboards in QBRs. Non-engineering viewer access needs the Cloud Infrastructure Lead; Anita and Varun approved and Nandini added the viewer group next day.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22507"
+      ],
+      "emails": [
+        "EMAIL-0099",
+        "EMAIL-0098"
+      ],
+      "slack": [
+        "SLACK-0274"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "monitoring",
+      "cross-department",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-016",
+    "type": "access_request",
+    "subtype": "quarterly_access_review",
+    "date": "2026-06-30",
+    "involved_employee_ids": [
+      "EMP-029",
+      "EMP-010",
+      "EMP-004",
+      "EMP-026",
+      "EMP-039",
+      "EMP-015"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Q2 2026 quarterly access review run by Kavya Reddy. Findings: 14 Salesforce licences unused for 90+ days, 3 contractor accounts past expiry still enabled (created before the Contractor policy v2), 2 NetSuite full licences unused. Cleanup tickets raised to Sales Ops and Finance Systems; findings documented in Confluence.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22133",
+        "RITM-22136",
+        "RITM-22140"
+      ],
+      "emails": [
+        "EMAIL-0067"
+      ],
+      "slack": [],
+      "docs": [
+        "DOC-0136"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "access-review",
+      "licences",
+      "governance"
+    ]
+  },
+  {
+    "event_id": "EVT-017",
+    "type": "access_request",
+    "subtype": "new_joiner_onboarding_bundle_clean",
+    "date": "2026-09-15",
+    "involved_employee_ids": [
+      "EMP-100",
+      "EMP-042",
+      "EMP-044",
+      "EMP-034",
+      "EMP-060",
+      "EMP-026",
+      "EMP-065"
+    ],
+    "team_id": "TEAM-18",
+    "related_system_id": "SYS-07",
+    "related_policy_id": "POL-19",
+    "related_project_id": "PROJ-23",
+    "summary": "Lavanya Bhat (Product Marketing Manager) joined 15-Sep-2026 - a clean onboarding. Default bundle and laptop ready Day 1; Sanya Kapadia raised HubSpot and Salesforce read-only on Day 1 and both were granted within a day.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22535",
+        "RITM-22604"
+      ],
+      "emails": [
+        "EMAIL-0106"
+      ],
+      "slack": [
+        "SLACK-0287"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "onboarding",
+      "new-joiner",
+      "marketing",
+      "clean"
+    ]
+  },
+  {
+    "event_id": "EVT-018",
+    "type": "access_request",
+    "subtype": "temporary_admin_elevation",
+    "date": "2026-04-28",
+    "involved_employee_ids": [
+      "EMP-033",
+      "EMP-024",
+      "EMP-074"
+    ],
+    "team_id": "TEAM-10",
+    "related_system_id": "SYS-20",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Nisha Pandey needed temporary Greenhouse Site Admin for 30 days to configure the campus pipeline stages and scorecards. Rohit Sinha (TA Lead, Greenhouse admin) approved and granted with an end date; access reverted automatically on 28-May.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21827"
+      ],
+      "emails": [
+        "EMAIL-0037",
+        "EMAIL-0036"
+      ],
+      "slack": [
+        "SLACK-0196"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "temporary-access",
+      "hr",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-019",
+    "type": "access_request",
+    "subtype": "raw_data_access_denied_alternative_provided",
+    "date": "2026-03-05",
+    "involved_employee_ids": [
+      "EMP-078",
+      "EMP-038",
+      "EMP-016",
+      "EMP-051"
+    ],
+    "team_id": "TEAM-17",
+    "related_system_id": "SYS-29",
+    "related_policy_id": "POL-18",
+    "related_project_id": null,
+    "summary": "Yash Agrawal (Performance Marketing) asked for direct Snowflake access to raw product event tables for attribution analysis. Suresh Pillai declined raw access per the Snowflake policy (native SQL for non-engineering teams discouraged; raw schemas engineering-only) and had Manish Tiwari build a curated 'Marketing Attribution' Metabase collection instead, delivered in a week.",
+    "outcome": "denied_with_alternative",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21567"
+      ],
+      "emails": [
+        "EMAIL-0019",
+        "EMAIL-0018"
+      ],
+      "slack": [
+        "SLACK-0136"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "data-access",
+      "denied",
+      "policy-consistent",
+      "alternative"
+    ]
+  },
+  {
+    "event_id": "EVT-020",
+    "type": "access_request",
+    "subtype": "shared_vault_after_credential_in_slack",
+    "date": "2026-05-06",
+    "involved_employee_ids": [
+      "EMP-036",
+      "EMP-041",
+      "EMP-027",
+      "EMP-029",
+      "EMP-007"
+    ],
+    "team_id": "TEAM-07",
+    "related_system_id": "SYS-12",
+    "related_policy_id": "POL-03",
+    "related_project_id": null,
+    "summary": "Aakash Bhatia posted the demo-tenant admin password in #sales-team. Amit Saxena rotated it within the hour per the Password & MFA Standard, and Natasha D'Souza requested a shared 1Password vault 'Sales-Demo' which IAM created the next day. Policy applied as written.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21859"
+      ],
+      "emails": [
+        "EMAIL-0040"
+      ],
+      "slack": [
+        "SLACK-0174"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "security",
+      "credentials",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-021",
+    "type": "incident",
+    "subtype": "sev1_api_outage_after_deploy",
+    "date": "2026-03-17",
+    "involved_employee_ids": [
+      "EMP-046",
+      "EMP-022",
+      "EMP-006",
+      "EMP-025",
+      "EMP-043",
+      "EMP-017",
+      "EMP-055",
+      "EMP-040",
+      "EMP-042",
+      "EMP-001",
+      "EMP-011",
+      "EMP-012"
+    ],
+    "team_id": "TEAM-01",
+    "related_system_id": "SYS-01",
+    "related_policy_id": "POL-08",
+    "related_project_id": "PROJ-01",
+    "summary": "Sev1: AlgoWorks Fleet API returned 5xx for ~60% of requests for 47 minutes (14:05-14:52 IST) after v4 API gateway 4.2.0 changed the PgBouncer pool size from 200 to 50 per pod, exhausting RDS connections under production concurrency. Rolled back via ArgoCD. 38 customers affected; driver app check-ins queued offline and synced afterwards. Postmortem published; actions: staging load test, config-change checklist, connection-pool alert.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21632",
+        "INC-21635",
+        "INC-21637",
+        "CHG-21640"
+      ],
+      "emails": [
+        "EMAIL-0022",
+        "EMAIL-0021"
+      ],
+      "slack": [
+        "SLACK-0143",
+        "SLACK-0144"
+      ],
+      "docs": [
+        "DOC-0122"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-008"
+    ],
+    "tags": [
+      "sev1",
+      "outage",
+      "v4",
+      "rollback",
+      "postmortem"
+    ]
+  },
+  {
+    "event_id": "EVT-022",
+    "type": "incident",
+    "subtype": "integration_failure_secret_rotation",
+    "date": "2026-05-27",
+    "involved_employee_ids": [
+      "EMP-063",
+      "EMP-009",
+      "EMP-067",
+      "EMP-077",
+      "EMP-047",
+      "EMP-006",
+      "EMP-025"
+    ],
+    "team_id": "TEAM-15",
+    "related_system_id": "SYS-06",
+    "related_policy_id": "POL-08",
+    "related_project_id": "PROJ-20",
+    "summary": "Chargebee-to-NetSuite invoice sync silently failed for three days (24-27 May) after Sanjay Dutta rotated the Chargebee webhook signing secret during a compliance review without updating the integration service. Anusha Rao noticed the AR mismatch; Daniel Fernandes updated the secret and replayed 312 webhooks. Action: secret rotation checklist.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21973"
+      ],
+      "emails": [
+        "EMAIL-0052"
+      ],
+      "slack": [
+        "SLACK-0193",
+        "SLACK-0195"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "integration",
+      "billing",
+      "secret-rotation",
+      "sev3"
+    ]
+  },
+  {
+    "event_id": "EVT-023",
+    "type": "incident",
+    "subtype": "sso_misconfiguration_login_loop",
+    "date": "2026-07-15",
+    "involved_employee_ids": [
+      "EMP-029",
+      "EMP-017",
+      "EMP-055",
+      "EMP-040",
+      "EMP-061",
+      "EMP-010",
+      "EMP-034",
+      "EMP-004"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-05",
+    "related_policy_id": "POL-09",
+    "related_project_id": null,
+    "summary": "All Zendesk agents were stuck in an Okta login loop for ~2 hours (10:40-12:35 IST) after Kavya Reddy changed the Zendesk SAML NameID format while tidying app settings from the Q2 review. Rolled back by Lakshmi Narayanan. Sev2 for internal system. Lesson: Okta app configuration changes need a CHG (they are in scope of the Change Management Policy) - this one had none.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22227",
+        "INC-22228",
+        "INC-22229"
+      ],
+      "emails": [
+        "EMAIL-0074"
+      ],
+      "slack": [
+        "SLACK-0235"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-016"
+    ],
+    "tags": [
+      "sso",
+      "zendesk",
+      "sev2",
+      "config-change"
+    ]
+  },
+  {
+    "event_id": "EVT-024",
+    "type": "incident",
+    "subtype": "hrms_payroll_sync_mapping",
+    "date": "2026-02-04",
+    "involved_employee_ids": [
+      "EMP-031",
+      "EMP-009",
+      "EMP-044",
+      "EMP-005",
+      "EMP-079",
+      "EMP-040",
+      "EMP-028"
+    ],
+    "team_id": "TEAM-15",
+    "related_system_id": "SYS-19",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "January payslips were missing in Darwinbox for all 12 Pune employees after a Keka upgrade changed the legal-entity code used by the Keka-to-Darwinbox payslip push. Vijay Kumar fixed the mapping with Keka support; payslips appeared on 6-Feb. HR Ops fielded a dozen queries in two days.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21436",
+        "INC-21437",
+        "INC-21440"
+      ],
+      "emails": [
+        "EMAIL-0012"
+      ],
+      "slack": [
+        "SLACK-0122"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "payroll",
+      "hrms",
+      "sync",
+      "pune"
+    ]
+  },
+  {
+    "event_id": "EVT-025",
+    "type": "incident",
+    "subtype": "ci_runners_disk_full",
+    "date": "2026-06-11",
+    "involved_employee_ids": [
+      "EMP-075",
+      "EMP-043",
+      "EMP-022",
+      "EMP-067"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-25",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "All four self-hosted GitHub Actions runners went offline for 3 hours (09:20-12:25) because the Docker layer cache filled the root volume. CI blocked for every team. Siddharth Jain pruned the cache, then shipped a CHG adding a nightly prune and a Datadog disk alert; runbook updated.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22029",
+        "CHG-22032"
+      ],
+      "emails": [
+        "EMAIL-0058"
+      ],
+      "slack": [
+        "SLACK-0206"
+      ],
+      "docs": [
+        "DOC-0133"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "ci",
+      "github-actions",
+      "disk",
+      "runbook"
+    ]
+  },
+  {
+    "event_id": "EVT-026",
+    "type": "incident",
+    "subtype": "mobile_release_crash_hotfix",
+    "date": "2026-08-20",
+    "involved_employee_ids": [
+      "EMP-037",
+      "EMP-013",
+      "EMP-072",
+      "EMP-055",
+      "EMP-017",
+      "EMP-042",
+      "EMP-040",
+      "EMP-048"
+    ],
+    "team_id": "TEAM-02",
+    "related_system_id": "SYS-03",
+    "related_policy_id": "POL-15",
+    "related_project_id": null,
+    "summary": "Driver App 3.8.0 crashed on launch on Android 15 devices during the 10% staged rollout (20-Aug). Farhan Siddiqui halted the rollout within 40 minutes, shipped hotfix 3.8.1 (edge-to-edge inset handling) the same evening, and staged rollout resumed next day. ~1,100 drivers affected for up to 6 hours; customer comms handled by CS.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22454",
+        "INC-22457"
+      ],
+      "emails": [
+        "EMAIL-0094"
+      ],
+      "slack": [
+        "SLACK-0267"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "mobile",
+      "android",
+      "hotfix",
+      "release"
+    ]
+  },
+  {
+    "event_id": "EVT-027",
+    "type": "incident",
+    "subtype": "cloud_cost_overrun_runaway_query",
+    "date": "2026-01-29",
+    "involved_employee_ids": [
+      "EMP-016",
+      "EMP-032",
+      "EMP-062",
+      "EMP-019",
+      "EMP-047"
+    ],
+    "team_id": "TEAM-03",
+    "related_system_id": "SYS-29",
+    "related_policy_id": "POL-08",
+    "related_project_id": "PROJ-09",
+    "summary": "Snowflake's January credit budget was blown by 29-Jan: a Metabase dashboard built by Sonal Mehra had a cartesian join and was scheduled hourly on the shared L warehouse, burning ~2,400 credits (~USD 7,200) in 9 days. Suresh Pillai killed it and capped Metabase to an XS warehouse; the incident kicked off the Snowflake Cost Optimization project.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21416"
+      ],
+      "emails": [
+        "EMAIL-0011"
+      ],
+      "slack": [
+        "SLACK-0119"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "snowflake",
+      "cost",
+      "metabase",
+      "finops"
+    ]
+  },
+  {
+    "event_id": "EVT-028",
+    "type": "incident",
+    "subtype": "vendor_outage_identity_provider",
+    "date": "2025-11-18",
+    "involved_employee_ids": [
+      "EMP-010",
+      "EMP-004",
+      "EMP-061",
+      "EMP-034",
+      "EMP-079",
+      "EMP-008",
+      "EMP-036",
+      "EMP-039",
+      "EMP-054",
+      "EMP-037",
+      "EMP-074"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "Okta's ap-1 cell had a vendor-side outage from 09:40 to 10:20 IST on 18-Nov-2025; nobody could log in to any SSO app (Slack, M365, ServiceNow included). The Service Desk logged user reports by phone, IAM used the break-glass local admin only to confirm Okta health, and communication went via the office WhatsApp group per the vendor-outage runbook. No data impact.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21109",
+        "INC-21111",
+        "INC-21114",
+        "INC-21115",
+        "INC-21118",
+        "INC-21121"
+      ],
+      "emails": [
+        "EMAIL-0005",
+        "EMAIL-0006"
+      ],
+      "slack": [
+        "SLACK-0096"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "okta",
+      "vendor-outage",
+      "sev2",
+      "runbook"
+    ]
+  },
+  {
+    "event_id": "EVT-029",
+    "type": "incident",
+    "subtype": "phishing_campaign_executive_impersonation",
+    "date": "2026-04-22",
+    "involved_employee_ids": [
+      "EMP-041",
+      "EMP-010",
+      "EMP-073",
+      "EMP-054",
+      "EMP-074",
+      "EMP-002",
+      "EMP-029",
+      "EMP-004"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-13",
+    "related_policy_id": "POL-03",
+    "related_project_id": "PROJ-24",
+    "summary": "A phishing campaign impersonating the CFO ('urgent vendor payment - reply with the bank change form') hit 61 mailboxes on 22-Apr. Three employees clicked the link; Alok Mishra entered his Okta password on the fake page. Amit Saxena revoked sessions and reset the credential within 25 minutes; MFA prevented account takeover. No funds moved. The incident launched the Security Awareness & Phishing Simulation Program.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21812",
+        "INC-21815"
+      ],
+      "emails": [
+        "EMAIL-0034"
+      ],
+      "slack": [
+        "SLACK-0163"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "phishing",
+      "security-incident",
+      "cfo-impersonation",
+      "mfa"
+    ]
+  },
+  {
+    "event_id": "EVT-030",
+    "type": "incident",
+    "subtype": "certificate_expiry_vpn",
+    "date": "2026-06-03",
+    "involved_employee_ids": [
+      "EMP-061",
+      "EMP-010",
+      "EMP-057",
+      "EMP-054",
+      "EMP-075",
+      "EMP-034",
+      "EMP-022",
+      "EMP-079",
+      "EMP-008"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-11",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "The GlobalProtect portal TLS certificate expired at midnight on 3-Jun; every remote user got a certificate error from 08:00 until Lakshmi Narayanan installed the renewed certificate at 09:35. Nobody owned the renewal reminder after the 2025 gateway migration. A runbook with a renewal calendar and a Datadog certificate-expiry check was created.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22005",
+        "INC-22007",
+        "INC-22008",
+        "INC-22009"
+      ],
+      "emails": [
+        "EMAIL-0054"
+      ],
+      "slack": [
+        "SLACK-0201"
+      ],
+      "docs": [
+        "DOC-0131"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "vpn",
+      "certificate",
+      "sev2",
+      "runbook"
+    ]
+  },
+  {
+    "event_id": "EVT-031",
+    "type": "incident",
+    "subtype": "mdm_enrollment_token_expiry",
+    "date": "2026-09-09",
+    "involved_employee_ids": [
+      "EMP-059",
+      "EMP-008",
+      "EMP-099",
+      "EMP-034",
+      "EMP-019"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-18",
+    "related_policy_id": "POL-04",
+    "related_project_id": null,
+    "summary": "New MacBooks could not enrol in Intune from 8-Sep because the Apple Business Manager MDM server token had expired. Discovered when Meenakshi Sundaram's Day-2 laptop provisioning failed; Mohammed Irfan renewed the token on 9-Sep. Two laptops delayed by a day; expiry added to the certificate/token inventory.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22577",
+        "RITM-22573"
+      ],
+      "emails": [
+        "EMAIL-0104"
+      ],
+      "slack": [
+        "SLACK-0281"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-030"
+    ],
+    "tags": [
+      "intune",
+      "abm",
+      "token",
+      "endpoint"
+    ]
+  },
+  {
+    "event_id": "EVT-032",
+    "type": "incident",
+    "subtype": "crm_sync_duplicate_leads_regression",
+    "date": "2026-07-29",
+    "involved_employee_ids": [
+      "EMP-060",
+      "EMP-026",
+      "EMP-038",
+      "EMP-015",
+      "EMP-087"
+    ],
+    "team_id": "TEAM-17",
+    "related_system_id": "SYS-07",
+    "related_policy_id": "POL-32",
+    "related_project_id": "PROJ-22",
+    "summary": "Duplicate leads reappeared in Salesforce (about 430 in 3 days) after a HubSpot workflow that had been disabled during the sync cleanup was re-enabled by mistake during the April connector mapping fix. Aparna Das and Megha Patil disabled the workflow, merged duplicates, and added a monitor - and the new CRM hygiene policy now requires a Jira ticket for mapping changes.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22324"
+      ],
+      "emails": [
+        "EMAIL-0083"
+      ],
+      "slack": [
+        "SLACK-0244"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-007"
+    ],
+    "tags": [
+      "crm",
+      "hubspot",
+      "salesforce",
+      "duplicates",
+      "regression"
+    ]
+  },
+  {
+    "event_id": "EVT-033",
+    "type": "incident",
+    "subtype": "alert_storm_misconfigured_monitors",
+    "date": "2026-05-08",
+    "involved_employee_ids": [
+      "EMP-064",
+      "EMP-046",
+      "EMP-022",
+      "EMP-050"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-28",
+    "related_policy_id": "POL-16",
+    "related_project_id": "PROJ-02",
+    "summary": "Enabling the Singapore standby environment's monitors with production thresholds generated ~340 PagerDuty alerts in two hours on 8-May (the standby runs at near-zero traffic, so every 'low throughput' monitor fired). Nandini Rajan muted the region and rebuilt the monitors with per-region thresholds. Led to the alert-hygiene rule in the On-Call policy v2.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21869"
+      ],
+      "emails": [
+        "EMAIL-0041"
+      ],
+      "slack": [
+        "SLACK-0175"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "datadog",
+      "alert-storm",
+      "multi-region",
+      "on-call"
+    ]
+  },
+  {
+    "event_id": "EVT-034",
+    "type": "incident",
+    "subtype": "vendor_outage_chat",
+    "date": "2026-02-19",
+    "involved_employee_ids": [
+      "EMP-008",
+      "EMP-034",
+      "EMP-023",
+      "EMP-030",
+      "EMP-069",
+      "EMP-004"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-14",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "Slack had a global vendor outage from 13:10 to 15:20 IST on 19-Feb-2026 (messages failing to send, channels not loading). Per the vendor-outage runbook the fallback was Outlook and Microsoft Teams; the Service Desk emailed all staff. Two user tickets logged. No AlgoWorks-side cause.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21516",
+        "INC-21518",
+        "INC-21520"
+      ],
+      "emails": [
+        "EMAIL-0015"
+      ],
+      "slack": [
+        "SLACK-0129"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "slack",
+      "vendor-outage",
+      "fallback"
+    ]
+  },
+  {
+    "event_id": "EVT-035",
+    "type": "incident",
+    "subtype": "integration_duplicate_journals_month_end",
+    "date": "2026-08-06",
+    "involved_employee_ids": [
+      "EMP-073",
+      "EMP-014",
+      "EMP-051",
+      "EMP-039",
+      "EMP-056",
+      "EMP-019",
+      "EMP-002",
+      "EMP-022"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-23",
+    "related_policy_id": "POL-30",
+    "related_project_id": "PROJ-18",
+    "summary": "During the July close (BD+2, 6-Aug), Alok Mishra found duplicate expense journals in NetSuite for 3 and 4 August: the new Zoho-NetSuite integration re-posted batches when NetSuite timed out. Manish Tiwari added idempotency keys and Payal Shah reversed 2 duplicate journals; close slipped by one day. The Month-End Close Checklist v6 added a duplicate check.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22375",
+        "CHG-22378"
+      ],
+      "emails": [
+        "EMAIL-0088"
+      ],
+      "slack": [
+        "SLACK-0257"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "netsuite",
+      "zoho",
+      "integration",
+      "month-end",
+      "duplicates"
+    ]
+  },
+  {
+    "event_id": "EVT-036",
+    "type": "incident",
+    "subtype": "office_network_outage",
+    "date": "2026-03-31",
+    "involved_employee_ids": [
+      "EMP-034",
+      "EMP-023",
+      "EMP-008",
+      "EMP-018",
+      "EMP-033",
+      "EMP-019",
+      "EMP-043"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-13",
+    "related_policy_id": "POL-09",
+    "related_project_id": null,
+    "summary": "Wi-Fi on floor 3 of the Bengaluru office dropped for ~2.5 hours on 31-Mar after the wireless controller auto-installed a firmware update overnight that broke the floor-3 access point group. Shruti Joshi rolled the firmware back; auto-update was disabled and firmware updates now go through a CHG.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21717",
+        "INC-21718",
+        "INC-21719"
+      ],
+      "emails": [
+        "EMAIL-0027"
+      ],
+      "slack": [
+        "SLACK-0152"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "office",
+      "wifi",
+      "network",
+      "firmware"
+    ]
+  },
+  {
+    "event_id": "EVT-037",
+    "type": "project_decision",
+    "subtype": "architecture_decision_record",
+    "date": "2026-01-20",
+    "involved_employee_ids": [
+      "EMP-006",
+      "EMP-025",
+      "EMP-012",
+      "EMP-043",
+      "EMP-001",
+      "EMP-046",
+      "EMP-067"
+    ],
+    "team_id": "TEAM-01",
+    "related_system_id": "SYS-01",
+    "related_policy_id": "POL-14",
+    "related_project_id": "PROJ-01",
+    "summary": "ADR-014: the v4 public API stays REST with OpenAPI-first contracts (generated clients and contract tests); gRPC is adopted only for internal service-to-service calls behind the gateway, phased after GA. Decided at the v4 architecture review on 20-Jan-2026, approved by Arjun Venkataraman.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0008"
+      ],
+      "slack": [
+        "SLACK-0115"
+      ],
+      "docs": [
+        "DOC-0116"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "adr",
+      "v4",
+      "api",
+      "architecture"
+    ]
+  },
+  {
+    "event_id": "EVT-038",
+    "type": "project_decision",
+    "subtype": "architecture_decision_record",
+    "date": "2025-11-10",
+    "involved_employee_ids": [
+      "EMP-022",
+      "EMP-064",
+      "EMP-075",
+      "EMP-004",
+      "EMP-002",
+      "EMP-046"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-26",
+    "related_policy_id": "POL-09",
+    "related_project_id": "PROJ-02",
+    "summary": "ADR: the Singapore region is built as a warm standby (active-passive) with cross-region RDS replication and Route 53 failover, not active-active, because it meets the 30-minute RTO and APAC residency ask at ~40% of the cost. Approved by Sandeep Malhotra with CFO visibility on the ~USD 9k/month run-rate.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "CHG-21094"
+      ],
+      "emails": [
+        "EMAIL-0004"
+      ],
+      "slack": [
+        "SLACK-0093"
+      ],
+      "docs": [
+        "DOC-0107"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "adr",
+      "aws",
+      "multi-region",
+      "cost"
+    ]
+  },
+  {
+    "event_id": "EVT-039",
+    "type": "project_decision",
+    "subtype": "requirements_change_scope_expansion",
+    "date": "2026-04-15",
+    "involved_employee_ids": [
+      "EMP-013",
+      "EMP-018",
+      "EMP-036",
+      "EMP-027",
+      "EMP-001",
+      "EMP-011",
+      "EMP-029",
+      "EMP-065",
+      "EMP-057",
+      "EMP-042",
+      "EMP-072"
+    ],
+    "team_id": "TEAM-02",
+    "related_system_id": "SYS-02",
+    "related_policy_id": "POL-01",
+    "related_project_id": "PROJ-03",
+    "summary": "Scope change: after Meridian Logistics and two APAC prospects made SAML SSO with their own identity providers a condition of renewal/purchase, the Customer Portal Revamp added customer-IdP SSO. Meera Krishnan re-planned: launch moved from September to November 2026 (six weeks); IAM provisioned a test SAML IdP in Okta for development.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21774"
+      ],
+      "emails": [
+        "EMAIL-0031",
+        "EMAIL-0033"
+      ],
+      "slack": [
+        "SLACK-0162"
+      ],
+      "docs": [
+        "DOC-0125"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "requirements-change",
+      "portal",
+      "sso",
+      "timeline"
+    ]
+  },
+  {
+    "event_id": "EVT-040",
+    "type": "project_decision",
+    "subtype": "design_decision",
+    "date": "2025-09-22",
+    "involved_employee_ids": [
+      "EMP-013",
+      "EMP-037",
+      "EMP-048",
+      "EMP-043",
+      "EMP-017",
+      "EMP-055"
+    ],
+    "team_id": "TEAM-02",
+    "related_system_id": "SYS-03",
+    "related_policy_id": "POL-17",
+    "related_project_id": "PROJ-04",
+    "summary": "Offline mode design decision: trip events are queued in a local SQLite store and synced in order; conflicts on the same trip are resolved last-write-wins by device timestamp, with server-side audit of overwritten values. Simpler than CRDT/merge and acceptable because drivers rarely edit the same trip from two devices.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0002"
+      ],
+      "slack": [
+        "SLACK-0075"
+      ],
+      "docs": [
+        "DOC-0095"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "design",
+      "mobile",
+      "offline",
+      "conflict-resolution"
+    ]
+  },
+  {
+    "event_id": "EVT-041",
+    "type": "project_decision",
+    "subtype": "cutover_decision",
+    "date": "2025-10-27",
+    "involved_employee_ids": [
+      "EMP-010",
+      "EMP-029",
+      "EMP-061",
+      "EMP-026",
+      "EMP-044",
+      "EMP-004",
+      "EMP-007",
+      "EMP-017",
+      "EMP-038",
+      "EMP-005"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-03",
+    "related_project_id": "PROJ-05",
+    "summary": "SSO Phase 2 cutover decision: Salesforce, Zendesk, HubSpot and Darwinbox become SSO-only (local passwords disabled) on 15-Dec-2025, app assignment moves to Okta groups, and Darwinbox drives Okta account creation. One exception: the shared Salesforce demo account stays local until a 1Password vault exists. Two CHGs implemented the cutover.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "CHG-21168",
+        "CHG-21171"
+      ],
+      "emails": [
+        "EMAIL-0003"
+      ],
+      "slack": [
+        "SLACK-0090"
+      ],
+      "docs": [
+        "DOC-0103"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "sso",
+      "cutover",
+      "okta",
+      "decision"
+    ]
+  },
+  {
+    "event_id": "EVT-042",
+    "type": "project_decision",
+    "subtype": "process_decision_gitops_approvals",
+    "date": "2025-08-25",
+    "involved_employee_ids": [
+      "EMP-022",
+      "EMP-075",
+      "EMP-046",
+      "EMP-006",
+      "EMP-004",
+      "EMP-001",
+      "EMP-010"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-27",
+    "related_policy_id": "POL-09",
+    "related_project_id": "PROJ-06",
+    "summary": "GitOps process decision: from the ArgoCD go-live (1-Dec-2025), a reviewed and merged pull request to the algoworks-deploy environment repo is the approval record for standard application deployments; no CHG or CAB slot is needed. CAB is retained for infrastructure, network, identity and database changes. Approved at CAB on 2-Sep-2025. The Change Management Policy (v2, June 2025) was never updated to reflect this.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "CHG-20783"
+      ],
+      "emails": [
+        "EMAIL-0001"
+      ],
+      "slack": [
+        "SLACK-0071"
+      ],
+      "docs": [
+        "DOC-0089"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-052"
+    ],
+    "tags": [
+      "gitops",
+      "change-management",
+      "process",
+      "decision"
+    ]
+  },
+  {
+    "event_id": "EVT-043",
+    "type": "project_decision",
+    "subtype": "requirements_change_catalog_routing",
+    "date": "2026-05-19",
+    "involved_employee_ids": [
+      "EMP-008",
+      "EMP-023",
+      "EMP-034",
+      "EMP-029",
+      "EMP-010",
+      "EMP-026"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-15",
+    "related_policy_id": "POL-01",
+    "related_project_id": "PROJ-07",
+    "summary": "Self-Service Catalog design decision: application-access catalog items route approval to the line manager (from Darwinbox) and then to the system owner's team from the Systems Directory table, replacing free-text incidents. Wave 1 covers Salesforce, Zendesk, HubSpot, Metabase and GitHub; go-live 8-Jun-2026.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21927"
+      ],
+      "emails": [
+        "EMAIL-0055"
+      ],
+      "slack": [
+        "SLACK-0184"
+      ],
+      "docs": [
+        "DOC-0128"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "servicenow",
+      "catalog",
+      "routing",
+      "decision"
+    ]
+  },
+  {
+    "event_id": "EVT-044",
+    "type": "project_decision",
+    "subtype": "cost_controls_decision",
+    "date": "2026-06-16",
+    "involved_employee_ids": [
+      "EMP-016",
+      "EMP-032",
+      "EMP-070",
+      "EMP-047",
+      "EMP-019",
+      "EMP-051",
+      "EMP-022"
+    ],
+    "team_id": "TEAM-03",
+    "related_system_id": "SYS-29",
+    "related_policy_id": "POL-09",
+    "related_project_id": "PROJ-09",
+    "summary": "Snowflake cost decisions: one warehouse per consuming team (ENG, SALES, FIN, MKT, DBT) with 60-second auto-suspend, Metabase pinned to XS with a 5-minute timeout, a monthly credit budget per warehouse owned by FP&A with alerts at 80%, and a dbt model-pruning pass. Implemented via a CHG on 23-Jun; June spend down 31% vs January.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "CHG-22055"
+      ],
+      "emails": [
+        "EMAIL-0060"
+      ],
+      "slack": [
+        "SLACK-0209"
+      ],
+      "docs": [
+        "DOC-0135"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-027"
+    ],
+    "tags": [
+      "snowflake",
+      "cost",
+      "finops",
+      "decision"
+    ]
+  },
+  {
+    "event_id": "EVT-045",
+    "type": "project_decision",
+    "subtype": "workflow_configuration_decision",
+    "date": "2026-03-23",
+    "involved_employee_ids": [
+      "EMP-015",
+      "EMP-026",
+      "EMP-069",
+      "EMP-007",
+      "EMP-002",
+      "EMP-027",
+      "EMP-063"
+    ],
+    "team_id": "TEAM-08",
+    "related_system_id": "SYS-04",
+    "related_policy_id": "POL-31",
+    "related_project_id": "PROJ-11",
+    "summary": "CPQ discount approval workflow configured with VP Sales approving 20-30% discounts (CFO only above 30%), based on a verbal agreement between Rahul Kapoor and Vivek Anand in February 2026. This differs from the Discount Approval Matrix (v3, Oct 2025), which the project decision log acknowledges but the policy was never updated. Codified the drift later seen in EVT-057.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0025"
+      ],
+      "slack": [
+        "SLACK-0150"
+      ],
+      "docs": [
+        "DOC-0123"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-057"
+    ],
+    "tags": [
+      "cpq",
+      "discount",
+      "workflow",
+      "decision",
+      "policy-gap"
+    ]
+  },
+  {
+    "event_id": "EVT-046",
+    "type": "project_decision",
+    "subtype": "role_bundle_mapping",
+    "date": "2026-07-21",
+    "involved_employee_ids": [
+      "EMP-005",
+      "EMP-044",
+      "EMP-029",
+      "EMP-023",
+      "EMP-028",
+      "EMP-091"
+    ],
+    "team_id": "TEAM-11",
+    "related_system_id": "SYS-19",
+    "related_policy_id": "POL-19",
+    "related_project_id": "PROJ-16",
+    "summary": "Post-project enhancement: HR Ops and IAM published the first written table of role-based application bundles that the Darwinbox-to-Okta automation applies to new joiners (ENG-PLATFORM, ENG-FRONTEND, CS-SUPPORT, FIN-AP, MKT-PMM, ...). The table was incomplete (e.g. no Metabase in SALES-OPS-ANALYST) and the Onboarding SOP still describes manual per-app requests.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0078"
+      ],
+      "slack": [
+        "SLACK-0239"
+      ],
+      "docs": [
+        "DOC-0138"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-059"
+    ],
+    "tags": [
+      "onboarding",
+      "role-bundles",
+      "okta",
+      "documentation"
+    ]
+  },
+  {
+    "event_id": "EVT-047",
+    "type": "project_decision",
+    "subtype": "integration_design_decision",
+    "date": "2026-06-09",
+    "involved_employee_ids": [
+      "EMP-014",
+      "EMP-073",
+      "EMP-056",
+      "EMP-039",
+      "EMP-051",
+      "EMP-019"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-22",
+    "related_policy_id": "POL-30",
+    "related_project_id": "PROJ-18",
+    "summary": "Integration design decision: post one summarised journal per day per cost centre and GST bucket from Zoho Expense to NetSuite (not one line per expense), keeping expense-level detail in Zoho with a drill-back link. Chosen for NetSuite performance and audit simplicity; the first version's retry logic later caused the August duplicate-journal incident.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0056"
+      ],
+      "slack": [
+        "SLACK-0204"
+      ],
+      "docs": [
+        "DOC-0132"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-035"
+    ],
+    "tags": [
+      "integration",
+      "netsuite",
+      "zoho",
+      "design"
+    ]
+  },
+  {
+    "event_id": "EVT-048",
+    "type": "project_decision",
+    "subtype": "technology_and_vendor_decision",
+    "date": "2026-05-26",
+    "involved_employee_ids": [
+      "EMP-030",
+      "EMP-045",
+      "EMP-057",
+      "EMP-060",
+      "EMP-011",
+      "EMP-010",
+      "EMP-056"
+    ],
+    "team_id": "TEAM-16",
+    "related_system_id": "SYS-08",
+    "related_policy_id": "POL-07",
+    "related_project_id": "PROJ-21",
+    "summary": "Website stack decision: headless WordPress (content) + Next.js front-end hosted on Vercel, with HubSpot forms embedded. Vercel is a new vendor (~Rs 6.2 lakh/year), so Security review and Procurement onboarding were flagged as prerequisites - the procurement step later happened with a single quote (EVT-062).",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0051"
+      ],
+      "slack": [
+        "SLACK-0192"
+      ],
+      "docs": [
+        "DOC-0129"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-062"
+    ],
+    "tags": [
+      "website",
+      "vendor",
+      "decision",
+      "procurement"
+    ]
+  },
+  {
+    "event_id": "EVT-049",
+    "type": "project_decision",
+    "subtype": "requirements_change_launch_date",
+    "date": "2026-08-12",
+    "involved_employee_ids": [
+      "EMP-042",
+      "EMP-065",
+      "EMP-076",
+      "EMP-011",
+      "EMP-007",
+      "EMP-001",
+      "EMP-006",
+      "EMP-068"
+    ],
+    "team_id": "TEAM-18",
+    "related_system_id": "SYS-07",
+    "related_policy_id": "POL-35",
+    "related_project_id": "PROJ-23",
+    "summary": "v4 launch campaign date moved from 15 September to 6 October 2026 after Engineering re-baselined v4 GA (contract-test coverage and the March outage follow-ups). Marketing re-sequenced: webinar series and analyst briefings shift three weeks; website cutover aligned to the new date.",
+    "outcome": "decided",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [],
+      "emails": [
+        "EMAIL-0089",
+        "EMAIL-0091"
+      ],
+      "slack": [
+        "SLACK-0262"
+      ],
+      "docs": [
+        "DOC-0139"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-021",
+      "EVT-039"
+    ],
+    "tags": [
+      "launch",
+      "timeline",
+      "campaign",
+      "requirements-change"
+    ]
+  },
+  {
+    "event_id": "EVT-050",
+    "type": "policy_drift",
+    "subtype": "access_approval_sla_override",
+    "date": "2026-08-25",
+    "involved_employee_ids": [
+      "EMP-096",
+      "EMP-027",
+      "EMP-029",
+      "EMP-015",
+      "EMP-010",
+      "EMP-062",
+      "EMP-026",
+      "EMP-007",
+      "EMP-004"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-04",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Ritika Sharma (new SDR) requested Salesforce access on her first day while her manager Natasha D'Souza was on leave for two weeks. The Application Access Request Policy says approvals must escalate to the Department Head (VP Sales) after 2 business days and IAM must never provision without recorded approval. In practice IAM approved and provisioned on day 6 after a Slack confirmation from Vinod Krishnamurthy (a different team's manager) - an undocumented '5-business-day SLA override' IAM has used since the SSO Phase 2 backlog. A second ticket (Sonal Mehra, June) shows the same pattern with a peer's confirmation.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (POL Application Access Request v3, s3.3/3.5): manager unavailable >2 business days -> escalate to Department Head; IAM must not provision without recorded approval. PRACTICE (Aug-2026, Jun-2026 tickets): IAM approves after 5 business days pending, on an informal Slack confirmation from any senior person on the requester's side, and documents it as 'SLA override'.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22437",
+        "RITM-22027",
+        "RITM-22510"
+      ],
+      "emails": [
+        "EMAIL-0095",
+        "EMAIL-0097"
+      ],
+      "slack": [
+        "SLACK-0266",
+        "SLACK-0208"
+      ],
+      "docs": [
+        "DOC-0140"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-071"
+    ],
+    "tags": [
+      "drift",
+      "access",
+      "salesforce",
+      "approval",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-051",
+    "type": "policy_drift",
+    "subtype": "laptop_delivery_sla_and_loaners",
+    "date": "2026-07-06",
+    "involved_employee_ids": [
+      "EMP-018",
+      "EMP-047",
+      "EMP-059",
+      "EMP-034",
+      "EMP-008",
+      "EMP-004",
+      "EMP-013",
+      "EMP-019"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-18",
+    "related_policy_id": "POL-04",
+    "related_project_id": null,
+    "summary": "The Laptop SOP promises replacement devices within 5 business days from a buffer stock of 4+4. Since May 2026 the buffer has been empty and MacBook Pro lead time is 3-4 weeks; the Service Desk's actual practice is 'loaner on day one, standard device when stock arrives' (14 and 12 business days in these two cases). Rajesh Kumar proposed updating the SOP; not done.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Laptop & Endpoint Provisioning SOP v4, s2.2-2.3): replacement device delivered within 5 business days; buffer stock of 4 MacBook Pros + 4 ThinkPads; loaner only when repair exceeds 2 days. PRACTICE (Jun-Jul 2026): buffer stock exhausted; loaner issued immediately by default; standard device in 12-14 business days. SOP not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22125",
+        "RITM-22161",
+        "RITM-22173"
+      ],
+      "emails": [
+        "EMAIL-0069",
+        "EMAIL-0066"
+      ],
+      "slack": [
+        "SLACK-0229"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "drift",
+      "laptop",
+      "sla",
+      "endpoint"
+    ]
+  },
+  {
+    "event_id": "EVT-052",
+    "type": "policy_drift",
+    "subtype": "change_request_not_required_for_gitops_deploys",
+    "date": "2026-04-30",
+    "involved_employee_ids": [
+      "EMP-043",
+      "EMP-067",
+      "EMP-022",
+      "EMP-006",
+      "EMP-075",
+      "EMP-046"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-27",
+    "related_policy_id": "POL-09",
+    "related_project_id": "PROJ-01",
+    "summary": "Engineers keep asking whether a production deployment needs a Change Request. The Change Management Policy (v2) says all production application deployments are Normal changes requiring a CHG and CAB approval. Since the ArgoCD go-live (Dec 2025), the operating rule is that a merged GitOps PR is the approval and CHGs are only for infrastructure - decided at CAB in September 2025 (EVT-042) but never written into the policy. Two CHGs were raised and cancelled in April and July.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Change Management v2, s2/s3.1/s4): all production application deployments are Normal changes -> CHG + CAB approval. PRACTICE (since 1-Dec-2025): merged PR in algoworks-deploy is the approval for standard app deployments; CHG only for infra/network/identity/DB. Source of practice: CAB decision 2-Sep-2025 (EVT-042). Policy never updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "CHG-21840",
+        "CHG-22272",
+        "RITM-21845"
+      ],
+      "emails": [
+        "EMAIL-0038"
+      ],
+      "slack": [
+        "SLACK-0171",
+        "SLACK-0241"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-042",
+      "EVT-073"
+    ],
+    "tags": [
+      "drift",
+      "change-management",
+      "gitops",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-053",
+    "type": "policy_drift",
+    "subtype": "friday_deploy_freeze_relaxed",
+    "date": "2026-06-19",
+    "involved_employee_ids": [
+      "EMP-013",
+      "EMP-018",
+      "EMP-001",
+      "EMP-006",
+      "EMP-025",
+      "EMP-072"
+    ],
+    "team_id": "TEAM-02",
+    "related_system_id": "SYS-02",
+    "related_policy_id": "POL-15",
+    "related_project_id": "PROJ-03",
+    "summary": "On Friday 19-Jun Aditya Rao deployed a portal fix at 11:30. Meera Krishnan objected citing the Deployment & Release SOP (no Friday production deployments). Arjun Venkataraman confirmed the freeze was relaxed at the 12-Mar Engineering all-hands ('Friday deploys allowed before 14:00 IST if behind a feature flag or trivially reversible') - a decision recorded only in the all-hands notes and a Slack thread; the SOP (v3, Apr 2025) still states the freeze.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Deployment & Release Process SOP v3, s1.2): no production deployments on Fridays. PRACTICE (since 12-Mar-2026 Engineering all-hands): Friday deploys permitted before 14:00 IST when feature-flagged or trivially reversible. Recorded in all-hands notes and Slack only; SOP not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22089"
+      ],
+      "emails": [
+        "EMAIL-0061"
+      ],
+      "slack": [
+        "SLACK-0214"
+      ],
+      "docs": [
+        "DOC-0121"
+      ]
+    },
+    "related_event_ids": [],
+    "tags": [
+      "drift",
+      "deployment",
+      "friday",
+      "release"
+    ]
+  },
+  {
+    "event_id": "EVT-054",
+    "type": "policy_drift",
+    "subtype": "pii_access_approved_without_dpo",
+    "date": "2026-05-12",
+    "involved_employee_ids": [
+      "EMP-086",
+      "EMP-038",
+      "EMP-016",
+      "EMP-032",
+      "EMP-083",
+      "EMP-010"
+    ],
+    "team_id": "TEAM-03",
+    "related_system_id": "SYS-29",
+    "related_policy_id": "POL-18",
+    "related_project_id": "PROJ-10",
+    "summary": "Chitra Mohan (Email Marketing) was granted the snowflake-pii-reader role for customer contact data on the approval of Suresh Pillai alone. The Snowflake Data Access Policy requires written DPO sign-off for PII schemas, but the DPO left in February and was never replaced (EVT-005). Data Engineering's working rule since April: the Data Engineering Manager approves PII access with a purpose statement and a 6-month expiry. Repeated for Ravi Shankar's churn-model access in June.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Snowflake Data Access v2, s2.2): PII-tagged schema access requires written DPO sign-off on the DATA ticket. PRACTICE (since Apr-2026): Data Engineering Manager approves alone with purpose + 6-month expiry, because the DPO role is vacant (EVT-005) and no interim was named.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21883",
+        "RITM-22137",
+        "RITM-21899"
+      ],
+      "emails": [
+        "EMAIL-0042",
+        "EMAIL-0043"
+      ],
+      "slack": [
+        "SLACK-0178"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-005",
+      "EVT-019"
+    ],
+    "tags": [
+      "drift",
+      "pii",
+      "snowflake",
+      "dpo",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-055",
+    "type": "policy_drift",
+    "subtype": "hybrid_work_office_days",
+    "date": "2026-08-05",
+    "involved_employee_ids": [
+      "EMP-094",
+      "EMP-091",
+      "EMP-006",
+      "EMP-028",
+      "EMP-025",
+      "EMP-003",
+      "EMP-043"
+    ],
+    "team_id": "TEAM-11",
+    "related_system_id": "SYS-19",
+    "related_policy_id": "POL-21",
+    "related_project_id": null,
+    "summary": "New joiner Tanvi Deshpande asked HR how many days she must be in the office. HR Ops (Ayesha Khan) answered per the Hybrid Work Policy: 3 days, Tue/Wed/Thu anchor days. Her manager Rohan Mehta said the team does 2 days (Tue/Thu) since leadership relaxed the rule in April. The HRBP confirmed the relaxation is real but the policy update is 'pending with the CPO'.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Hybrid Work v2, s1.1-1.2): minimum 3 days/week in office, Tue/Wed/Thu anchor days. PRACTICE (since Apr-2026): 2 days/week with team discretion on which days, agreed verbally by leadership; HR Ops still quotes 3 days; policy not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22367",
+        "RITM-22388"
+      ],
+      "emails": [
+        "EMAIL-0087"
+      ],
+      "slack": [
+        "SLACK-0255"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "drift",
+      "hybrid-work",
+      "hr",
+      "new-joiner",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-056",
+    "type": "policy_drift",
+    "subtype": "expense_window_and_per_diem",
+    "date": "2026-06-24",
+    "involved_employee_ids": [
+      "EMP-036",
+      "EMP-082",
+      "EMP-020",
+      "EMP-073",
+      "EMP-014",
+      "EMP-027",
+      "EMP-002",
+      "EMP-052"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-22",
+    "related_policy_id": "POL-26",
+    "related_project_id": null,
+    "summary": "Zoho Expense auto-rejected Aakash Bhatia's 45-day-old claim per the T&E policy's 30-day rule; Finance AP approved it on appeal because 'we accept up to 60 days now'. Separately, Gaurav Thakur's APAC per-diem claim at Rs 2,500/day was rejected by the Zoho rule (policy: Rs 2,000) and then approved because the per-diem was raised to Rs 2,500 in April by CFO email. Neither change is in the policy (v5, Nov 2025) or the Zoho rules.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (T&E v5, s1.2/s2.3): claims within 30 days, older claims rejected; domestic per-diem Rs 2,000/day. PRACTICE (2026): AP accepts claims up to 60 days on appeal; per-diem Rs 2,500 since Apr-2026 (CFO email). Zoho rules still enforce the old values, so claims are auto-rejected and manually approved.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack",
+      "confluence"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22103",
+        "RITM-22127",
+        "RITM-22141"
+      ],
+      "emails": [
+        "EMAIL-0062",
+        "EMAIL-0063"
+      ],
+      "slack": [
+        "SLACK-0218"
+      ],
+      "docs": [
+        "DOC-0137"
+      ]
+    },
+    "related_event_ids": [
+      "EVT-072",
+      "EVT-066"
+    ],
+    "tags": [
+      "drift",
+      "expenses",
+      "finance",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-057",
+    "type": "policy_drift",
+    "subtype": "discount_approval_matrix_vp_sales",
+    "date": "2026-07-10",
+    "involved_employee_ids": [
+      "EMP-082",
+      "EMP-052",
+      "EMP-069",
+      "EMP-007",
+      "EMP-002",
+      "EMP-015"
+    ],
+    "team_id": "TEAM-08",
+    "related_system_id": "SYS-04",
+    "related_policy_id": "POL-31",
+    "related_project_id": "PROJ-11",
+    "summary": "Two Deal Desk tickets show 27% and 24% discounts approved by the VP Sales alone. The Discount Approval Matrix (v3) requires the CFO for 20-30%. The CPQ workflow was configured in March to route 20-30% to VP Sales under a verbal Rahul/Vivek agreement with a weekly report (EVT-045); the matrix was never reissued, so the policy page and the CPQ system disagree.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Discount Approval Matrix v3, s2): 20.01-30% discount requires CFO approval. PRACTICE (since Apr-2026 CPQ go-live): VP Sales approves 20-30%; CFO gets a weekly report. Codified in CPQ config and a project decision doc (EVT-045); policy not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22193",
+        "RITM-22467",
+        "RITM-22209"
+      ],
+      "emails": [
+        "EMAIL-0073",
+        "EMAIL-0072"
+      ],
+      "slack": [
+        "SLACK-0232"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-045",
+      "EVT-080"
+    ],
+    "tags": [
+      "drift",
+      "discount",
+      "deal-desk",
+      "cpq",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-058",
+    "type": "policy_drift",
+    "subtype": "vpn_renewal_and_contractor_group",
+    "date": "2026-05-29",
+    "involved_employee_ids": [
+      "EMP-047",
+      "EMP-029",
+      "EMP-061",
+      "EMP-030",
+      "EMP-010",
+      "EMP-041",
+      "EMP-004"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-11",
+    "related_policy_id": "POL-02",
+    "related_project_id": null,
+    "summary": "Nithin George received a '90-day VPN expiry' reminder from an old ServiceNow schedule and asked how to renew; IAM told him employee VPN has been on 365-day automatic renewal via the Okta group since the SSO integration. Separately, a Pixelcraft contractor was given direct VPN via the vpn-contractors Okta group (per the June Contractor policy) although the VPN policy (v2, May 2025) still says contractors must use the jump host only. Two policies now conflict and the VPN policy is stale.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (VPN & Remote Connectivity v2, s2.3-2.4): VPN granted for 90 days, renewal by manager-approved request; contractors jump-host only. PRACTICE: employee VPN auto-renews for 365 days via Okta group (since Dec-2025); contractors get scoped VPN via the vpn-contractors group (per the newer Contractor & Guest Access Policy v2). VPN policy not updated; conflicts with the Contractor policy.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21984",
+        "RITM-22230",
+        "RITM-21992"
+      ],
+      "emails": [
+        "EMAIL-0053"
+      ],
+      "slack": [
+        "SLACK-0200"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-004"
+    ],
+    "tags": [
+      "drift",
+      "vpn",
+      "contractor",
+      "policy-conflict"
+    ]
+  },
+  {
+    "event_id": "EVT-059",
+    "type": "policy_drift",
+    "subtype": "onboarding_role_bundles_vs_sop",
+    "date": "2026-08-11",
+    "involved_employee_ids": [
+      "EMP-095",
+      "EMP-015",
+      "EMP-029",
+      "EMP-005",
+      "EMP-044",
+      "EMP-026"
+    ],
+    "team_id": "TEAM-11",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-19",
+    "related_project_id": "PROJ-16",
+    "summary": "Dhruv Malik (Revenue Analyst) started 10-Aug with Salesforce and Slack auto-provisioned by the SALES-OPS-ANALYST role bundle but no Metabase - his main tool. His manager Vinod Krishnamurthy, following the Onboarding SOP, expected to raise every application request on Day 1 and was confused about what the bundle covers. The SOP (v3, Aug 2025) describes HR emailing IT 5 days ahead and managers requesting each app; practice since May 2026 is Darwinbox-triggered tickets 10 days ahead and role bundles, documented only in a July reference page.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Employee Onboarding SOP v3, s1/s2.2): HR emails IT 5 business days before start; manager raises a separate request for every application on Day 1; nothing provisioned automatically by role. PRACTICE (since May-2026): Darwinbox auto-creates the ticket 10 business days ahead and Okta applies role bundles; managers request only what the bundle misses. SOP not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22399",
+        "RITM-22406"
+      ],
+      "emails": [
+        "EMAIL-0090"
+      ],
+      "slack": [
+        "SLACK-0260"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-046",
+      "EVT-001"
+    ],
+    "tags": [
+      "drift",
+      "onboarding",
+      "role-bundles",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-060",
+    "type": "policy_drift",
+    "subtype": "byod_personal_phone_email",
+    "date": "2026-04-02",
+    "involved_employee_ids": [
+      "EMP-052",
+      "EMP-040",
+      "EMP-059",
+      "EMP-034",
+      "EMP-008",
+      "EMP-004",
+      "EMP-010"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-18",
+    "related_policy_id": "POL-12",
+    "related_project_id": null,
+    "summary": "The BYOD policy (v1, Jun 2025) prohibits personal phones from accessing corporate email and says mobile access requires a company-issued device. In practice the Service Desk routinely enrols personal iPhones/Androids with Intune app-protection (MAM) for Outlook and Teams - two tickets in April and June show it as a standard, no-approval request. The policy's own rationale ('MAM not adopted pending licence review') is out of date since the Intune P2 licences arrived in early 2026.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (BYOD & Mobile Device v1, s1.1-1.2): personal mobile devices may not access corporate email/Slack; company-issued Intune-managed phones only; exceptions need Head of IT approval for 30 days. PRACTICE (since ~Feb-2026): Service Desk enrols personal phones with Intune MAM (app protection) for Outlook/Teams on request, no approval. Policy not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21732",
+        "RITM-22044",
+        "RITM-21741"
+      ],
+      "emails": [
+        "EMAIL-0028"
+      ],
+      "slack": [
+        "SLACK-0153"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "drift",
+      "byod",
+      "intune",
+      "mobile"
+    ]
+  },
+  {
+    "event_id": "EVT-061",
+    "type": "policy_drift",
+    "subtype": "ld_reimbursement_cap_and_preapproval",
+    "date": "2026-07-27",
+    "involved_employee_ids": [
+      "EMP-070",
+      "EMP-046",
+      "EMP-053",
+      "EMP-035",
+      "EMP-016",
+      "EMP-022",
+      "EMP-003",
+      "EMP-085"
+    ],
+    "team_id": "TEAM-12",
+    "related_system_id": "SYS-24",
+    "related_policy_id": "POL-24",
+    "related_project_id": null,
+    "summary": "Divya Menon claimed Rs 32,000 for an AWS certification without pre-approval; L&D approved it. The L&D Reimbursement Policy (v2, Dec 2025) caps claims at Rs 25,000/year and says claims without pre-approval are not reimbursed. Since the FY27 budget (April 2026) L&D has applied a Rs 40,000 cap for certifications and waives pre-approval when the certification is passed; Harish Gowda's Rs 28,000 CKA claim in May was handled the same way. Policy not updated.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (L&D Reimbursement v2, s1/s2.2): Rs 25,000 annual cap; pre-approval mandatory, no reimbursement without it. PRACTICE (since Apr-2026 FY27 budget): Rs 40,000 cap for certifications; pre-approval waived if the certification is passed. Applied in May and July 2026; policy not updated.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22295",
+        "RITM-21874",
+        "RITM-22310"
+      ],
+      "emails": [
+        "EMAIL-0080",
+        "EMAIL-0081"
+      ],
+      "slack": [
+        "SLACK-0242"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "drift",
+      "learning",
+      "reimbursement",
+      "hr"
+    ]
+  },
+  {
+    "event_id": "EVT-062",
+    "type": "policy_drift",
+    "subtype": "vendor_quotes_exemption_and_net30",
+    "date": "2026-08-14",
+    "involved_employee_ids": [
+      "EMP-030",
+      "EMP-056",
+      "EMP-014",
+      "EMP-002",
+      "EMP-011",
+      "EMP-097",
+      "EMP-073"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-23",
+    "related_policy_id": "POL-29",
+    "related_project_id": "PROJ-21",
+    "summary": "Vercel (new vendor, Rs 6.2 lakh/year) was onboarded with a single quote and Net-30 terms. The Vendor Onboarding SOP requires three quotes above Rs 5 lakh 'equally for SaaS and hosting' with CFO-approved single-source justification, and Net-45 unless the CFO approves shorter terms. Procurement has been treating SaaS subscriptions as exempt from the three-quote rule and accepting vendors' Net-30 for anything under Rs 10 lakh since early 2026 - neither is written down.",
+    "outcome": "resolved",
+    "is_drift_scenario": true,
+    "drift_note": "POLICY (Vendor Onboarding & Payment Terms SOP v2, s2.1/s3.1-3.2): three quotes for any new vendor above Rs 5 lakh including SaaS/hosting; Net-45 standard, Net-30 only with CFO approval. PRACTICE (2026): SaaS subscriptions processed on one quote as an 'informal SaaS exemption'; Net-30 accepted under Rs 10 lakh without CFO approval.",
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22419",
+        "RITM-22494"
+      ],
+      "emails": [
+        "EMAIL-0092",
+        "EMAIL-0093"
+      ],
+      "slack": [
+        "SLACK-0272"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-048",
+      "EVT-078"
+    ],
+    "tags": [
+      "drift",
+      "procurement",
+      "vendor",
+      "finance"
+    ]
+  },
+  {
+    "event_id": "EVT-063",
+    "type": "contradictory_resolution",
+    "subtype": "vpn_disconnects_two_fixes_no_root_cause",
+    "date": "2026-06-17",
+    "involved_employee_ids": [
+      "EMP-039",
+      "EMP-047",
+      "EMP-034",
+      "EMP-023",
+      "EMP-061",
+      "EMP-080"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-11",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "Two Finance users reported GlobalProtect dropping every ~30 minutes on home Wi-Fi. Ticket A (March, Payal Shah) was closed as 'reinstalled the client'; ticket B (June, Nithin George) was closed as 'disabled IPv6 on the Wi-Fi adapter'. Both users say it still happens intermittently; no root cause was found and the two resolutions contradict each other. Still recurring per an August Slack thread.",
+    "outcome": "unresolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21595",
+        "INC-22069",
+        "INC-22356"
+      ],
+      "emails": [
+        "EMAIL-0085"
+      ],
+      "slack": [
+        "SLACK-0249"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "conflict",
+      "vpn",
+      "troubleshooting",
+      "recurring",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-064",
+    "type": "contradictory_resolution",
+    "subtype": "salesforce_report_export_two_causes",
+    "date": "2026-05-05",
+    "involved_employee_ids": [
+      "EMP-062",
+      "EMP-069",
+      "EMP-079",
+      "EMP-026",
+      "EMP-015",
+      "EMP-034"
+    ],
+    "team_id": "TEAM-08",
+    "related_system_id": "SYS-04",
+    "related_policy_id": "POL-32",
+    "related_project_id": null,
+    "summary": "Two Sales Ops users could not export Salesforce reports. Ticket A (Sonal Mehra, February) was resolved by the Service Desk as 'cleared browser cache'; ticket B (Arun Prasad, May) was resolved by the Salesforce Administrator as 'user profile lacked the Export Reports permission - added'. The two tickets give different answers to the same question and the Service Desk's answer was probably coincidental.",
+    "outcome": "resolved_inconsistently",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21530",
+        "INC-21851",
+        "RITM-21852"
+      ],
+      "emails": [
+        "EMAIL-0039"
+      ],
+      "slack": [
+        "SLACK-0172"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "conflict",
+      "salesforce",
+      "permissions",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-065",
+    "type": "contradictory_resolution",
+    "subtype": "okta_verify_push_two_fixes",
+    "date": "2026-07-01",
+    "involved_employee_ids": [
+      "EMP-054",
+      "EMP-074",
+      "EMP-029",
+      "EMP-034",
+      "EMP-061",
+      "EMP-023",
+      "EMP-079"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-03",
+    "related_project_id": null,
+    "summary": "Okta Verify push notifications not arriving: ticket A (Riya Sen, April) was fixed by re-enrolling Okta Verify; ticket B (Bhavana Shetty, July) was fixed by correcting the phone's automatic time setting. Both were closed as resolved with different root causes; the IT knowledge article still lists only 're-enrol', so the Service Desk keeps re-enrolling users for whom the time-sync fix would work.",
+    "outcome": "resolved_inconsistently",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-21768",
+        "INC-22142",
+        "RITM-22144"
+      ],
+      "emails": [
+        "EMAIL-0068"
+      ],
+      "slack": [
+        "SLACK-0225"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "conflict",
+      "okta",
+      "mfa",
+      "troubleshooting"
+    ]
+  },
+  {
+    "event_id": "EVT-066",
+    "type": "contradictory_resolution",
+    "subtype": "home_internet_reimbursement_two_decisions",
+    "date": "2026-06-12",
+    "involved_employee_ids": [
+      "EMP-088",
+      "EMP-057",
+      "EMP-020",
+      "EMP-073",
+      "EMP-014",
+      "EMP-038",
+      "EMP-013",
+      "EMP-002"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-22",
+    "related_policy_id": "POL-26",
+    "related_project_id": null,
+    "summary": "Two remote employees claimed home internet. Ethan Brooks (March) was approved Rs 1,500/month by Ramesh Babu 'as a remote designation allowance'; Ishita Bose (June) was rejected by Alok Mishra because home internet is 'not in the policy'. The T&E policy is silent on home internet (only mobile bills are listed). Finance has not decided; both tickets remain as precedent and Ishita's appeal is open.",
+    "outcome": "unresolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21675",
+        "RITM-22038",
+        "RITM-22058"
+      ],
+      "emails": [
+        "EMAIL-0059",
+        "EMAIL-0026"
+      ],
+      "slack": [
+        "SLACK-0207"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-056"
+    ],
+    "tags": [
+      "conflict",
+      "expenses",
+      "remote",
+      "unresolved",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-067",
+    "type": "contradictory_resolution",
+    "subtype": "admin_console_access_granted_vs_denied",
+    "date": "2026-04-21",
+    "involved_employee_ids": [
+      "EMP-055",
+      "EMP-049",
+      "EMP-006",
+      "EMP-010",
+      "EMP-029",
+      "EMP-017"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-09",
+    "related_policy_id": "POL-11",
+    "related_project_id": null,
+    "summary": "Two Support Engineers requested AlgoWorks Admin Console read-only. Preeti Nambiar (January, policy v1) was granted it by Rohan Mehta with a manager attestation instead of the training; Sameer Khan (April, after policy v2 removed that option) was denied by Nikhil Bhatt pending the training and never re-requested. The same team therefore has one member with access obtained without training and another without access - and Kunal Shah's May request (EVT-003) shows the policy applied correctly.",
+    "outcome": "unresolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21368",
+        "RITM-21799",
+        "RITM-22145"
+      ],
+      "emails": [
+        "EMAIL-0035",
+        "EMAIL-0007"
+      ],
+      "slack": [
+        "SLACK-0165"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-003"
+    ],
+    "tags": [
+      "conflict",
+      "privileged-access",
+      "admin-console",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-068",
+    "type": "contradictory_resolution",
+    "subtype": "jira_project_creation_ownership",
+    "date": "2026-08-03",
+    "involved_employee_ids": [
+      "EMP-030",
+      "EMP-038",
+      "EMP-023",
+      "EMP-034",
+      "EMP-006",
+      "EMP-043",
+      "EMP-008"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-17",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Two Marketing managers asked for a new Jira project. Ankit Chawla (May) got 'MKT' created by the Service Desk (Shruti Joshi) the same day; Manoj Venkatesh (August) was told by the Service Desk that Jira projects are created by Platform Backend and waited four days for Rohan Mehta. Jira is owned by Platform Backend per the Systems Directory, but the Service Desk still holds admin rights from before the ownership change - so the answer depends on who picks up the ticket.",
+    "outcome": "resolved_inconsistently",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21911",
+        "RITM-22348",
+        "RITM-22380"
+      ],
+      "emails": [
+        "EMAIL-0086"
+      ],
+      "slack": [
+        "SLACK-0250"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "conflict",
+      "jira",
+      "ownership"
+    ]
+  },
+  {
+    "event_id": "EVT-069",
+    "type": "contradictory_resolution",
+    "subtype": "snowflake_query_timeouts_two_answers",
+    "date": "2026-09-10",
+    "involved_employee_ids": [
+      "EMP-080",
+      "EMP-099",
+      "EMP-032",
+      "EMP-051",
+      "EMP-016",
+      "EMP-019"
+    ],
+    "team_id": "TEAM-03",
+    "related_system_id": "SYS-29",
+    "related_policy_id": "POL-18",
+    "related_project_id": "PROJ-09",
+    "summary": "Two FP&A analysts hit 5-minute query timeouts on the same AOP cost-centre query after the warehouse restructure. Harsha Vardhan (June) had his warehouse bumped from S to M by Ananya Chatterjee; Meenakshi Sundaram (September) was told by Manish Tiwari to use the Metabase 'AOP Actuals' dashboard instead and the ticket closed 'won't fix'. FP&A now has one analyst on a bigger warehouse and one told there is no SQL path - unresolved.",
+    "outcome": "unresolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22090",
+        "INC-22584"
+      ],
+      "emails": [
+        "EMAIL-0105"
+      ],
+      "slack": [
+        "SLACK-0283"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-044"
+    ],
+    "tags": [
+      "conflict",
+      "snowflake",
+      "performance",
+      "unresolved"
+    ]
+  },
+  {
+    "event_id": "EVT-070",
+    "type": "contradictory_resolution",
+    "subtype": "referral_bonus_timing_two_answers",
+    "date": "2026-07-14",
+    "involved_employee_ids": [
+      "EMP-043",
+      "EMP-018",
+      "EMP-044",
+      "EMP-058",
+      "EMP-024",
+      "EMP-031"
+    ],
+    "team_id": "TEAM-10",
+    "related_system_id": "SYS-20",
+    "related_policy_id": "POL-23",
+    "related_project_id": null,
+    "summary": "Two engineers asked when their referral bonus would be paid. Rakesh Nair (February, HR Ops) said 'in the payroll after the referred employee completes 90 days'; Fatima Sheikh (July, HRBP) said 'after 6 months, in the following payroll cycle'. The policy was changed from 6 months to 90 days in April 2026 (v2), so Fatima's July answer follows the superseded v1 - and Aditya's bonus is now late. Payroll is still waiting for TA confirmation.",
+    "outcome": "unresolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21460",
+        "RITM-22210",
+        "RITM-22634"
+      ],
+      "emails": [],
+      "slack": [
+        "SLACK-0291"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "conflict",
+      "referral",
+      "hr",
+      "payroll",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-071",
+    "type": "routine_baseline",
+    "subtype": "standard_access_request_per_policy",
+    "date": "2026-07-28",
+    "involved_employee_ids": [
+      "EMP-093",
+      "EMP-030",
+      "EMP-029",
+      "EMP-060"
+    ],
+    "team_id": "TEAM-16",
+    "related_system_id": "SYS-07",
+    "related_policy_id": "POL-01",
+    "related_project_id": null,
+    "summary": "Kabir Mehrotra (new Social Media Manager) requested HubSpot access on his second day. Line manager Ankit Chawla approved within the hour; IAM added the Okta group and Aparna Das assigned the permission set the same day - well inside the 3-business-day fulfilment SLA. Exactly what the Application Access Request Policy describes.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22313"
+      ],
+      "emails": [
+        "EMAIL-0079",
+        "EMAIL-0082"
+      ],
+      "slack": [
+        "SLACK-0243"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-050"
+    ],
+    "tags": [
+      "baseline",
+      "access",
+      "policy-consistent",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-072",
+    "type": "routine_baseline",
+    "subtype": "expense_claim_within_policy",
+    "date": "2026-05-21",
+    "involved_employee_ids": [
+      "EMP-017",
+      "EMP-007",
+      "EMP-020",
+      "EMP-040"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-22",
+    "related_policy_id": "POL-26",
+    "related_project_id": null,
+    "summary": "Anita Desai's Mumbai customer-visit claim (submitted 9 days after travel, itemised receipts for every item over Rs 500, hotel under the metro cap, per-diem claimed without meal receipts) was approved by her manager and by Finance AP in two days. A textbook claim under the T&E policy - no exceptions needed.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21938"
+      ],
+      "emails": [
+        "EMAIL-0050",
+        "EMAIL-0049"
+      ],
+      "slack": [
+        "SLACK-0186"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-056"
+    ],
+    "tags": [
+      "baseline",
+      "expenses",
+      "policy-consistent",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-073",
+    "type": "routine_baseline",
+    "subtype": "infrastructure_change_via_cab",
+    "date": "2026-04-07",
+    "involved_employee_ids": [
+      "EMP-064",
+      "EMP-022",
+      "EMP-006",
+      "EMP-010",
+      "EMP-017",
+      "EMP-042"
+    ],
+    "team_id": "TEAM-06",
+    "related_system_id": "SYS-26",
+    "related_policy_id": "POL-09",
+    "related_project_id": null,
+    "summary": "RDS production instance resize (db.r6g.2xlarge to 4xlarge) raised as a Normal change with rollback plan, reviewed and approved at the Thursday CAB, implemented in the approved window with the outcome recorded next day. Infrastructure changes still follow the Change Management Policy exactly as written.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "CHG-21750"
+      ],
+      "emails": [
+        "EMAIL-0030"
+      ],
+      "slack": [
+        "SLACK-0155"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-052"
+    ],
+    "tags": [
+      "baseline",
+      "change-management",
+      "policy-consistent",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-074",
+    "type": "routine_baseline",
+    "subtype": "laptop_refresh_within_sla",
+    "date": "2026-07-16",
+    "involved_employee_ids": [
+      "EMP-033",
+      "EMP-024",
+      "EMP-034"
+    ],
+    "team_id": "TEAM-05",
+    "related_system_id": "SYS-18",
+    "related_policy_id": "POL-04",
+    "related_project_id": null,
+    "summary": "Nisha Pandey's 4-year laptop refresh (ThinkPad T14) was approved by her manager and delivered in 4 business days from a ThinkPad that had just arrived on the July stock order - within the SOP's 5-business-day target. (Contrast with EVT-051, where MacBook Pro stock made the same SLA impossible.)",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22233"
+      ],
+      "emails": [
+        "EMAIL-0075"
+      ],
+      "slack": [
+        "SLACK-0240"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-051"
+    ],
+    "tags": [
+      "baseline",
+      "laptop",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-075",
+    "type": "routine_baseline",
+    "subtype": "leave_policy_query_answered_per_policy",
+    "date": "2026-08-28",
+    "involved_employee_ids": [
+      "EMP-074",
+      "EMP-091",
+      "EMP-024",
+      "EMP-066"
+    ],
+    "team_id": "TEAM-11",
+    "related_system_id": "SYS-19",
+    "related_policy_id": "POL-20",
+    "related_project_id": null,
+    "summary": "Bhavana Shetty asked how many privilege-leave days carry forward and how much notice a 5-day leave needs. HR Ops answered from the Leave & Time-Off Policy v4 (12 days carry forward; notice of twice the duration; Department Head for >10 days) and Darwinbox enforced the same rules. No gap between policy and practice.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22512"
+      ],
+      "emails": [
+        "EMAIL-0100"
+      ],
+      "slack": [
+        "SLACK-0275"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [],
+    "tags": [
+      "baseline",
+      "leave",
+      "hr",
+      "policy-consistent",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-076",
+    "type": "routine_baseline",
+    "subtype": "contractor_offboarding_on_expiry",
+    "date": "2026-03-12",
+    "involved_employee_ids": [
+      "EMP-029",
+      "EMP-024",
+      "EMP-010",
+      "EMP-033",
+      "EMP-066"
+    ],
+    "team_id": "TEAM-04",
+    "related_system_id": "SYS-10",
+    "related_policy_id": "POL-05",
+    "related_project_id": null,
+    "summary": "A recruitment-agency contractor's engagement ended on 12-Mar; the sponsor (Rohit Sinha) gave notice, and IAM disabled the ext- account at 18:00 on the last day, removed Greenhouse and Slack access the next morning and transferred nothing (no owned resources). Offboarding SOP followed to the letter.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21596"
+      ],
+      "emails": [
+        "EMAIL-0020"
+      ],
+      "slack": [
+        "SLACK-0137"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-005"
+    ],
+    "tags": [
+      "baseline",
+      "offboarding",
+      "contractor",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-077",
+    "type": "routine_baseline",
+    "subtype": "sev3_incident_handled_per_sop",
+    "date": "2026-06-26",
+    "involved_employee_ids": [
+      "EMP-062",
+      "EMP-051",
+      "EMP-016"
+    ],
+    "team_id": "TEAM-03",
+    "related_system_id": "SYS-30",
+    "related_policy_id": "POL-08",
+    "related_project_id": null,
+    "summary": "Metabase sales dashboards loading slowly for Sales Ops after the warehouse restructure. Classified Sev3 (internal tool degraded for one team, workaround exists), picked up next business day, fixed by re-pointing the collection to the right warehouse. Handled and documented per the Incident Management SOP; no postmortem required for Sev3.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "INC-22113"
+      ],
+      "emails": [],
+      "slack": [
+        "SLACK-0219"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-044"
+    ],
+    "tags": [
+      "baseline",
+      "incident",
+      "sev3",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-078",
+    "type": "routine_baseline",
+    "subtype": "small_saas_purchase_per_policy",
+    "date": "2026-02-17",
+    "involved_employee_ids": [
+      "EMP-045",
+      "EMP-030",
+      "EMP-011",
+      "EMP-056",
+      "EMP-041",
+      "EMP-068"
+    ],
+    "team_id": "TEAM-13",
+    "related_system_id": "SYS-23",
+    "related_policy_id": "POL-07",
+    "related_project_id": null,
+    "summary": "Marketing bought 5 Figma Professional seats (Rs 1.8 lakh/year): under Rs 5 lakh, so Department Head approval, a Security review (SSO supported) and a Procurement PO - no competitive quotes required. Processed in 5 business days exactly as the SaaS Approval and Purchase Order policies describe.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21496"
+      ],
+      "emails": [
+        "EMAIL-0016"
+      ],
+      "slack": [
+        "SLACK-0130"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-062"
+    ],
+    "tags": [
+      "baseline",
+      "procurement",
+      "saas",
+      "policy-consistent",
+      "demo"
+    ]
+  },
+  {
+    "event_id": "EVT-079",
+    "type": "routine_baseline",
+    "subtype": "ld_claim_with_preapproval_within_cap",
+    "date": "2026-09-03",
+    "involved_employee_ids": [
+      "EMP-071",
+      "EMP-035",
+      "EMP-053",
+      "EMP-085"
+    ],
+    "team_id": "TEAM-12",
+    "related_system_id": "SYS-24",
+    "related_policy_id": "POL-24",
+    "related_project_id": null,
+    "summary": "Leela Krishnan pre-approved a Rs 12,000 instructional-design course in LearnHub in July (manager + L&D), completed it, and claimed within 30 days with certificate and invoice. Approved next day. Within the cap and process under both the written policy and current practice - no drift either way.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-22543"
+      ],
+      "emails": [
+        "EMAIL-0103"
+      ],
+      "slack": [
+        "SLACK-0279"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-061"
+    ],
+    "tags": [
+      "baseline",
+      "learning",
+      "policy-consistent"
+    ]
+  },
+  {
+    "event_id": "EVT-080",
+    "type": "routine_baseline",
+    "subtype": "discount_within_sales_manager_authority",
+    "date": "2026-05-13",
+    "involved_employee_ids": [
+      "EMP-036",
+      "EMP-027",
+      "EMP-069"
+    ],
+    "team_id": "TEAM-08",
+    "related_system_id": "SYS-04",
+    "related_policy_id": "POL-31",
+    "related_project_id": "PROJ-11",
+    "summary": "Aakash Bhatia requested a 15% discount for a mid-market renewal. Under both the published Discount Approval Matrix and the CPQ configuration, 10-20% is the Sales Manager's call; Natasha D'Souza approved in CPQ and on the Deal Desk ticket the same afternoon. No policy question arises at this discount level.",
+    "outcome": "resolved",
+    "is_drift_scenario": false,
+    "drift_note": null,
+    "produces_artifacts": [
+      "ticket",
+      "email",
+      "slack"
+    ],
+    "artifact_ids": {
+      "tickets": [
+        "RITM-21902"
+      ],
+      "emails": [
+        "EMAIL-0044"
+      ],
+      "slack": [
+        "SLACK-0182"
+      ],
+      "docs": []
+    },
+    "related_event_ids": [
+      "EVT-057"
+    ],
+    "tags": [
+      "baseline",
+      "discount",
+      "deal-desk",
+      "policy-consistent",
+      "demo"
+    ]
+  }
+]

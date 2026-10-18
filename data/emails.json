@@ -1,0 +1,4868 @@
+[
+  {
+    "thread_id": "EMAIL-0084",
+    "event_id": "EVT-001",
+    "subject": "Welcome to Platform Backend - your first week",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-094"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-094"
+        ],
+        "date": "2026-08-03T08:12",
+        "body": "Hi Tanvi,\n\nWelcome to AlgoWorks! Your laptop and accounts should be ready when you get in - Deepak from IT will hand over the MacBook at 9:30 and HR induction runs until 11.\n\nA few things for week one:\n- I've raised your GitHub and AWS access; GitHub should land today, AWS may take a couple of days.\n- Priya is your onboarding buddy; she'll walk you through the v4 migration repo and our local dev setup.\n- Please complete the Security Awareness and Code of Conduct modules in LearnHub in the first two weeks.\n- Team sync is Tue/Thu 10:30 in Meeting Room Falcon.\n\nRohan"
+      },
+      {
+        "from_employee_id": "EMP-094",
+        "from_name": "Tanvi Deshpande",
+        "to": [
+          "EMP-006"
+        ],
+        "date": "2026-08-03T13:40",
+        "body": "Thanks Rohan! Laptop's set up and I'm in GitHub already. AWS console says no permission sets assigned yet - I'll wait. Priya has given me the v4 onboarding doc.\n\nTanvi"
+      },
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-094"
+        ],
+        "date": "2026-08-06T10:05",
+        "body": "AWS is sorted now - Varun approved this morning. You should see ProdReadOnly and the sandbox account in the access portal. Shout if not.\n\nRohan"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-001"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-08-03",
+      "last_referenced_date": "2026-08-06"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0076",
+    "event_id": "EVT-002",
+    "subject": "Welcome to the Data team - how we handle data access",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-092"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-092"
+        ],
+        "date": "2026-07-20T09:30",
+        "body": "Hi Pooja,\n\nWelcome! Two things about data access before you dive in: (1) everything goes through a Jira DATA ticket, even when I've said yes in person - the ticket is the record; (2) you'll get the curated marts today or tomorrow, but anything PII-tagged is a separate conversation with a purpose statement, and we're being careful there because the DPO role is vacant. Ananya will get you set up. Customer 360 kick-off with Manish is Thursday.\n\nSuresh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-002"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-07-20",
+      "last_referenced_date": "2026-07-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0077",
+    "event_id": "EVT-002",
+    "subject": "Approval needed: RITM-22256 - Snowflake (curated marts) + Metabase access",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-032",
+      "EMP-092"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-092",
+        "from_name": "Pooja Hegde",
+        "to": [
+          "EMP-016"
+        ],
+        "date": "2026-07-21T11:20",
+        "body": "Hi Suresh,\n\nCould you approve RITM-22256 in ServiceNow when you have a minute? It's the Snowflake (curated marts) + Metabase access. The IAM clock only starts once the approval is recorded.\n\nThanks,\nPooja"
+      },
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-092"
+        ],
+        "date": "2026-07-21T12:10",
+        "body": "Approved on the ticket.\n\nSuresh"
+      },
+      {
+        "from_employee_id": "EMP-032",
+        "from_name": "Ananya Chatterjee",
+        "to": [
+          "EMP-092"
+        ],
+        "date": "2026-07-22T16:45",
+        "body": "Hi Pooja,\n\nRITM-22256 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nAnanya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-002",
+      "RITM-22256"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-07-21",
+      "last_referenced_date": "2026-07-22"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0046",
+    "event_id": "EVT-003",
+    "subject": "RE: Admin Console access request - training prerequisite",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-029",
+      "EMP-040"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-040",
+          "EMP-017"
+        ],
+        "date": "2026-05-14T15:22",
+        "body": "Hi Kunal,\n\nI've picked up your Admin Console request. Before I can grant console-readonly, the Privileged Access & Admin Console Policy (v2, April 2026) requires completion of the 'Handling Customer Data' course in LearnHub within the last 12 months - LearnHub shows it as not started for you. It takes about 40 minutes. Once it shows complete I'll route the approvals to Anita and to Rohan Mehta (Platform EM, system owner).\n\nSorry for the extra step - v2 removed the option for a manager attestation instead of the training.\n\nKavya\nIAM Analyst"
+      },
+      {
+        "from_employee_id": "EMP-040",
+        "from_name": "Kunal Shah",
+        "to": [
+          "EMP-029",
+          "EMP-017"
+        ],
+        "date": "2026-05-18T11:48",
+        "body": "Done - certificate attached. Thanks for the clear explanation. Anita, could you approve on the ticket?\n\nKunal"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-040",
+          "EMP-029"
+        ],
+        "date": "2026-05-18T12:30",
+        "body": "Approved on the ticket. Thanks both.\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-040",
+          "EMP-017"
+        ],
+        "date": "2026-05-20T09:58",
+        "body": "Rohan approved yesterday evening; you're now in console-readonly. Login is via Okta tile 'Admin Console' (VPN required).\n\nKavya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-003"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-05-14",
+      "last_referenced_date": "2026-05-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0045",
+    "event_id": "EVT-003",
+    "subject": "Approval needed: RITM-21908 - AlgoWorks Admin Console read-only access",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-029",
+      "EMP-040"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-040",
+        "from_name": "Kunal Shah",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-05-14T11:20",
+        "body": "Anita - RITM-21908 needs your approval (AlgoWorks Admin Console read-only access). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nKunal"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-040"
+        ],
+        "date": "2026-05-14T12:40",
+        "body": "Done - approved just now. FYI I've set a delegate in Darwinbox for next week in case anything else comes up.\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-040"
+        ],
+        "date": "2026-05-20T14:00",
+        "body": "Hi Kunal,\n\nRITM-21908 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nKavya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-003",
+      "RITM-21908"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "restricted",
+      "created_date": "2026-05-14",
+      "last_referenced_date": "2026-05-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0057",
+    "event_id": "EVT-004",
+    "subject": "Pixelcraft contractor accounts - expiry and extension",
+    "participant_employee_ids": [
+      "EMP-029",
+      "EMP-030"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-06-10T14:05",
+        "body": "Hi Ankit,\n\nBoth Pixelcraft accounts are live (details on the ticket). Two things to note under the new contractor policy:\n1. Accounts expire on 8 September (90 days). You'll get a reminder 10 days before; extension is a one-click approval on the ticket, in 90-day blocks.\n2. If they ever need VPN (e.g. for the Admin Console or Metabase) that's a separate request and a security review - please don't share your own credentials.\n\nKavya"
+      },
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-029"
+        ],
+        "date": "2026-06-10T15:11",
+        "body": "Perfect, thanks Kavya. They only need the WordPress staging site and Confluence, no VPN. I'll extend in late August.\n\nAnkit"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-004"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-06-10",
+      "last_referenced_date": "2026-06-10"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0017",
+    "event_id": "EVT-005",
+    "subject": "DPO coverage after Pradeep's exit",
+    "participant_employee_ids": [
+      "EMP-003",
+      "EMP-004",
+      "EMP-010"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-004",
+          "EMP-003"
+        ],
+        "date": "2026-03-02T09:40",
+        "body": "Sandeep, Sunita,\n\nPradeep's access is fully revoked as of Friday. The gap I want to flag: he was the DPO named in three policies (Snowflake Data Access, Data Classification, and by reference the Offboarding SOP). Concretely, the Snowflake policy says PII schema access needs written DPO sign-off on the DATA ticket. Suresh's team has two such requests queued right now.\n\nOptions: (a) I cover it as an interim, (b) Suresh approves PII access himself until we backfill, (c) hold all PII requests. I'd prefer (a) with a hard 3-month limit and a backfill req.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "EMP-010",
+          "EMP-003"
+        ],
+        "date": "2026-03-03T11:15",
+        "body": "Nikhil - take the security compliance and vendor questionnaire items as interim. On the data-protection sign-offs I don't want to formalise an interim until we know whether Finance approves a backfill in the FY27 plan; let's revisit end of March. Please log a ticket so it doesn't get lost.\n\nSandeep"
+      },
+      {
+        "from_employee_id": "EMP-003",
+        "from_name": "Sunita Raghavan",
+        "to": [
+          "EMP-004",
+          "EMP-010"
+        ],
+        "date": "2026-03-03T12:02",
+        "body": "Agree with Sandeep. From the HR side I'll add a checklist item to the exit process so ownership of approval roles is captured before LWD - this shouldn't have been discovered after the fact.\n\nSunita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-005"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "restricted",
+      "created_date": "2026-03-02",
+      "last_referenced_date": "2026-03-03"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0096",
+    "event_id": "EVT-006",
+    "subject": "NetSuite licence for Zara",
+    "participant_employee_ids": [
+      "EMP-014",
+      "EMP-039"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-039"
+        ],
+        "date": "2026-08-24T14:20",
+        "body": "Hi Payal, I've raised the NetSuite request for Zara (new Procurement Associate). Can we get her in this week? She's shadowing Kritika on POs from Wednesday.\n\nShalini"
+      },
+      {
+        "from_employee_id": "EMP-039",
+        "from_name": "Payal Shah",
+        "to": [
+          "EMP-014"
+        ],
+        "date": "2026-08-24T16:02",
+        "body": "Hi Shalini - we're at 32 of 32 full-user licences. Two options: buy an add-on licence (Rs 38,000/yr, needs Ashwin + Vivek) or reclaim one. Kavya's Q2 access review flagged two NetSuite users with no login since March; I'm checking with them today.\n\nPayal"
+      },
+      {
+        "from_employee_id": "EMP-039",
+        "from_name": "Payal Shah",
+        "to": [
+          "EMP-014"
+        ],
+        "date": "2026-08-27T17:30",
+        "body": "Sonal confirmed she doesn't need hers (she uses the Metabase finance dashboards now). Releasing it and assigning Zara tomorrow morning. I've also asked Ashwin to add 3 licences in the FY27 renewal so this doesn't keep happening.\n\nPayal"
+      },
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-039"
+        ],
+        "date": "2026-08-28T10:10",
+        "body": "She's in. Thanks for chasing it, Payal.\n\nShalini"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-006"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-08-24",
+      "last_referenced_date": "2026-08-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0032",
+    "event_id": "EVT-007",
+    "subject": "HubSpot mapping change - plan and rollback",
+    "participant_employee_ids": [
+      "EMP-026",
+      "EMP-038",
+      "EMP-060"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-026",
+        "from_name": "Megha Patil",
+        "to": [
+          "EMP-038",
+          "EMP-060"
+        ],
+        "date": "2026-04-10T15:05",
+        "body": "Manoj, Aparna,\n\nPlan for the Lead Source mapping fix (MKT-233): change the connector field mapping in the HubSpot sandbox today, verify with 20 test leads, then apply to production Monday 11:00 with Aparna watching the sync log. Rollback is reverting the mapping (2 minutes). I won't touch any workflows - only the field mapping.\n\nMegha"
+      },
+      {
+        "from_employee_id": "EMP-060",
+        "from_name": "Aparna Das",
+        "to": [
+          "EMP-026",
+          "EMP-038"
+        ],
+        "date": "2026-04-10T15:30",
+        "body": "Works for me. Note that saving the connector settings re-publishes the associated workflows - I'll check they're all still in the state we expect afterwards.\n\nAparna"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-007"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-04-10",
+      "last_referenced_date": "2026-04-10"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0029",
+    "event_id": "EVT-007",
+    "subject": "Approval needed: RITM-21754 - HubSpot super-admin access",
+    "participant_employee_ids": [
+      "EMP-015",
+      "EMP-026"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-026",
+        "from_name": "Megha Patil",
+        "to": [
+          "EMP-015"
+        ],
+        "date": "2026-04-09T10:05",
+        "body": "Vinod - RITM-21754 needs your approval (HubSpot super-admin access). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nMegha"
+      },
+      {
+        "from_employee_id": "EMP-015",
+        "from_name": "Vinod Krishnamurthy",
+        "to": [
+          "EMP-026"
+        ],
+        "date": "2026-04-09T15:40",
+        "body": "Approved on the ticket.\n\nVinod"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-007",
+      "RITM-21754"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-04-09",
+      "last_referenced_date": "2026-04-09"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0024",
+    "event_id": "EVT-008",
+    "subject": "Approved: ProdOperator session for Kinesis fix (19-Mar)",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-022",
+      "EMP-046"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-046",
+          "EMP-006"
+        ],
+        "date": "2026-03-19T10:12",
+        "body": "Harish - approved on the ticket, session is yours. Keep it to the checkpoint reset and the restart; anything else we discuss first. Rohan, FYI as this touches the v4 consumer.\n\nVarun"
+      },
+      {
+        "from_employee_id": "EMP-046",
+        "from_name": "Harish Gowda",
+        "to": [
+          "EMP-022",
+          "EMP-006"
+        ],
+        "date": "2026-03-19T12:10",
+        "body": "Done and session closed. Lag is draining at ~40k/min, should be caught up by 13:00. Notes on the ticket; I'll raise the retrospective CHG tomorrow morning.\n\nHarish"
+      },
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-046",
+          "EMP-006"
+        ],
+        "date": "2026-03-20T09:30",
+        "body": "Post-hoc review done - CloudTrail lines up with the ticket. Thanks for the clean write-up.\n\nVarun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-008"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "restricted",
+      "created_date": "2026-03-19",
+      "last_referenced_date": "2026-03-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0023",
+    "event_id": "EVT-008",
+    "subject": "Approval needed: RITM-21647 - Production elevated access (ProdOperator)",
+    "participant_employee_ids": [
+      "EMP-022",
+      "EMP-046"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-046",
+        "from_name": "Harish Gowda",
+        "to": [
+          "EMP-022"
+        ],
+        "date": "2026-03-19T10:05",
+        "body": "Varun - RITM-21647 needs your approval (Production elevated access (ProdOperator)). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nHarish"
+      },
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-046"
+        ],
+        "date": "2026-03-19T12:10",
+        "body": "Approved. Let me know if it doesn't come through in a couple of days.\n\nVarun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-008",
+      "RITM-21647"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "restricted",
+      "created_date": "2026-03-19",
+      "last_referenced_date": "2026-03-19"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0065",
+    "event_id": "EVT-009",
+    "subject": "RE: VPN connects then drops - Ethan Brooks",
+    "participant_employee_ids": [
+      "EMP-061",
+      "EMP-088"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-088",
+        "from_name": "Ethan Brooks",
+        "to": [
+          "IT-Access-Team"
+        ],
+        "date": "2026-06-26T20:15",
+        "body": "Hi - thanks for adding me to VPN. It connects, shows 'Connected' for about 20 seconds, then drops and reconnects in a loop. Metabase never loads. I'm on macOS 15, GlobalProtect 6.3, home fibre. Happy to jump on a call but I'm 12.5 hours behind you - I can do 7am my time (7:30pm IST).\n\nEthan"
+      },
+      {
+        "from_employee_id": "EMP-061",
+        "from_name": "Lakshmi Narayanan",
+        "to": [
+          "EMP-088"
+        ],
+        "date": "2026-06-27T09:20",
+        "body": "Hi Ethan, I've picked this up. Could you send the GlobalProtect logs (Settings > Troubleshooting > Collect Logs) and the output of `ping -D -s 1400 10.20.0.1` while connected? That'll tell us if it's a fragmentation issue, which the 20-second pattern suggests.\n\nLakshmi"
+      },
+      {
+        "from_employee_id": "EMP-088",
+        "from_name": "Ethan Brooks",
+        "to": [
+          "EMP-061"
+        ],
+        "date": "2026-06-27T19:50",
+        "body": "Logs attached. The 1400-byte ping fails ('Message too long'), 1300 works.\n\nEthan"
+      },
+      {
+        "from_employee_id": "EMP-061",
+        "from_name": "Lakshmi Narayanan",
+        "to": [
+          "EMP-088"
+        ],
+        "date": "2026-06-30T09:05",
+        "body": "That confirms it - your router is eating large packets (PPPoE overhead). I've pushed an MTU of 1380 to the remote-us gateway profile; please quit and reopen GlobalProtect and try again. I'm around till 7pm IST if you want to test early.\n\nLakshmi"
+      },
+      {
+        "from_employee_id": "EMP-088",
+        "from_name": "Ethan Brooks",
+        "to": [
+          "EMP-061"
+        ],
+        "date": "2026-06-30T19:35",
+        "body": "Stable for 20 minutes now and Metabase loads. Thank you!\n\nEthan"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-009"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-06-26",
+      "last_referenced_date": "2026-06-30"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0064",
+    "event_id": "EVT-009",
+    "subject": "Approval needed: RITM-22110 - VPN access",
+    "participant_employee_ids": [
+      "EMP-038",
+      "EMP-061",
+      "EMP-088"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-088",
+        "from_name": "Ethan Brooks",
+        "to": [
+          "EMP-038"
+        ],
+        "date": "2026-06-25T09:35",
+        "body": "Manoj - RITM-22110 needs your approval (VPN access). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nEthan"
+      },
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-088"
+        ],
+        "date": "2026-06-25T16:40",
+        "body": "Approved. Let me know if it doesn't come through in a couple of days.\n\nManoj"
+      },
+      {
+        "from_employee_id": "EMP-061",
+        "from_name": "Lakshmi Narayanan",
+        "to": [
+          "EMP-088"
+        ],
+        "date": "2026-06-30T15:00",
+        "body": "Ethan - your request RITM-22110 is done; you should see it after your next login. Closing the ticket.\n\nLakshmi"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-009",
+      "RITM-22110"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-06-25",
+      "last_referenced_date": "2026-06-30"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0048",
+    "event_id": "EVT-010",
+    "subject": "CFO sign-off needed: NetSuite read-only for Manish Tiwari (AOP support)",
+    "participant_employee_ids": [
+      "EMP-002",
+      "EMP-019"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-002"
+        ],
+        "date": "2026-05-20T15:45",
+        "body": "Vivek - Manish from Data Engineering is building the driver-based revenue model for the FY27 AOP with us and needs read-only NetSuite (saved searches, GL reports). Per the access rules for non-Finance users I need your sign-off on the ticket. Time-boxed to 31 December.\n\nAshwin"
+      },
+      {
+        "from_employee_id": "EMP-002",
+        "from_name": "Vivek Anand",
+        "to": [
+          "EMP-019"
+        ],
+        "date": "2026-05-22T08:20",
+        "body": "Approved on the ticket. Please make sure the role excludes payroll journals and employee records.\n\nVivek"
+      },
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-002"
+        ],
+        "date": "2026-05-22T09:02",
+        "body": "It does - Payal built a reporting-only role for exactly this. Thanks.\n\nAshwin"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-010"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "restricted",
+      "created_date": "2026-05-20",
+      "last_referenced_date": "2026-05-22"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0047",
+    "event_id": "EVT-010",
+    "subject": "Approval needed: RITM-21932 - NetSuite read-only (reporting) access",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-051"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-051",
+        "from_name": "Manish Tiwari",
+        "to": [
+          "EMP-016"
+        ],
+        "date": "2026-05-20T09:05",
+        "body": "Hi Suresh,\n\nGentle nudge on RITM-21932 (NetSuite read-only (reporting) access) - it's sitting in your approvals list. Happy to add any justification you need.\n\nManish"
+      },
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-051"
+        ],
+        "date": "2026-05-20T14:25",
+        "body": "Approved on the ticket.\n\nSuresh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-010",
+      "RITM-21932"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "restricted",
+      "created_date": "2026-05-20",
+      "last_referenced_date": "2026-05-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0102",
+    "event_id": "EVT-011",
+    "subject": "Approval needed: 2 Zendesk agent seats (Rs 1.2L/yr)",
+    "participant_employee_ids": [
+      "EMP-007",
+      "EMP-017"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-007"
+        ],
+        "date": "2026-09-01T12:30",
+        "body": "Rahul - we're out of Zendesk agent seats and Tara (new Support Engineer, started today) can't reply to customers on a light seat. I've raised a purchase request for two seats (Rs 1,20,000/yr, co-termed). It needs your approval as Department Head; Procurement will handle the PO. Budget is in the CS SaaS line.\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-09-02T08:15",
+        "body": "Approved on the ticket. Let's also make sure the FY27 plan has seats for the two Q4 hires so we're not doing this per person.\n\nRahul"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-007"
+        ],
+        "date": "2026-09-02T08:40",
+        "body": "Will do - I'll add it to the AOP headcount sheet. Thanks.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-011"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-09-01",
+      "last_referenced_date": "2026-09-02"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0101",
+    "event_id": "EVT-011",
+    "subject": "Approval needed: RITM-22530 - Purchase request: 2 x Zendesk Suite agent seats (annual)",
+    "participant_employee_ids": [
+      "EMP-007",
+      "EMP-017"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-007"
+        ],
+        "date": "2026-09-01T09:20",
+        "body": "Hi Rahul,\n\nGentle nudge on RITM-22530 (Purchase request: 2 x Zendesk Suite agent seats (annual)) - it's sitting in your approvals list. Happy to add any justification you need.\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-09-01T17:10",
+        "body": "Approved on the ticket.\n\nRahul"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-011",
+      "RITM-22530"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-09-01",
+      "last_referenced_date": "2026-09-01"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0010",
+    "event_id": "EVT-012",
+    "subject": "RE: Chargebee read access - scope",
+    "participant_employee_ids": [
+      "EMP-009",
+      "EMP-027",
+      "EMP-052"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-009",
+        "from_name": "Deepa Subramanian",
+        "to": [
+          "EMP-052",
+          "EMP-027"
+        ],
+        "date": "2026-01-23T10:40",
+        "body": "Hi Simran,\n\nHappy to approve, one clarification first: Chargebee doesn't let us scope a viewer to 'your' accounts - the Invoice Viewer role sees invoices and payment status for all customers. It doesn't show card details or payroll data. If that's acceptable, please reply confirming you've read the Data Classification standard (customer billing = Restricted, no exports outside Finance without approval) and I'll approve.\n\nDeepa"
+      },
+      {
+        "from_employee_id": "EMP-052",
+        "from_name": "Simran Kaur",
+        "to": [
+          "EMP-009",
+          "EMP-027"
+        ],
+        "date": "2026-01-26T09:15",
+        "body": "Understood and confirmed - I only need to look up status before calls, no exports. Thanks Deepa.\n\nSimran"
+      },
+      {
+        "from_employee_id": "EMP-009",
+        "from_name": "Deepa Subramanian",
+        "to": [
+          "EMP-052",
+          "EMP-027"
+        ],
+        "date": "2026-01-26T09:50",
+        "body": "Approved on the ticket; Anusha will set it up.\n\nDeepa"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-012"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "restricted",
+      "created_date": "2026-01-23",
+      "last_referenced_date": "2026-01-26"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0009",
+    "event_id": "EVT-012",
+    "subject": "Approval needed: RITM-21393 - Chargebee read-only (Invoice Viewer)",
+    "participant_employee_ids": [
+      "EMP-027",
+      "EMP-052",
+      "EMP-063"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-052",
+        "from_name": "Simran Kaur",
+        "to": [
+          "EMP-027"
+        ],
+        "date": "2026-01-22T10:50",
+        "body": "Hi Natasha,\n\nCould you approve RITM-21393 in ServiceNow when you have a minute? It's the Chargebee read-only (Invoice Viewer). The IAM clock only starts once the approval is recorded.\n\nThanks,\nSimran"
+      },
+      {
+        "from_employee_id": "EMP-027",
+        "from_name": "Natasha D'Souza",
+        "to": [
+          "EMP-052"
+        ],
+        "date": "2026-01-23T14:10",
+        "body": "Done - approved just now. FYI I've set a delegate in Darwinbox for next week in case anything else comes up.\n\nNatasha"
+      },
+      {
+        "from_employee_id": "EMP-063",
+        "from_name": "Anusha Rao",
+        "to": [
+          "EMP-052"
+        ],
+        "date": "2026-01-27T16:45",
+        "body": "Hi Simran,\n\nRITM-21393 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nAnusha"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-012",
+      "RITM-21393"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "restricted",
+      "created_date": "2026-01-22",
+      "last_referenced_date": "2026-01-27"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0070",
+    "event_id": "EVT-013",
+    "subject": "Tier 2 - access and expectations",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-055"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-055"
+        ],
+        "date": "2026-07-08T09:20",
+        "body": "Hi Preeti,\n\nCongratulations again. For Tier 2 you'll need the support@ shared mailbox and the Zendesk Tier 2 group - please raise both in ServiceNow today and I'll approve. Escalations to Engineering go through a linked SUP issue and #customer-success, P1s also to #incidents. And please do finish the 'Handling Customer Data' course this month - the Admin Console access you got in January was on my attestation and the new policy expects the course.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-013"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-07-08",
+      "last_referenced_date": "2026-07-08"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0071",
+    "event_id": "EVT-013",
+    "subject": "Approval needed: RITM-22169 - Shared mailbox access: support@algoworks.io",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-055"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-055",
+        "from_name": "Preeti Nambiar",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-07-08T10:20",
+        "body": "Hi Anita,\n\nGentle nudge on RITM-22169 (Shared mailbox access: support@algoworks.io) - it's sitting in your approvals list. Happy to add any justification you need.\n\nPreeti"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-055"
+        ],
+        "date": "2026-07-08T14:25",
+        "body": "Approved on the ticket.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-013",
+      "RITM-22169"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-07-08",
+      "last_referenced_date": "2026-07-08"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0014",
+    "event_id": "EVT-014",
+    "subject": "GitHub seats - non-engineering users",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-029"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-006"
+        ],
+        "date": "2026-02-12T11:20",
+        "body": "Rohan - with Omar we'll be at 119 of 120 GitHub seats. Three more designers/writers have asked informally. Do you want to keep approving these case by case or should we ask Procurement for a 10-seat top-up at the April renewal?\n\nKavya"
+      },
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-029"
+        ],
+        "date": "2026-02-12T13:05",
+        "body": "Case by case for now, but yes - put 10 seats in the renewal request; I'll back it. For designers, write on the assets repo only, and always via the brand-contributors team so we can review it in one place.\n\nRohan"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-014"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-02-12",
+      "last_referenced_date": "2026-02-12"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0013",
+    "event_id": "EVT-014",
+    "subject": "Approval needed: RITM-21467 - GitHub access (algoworks-brand-assets repo)",
+    "participant_employee_ids": [
+      "EMP-030",
+      "EMP-045"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-045",
+        "from_name": "Omar Farooq",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-02-11T09:05",
+        "body": "Ankit - RITM-21467 needs your approval (GitHub access (algoworks-brand-assets repo)). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nOmar"
+      },
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-045"
+        ],
+        "date": "2026-02-11T16:25",
+        "body": "Approved. FYI I've set a delegate in Darwinbox for next week in case anything else comes up.\n\nAnkit"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-014",
+      "RITM-21467"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-02-11",
+      "last_referenced_date": "2026-02-11"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0099",
+    "event_id": "EVT-015",
+    "subject": "Datadog viewer - which dashboards to use in QBRs",
+    "participant_employee_ids": [
+      "EMP-022",
+      "EMP-049"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-049"
+        ],
+        "date": "2026-08-28T10:30",
+        "body": "Sameer,\n\nYou're set up as a viewer. For QBRs use 'Tenant SLO' (per-customer latency/uptime, already filtered to exclude internal tenants) and 'Platform SLOs' for the overall picture. Please don't screenshot the infrastructure dashboards - they include hostnames and account IDs we don't share externally.\n\nVarun"
+      },
+      {
+        "from_employee_id": "EMP-049",
+        "from_name": "Sameer Khan",
+        "to": [
+          "EMP-022"
+        ],
+        "date": "2026-08-28T10:45",
+        "body": "Understood, Tenant SLO only. Thanks Varun.\n\nSameer"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-015"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-08-28",
+      "last_referenced_date": "2026-08-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0098",
+    "event_id": "EVT-015",
+    "subject": "Approval needed: RITM-22507 - Datadog read-only (viewer)",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-049",
+      "EMP-064"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-049",
+        "from_name": "Sameer Khan",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-08-27T09:50",
+        "body": "Hi Anita,\n\nGentle nudge on RITM-22507 (Datadog read-only (viewer)) - it's sitting in your approvals list. Happy to add any justification you need.\n\nSameer"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-049"
+        ],
+        "date": "2026-08-28T13:10",
+        "body": "Done - approved just now. \n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-064",
+        "from_name": "Nandini Rajan",
+        "to": [
+          "EMP-049"
+        ],
+        "date": "2026-08-28T17:15",
+        "body": "Sameer - your request RITM-22507 is done; you should see it after your next login. Closing the ticket.\n\nNandini"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-015",
+      "RITM-22507"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-08-27",
+      "last_referenced_date": "2026-08-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0067",
+    "event_id": "EVT-016",
+    "subject": "Q2 2026 access review - summary and actions",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-010",
+      "EMP-029"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-010",
+          "EMP-004"
+        ],
+        "date": "2026-07-01T17:20",
+        "body": "Nikhil, Sandeep,\n\nQ2 review is done (Okta, Salesforce, NetSuite, Admin Console, AWS). Summary:\n- Salesforce: 14 stale licences -> ticket to Sales Ops.\n- Contractors: 3 accounts past expiry still enabled (pre-June process) -> disabled today; auto-expiry now applied to all ext- accounts.\n- NetSuite: 2 stale full licences -> ticket to Finance Systems.\n- Admin Console: 31 members of console-readonly; 4 with no login in 90 days -> Rohan removing.\n- AWS: no findings.\n\nOne process note: Salesforce licences assigned directly (not via Okta group) survive Okta deprovisioning. Megha and I will migrate the remaining direct assignments to groups in Q3.\n\nFull write-up on Confluence: Q2 2026 Quarterly Access Review.\n\nKavya"
+      },
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-029",
+          "EMP-004"
+        ],
+        "date": "2026-07-02T09:10",
+        "body": "Good work. Please add the direct-assignment migration to the Q3 plan and include the pii-reader membership in the Q3 review - that one hasn't been reviewed since Pradeep left.\n\nNikhil"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-016"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-07-01",
+      "last_referenced_date": "2026-07-02"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0106",
+    "event_id": "EVT-017",
+    "subject": "Welcome to Product Marketing!",
+    "participant_employee_ids": [
+      "EMP-042",
+      "EMP-100"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-042",
+        "from_name": "Sanya Kapadia",
+        "to": [
+          "EMP-100"
+        ],
+        "date": "2026-09-15T08:05",
+        "body": "Hi Lavanya,\n\nWelcome! Today: IT handover 9:30, HR induction 9:30-11 (yes, they overlap - IT will be quick), then lunch with the team at 12:30. I've requested HubSpot and Salesforce read-only for you; both should be through by tomorrow. Varsha will be your buddy and will walk you through the v4 launch plan - we're four weeks out from 6 October.\n\nSanya"
+      },
+      {
+        "from_employee_id": "EMP-100",
+        "from_name": "Lavanya Bhat",
+        "to": [
+          "EMP-042"
+        ],
+        "date": "2026-09-16T10:20",
+        "body": "Thanks Sanya - HubSpot came through yesterday and Salesforce this morning. Reading the launch plan now.\n\nLavanya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-017"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-09-15",
+      "last_referenced_date": "2026-09-16"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0037",
+    "event_id": "EVT-018",
+    "subject": "Greenhouse Site Admin - temporary",
+    "participant_employee_ids": [
+      "EMP-024",
+      "EMP-033"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-024",
+        "from_name": "Rohit Sinha",
+        "to": [
+          "EMP-033"
+        ],
+        "date": "2026-04-28T14:10",
+        "body": "Nisha - done, you're Site Admin until 28 May (ticket has the end date so IAM will nudge me). Please don't change the offer approval chain for non-campus jobs; Sunita signed that off separately.\n\nRohit"
+      },
+      {
+        "from_employee_id": "EMP-033",
+        "from_name": "Nisha Pandey",
+        "to": [
+          "EMP-024"
+        ],
+        "date": "2026-04-28T14:25",
+        "body": "Understood - campus jobs only. Thanks!\n\nNisha"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-018"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-04-28",
+      "last_referenced_date": "2026-04-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0036",
+    "event_id": "EVT-018",
+    "subject": "Approval needed: RITM-21827 - Temporary Greenhouse Site Admin (30 days)",
+    "participant_employee_ids": [
+      "EMP-024",
+      "EMP-033"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-033",
+        "from_name": "Nisha Pandey",
+        "to": [
+          "EMP-024"
+        ],
+        "date": "2026-04-28T10:50",
+        "body": "Rohit - RITM-21827 needs your approval (Temporary Greenhouse Site Admin (30 days)). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nNisha"
+      },
+      {
+        "from_employee_id": "EMP-024",
+        "from_name": "Rohit Sinha",
+        "to": [
+          "EMP-033"
+        ],
+        "date": "2026-04-28T12:10",
+        "body": "Done - approved just now. Please keep it to what you actually need.\n\nRohit"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-018",
+      "RITM-21827"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-04-28",
+      "last_referenced_date": "2026-04-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0019",
+    "event_id": "EVT-019",
+    "subject": "RE: Snowflake raw access request - alternative",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-038",
+      "EMP-051",
+      "EMP-078"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-078",
+          "EMP-038"
+        ],
+        "date": "2026-03-05T16:30",
+        "body": "Hi Yash, Manoj,\n\nI can't grant raw access here - RAW.* is limited to engineering roles and RAW.SIGNUPS has email and phone columns, which would need a PII sign-off we currently can't get. But the question is a good one and we should answer it properly. Proposal: Manish builds an attribution mart (channel, campaign, signup and first-trip dates, hashed account id) and exposes it in Metabase with SQL enabled for you. Should take about a week. OK?\n\nSuresh"
+      },
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-016",
+          "EMP-078"
+        ],
+        "date": "2026-03-05T17:05",
+        "body": "Works for us - as long as Yash can write his own SQL against it. Thanks Suresh.\n\nManoj"
+      },
+      {
+        "from_employee_id": "EMP-051",
+        "from_name": "Manish Tiwari",
+        "to": [
+          "EMP-078",
+          "EMP-016",
+          "EMP-038"
+        ],
+        "date": "2026-03-12T11:40",
+        "body": "MARKETING_MART.ATTRIBUTION is live and refreshed hourly; Metabase collection 'Marketing Attribution' is shared with Demand Gen. Column notes are on the Confluence page. Yash, you have SQL on that mart.\n\nManish"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-019"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-03-05",
+      "last_referenced_date": "2026-03-12"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0018",
+    "event_id": "EVT-019",
+    "subject": "Approval needed: RITM-21567 - Snowflake access to RAW.PRODUCT_EVENTS",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-038",
+      "EMP-078"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-078",
+        "from_name": "Yash Agrawal",
+        "to": [
+          "EMP-038"
+        ],
+        "date": "2026-03-05T11:05",
+        "body": "Manoj - RITM-21567 needs your approval (Snowflake access to RAW.PRODUCT_EVENTS). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nYash"
+      },
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-078"
+        ],
+        "date": "2026-03-06T14:10",
+        "body": "Done - approved just now. Let me know if it doesn't come through in a couple of days.\n\nManoj"
+      },
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-078"
+        ],
+        "date": "2026-03-12T16:30",
+        "body": "Hi Yash,\n\nRITM-21567 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nSuresh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-019",
+      "RITM-21567"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-03-05",
+      "last_referenced_date": "2026-03-12"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0040",
+    "event_id": "EVT-020",
+    "subject": "Credentials in Slack - what happened today and what changes",
+    "participant_employee_ids": [
+      "EMP-007",
+      "EMP-027",
+      "EMP-041"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-041",
+        "from_name": "Amit Saxena",
+        "to": [
+          "EMP-027",
+          "EMP-007"
+        ],
+        "date": "2026-05-06T15:40",
+        "body": "Natasha, Rahul,\n\nSummary of this morning: a demo tenant admin password was posted in #sales-team; it was deleted within 15 minutes and I rotated it. No sign of misuse (the demo tenant has no customer data). The Password & MFA Standard is clear that shared credentials live in 1Password vaults, so from tomorrow the Sales-Demo vault is the only place for demo logins - anything found in Slack, notes or email will be rotated without notice. Not a disciplinary matter, but please reinforce it at the team meeting.\n\nAmit"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-041",
+          "EMP-027"
+        ],
+        "date": "2026-05-06T17:10",
+        "body": "Will do. Thanks for the quick response.\n\nRahul"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-020"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-05-06",
+      "last_referenced_date": "2026-05-06"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0022",
+    "event_id": "EVT-021",
+    "subject": "[RESOLVED] Sev1 - AlgoWorks Fleet API outage 17-Mar 14:05-14:52 IST",
+    "participant_employee_ids": [
+      "EMP-001",
+      "EMP-022"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "Eng-All"
+        ],
+        "date": "2026-03-17T15:20",
+        "body": "All,\n\nSummary of today's Sev1:\n- Impact: ~60% of API requests failed for 47 minutes (14:05-14:52 IST). Customer portal errors; driver app check-ins queued offline and have since synced. 38 customers affected.\n- Cause: algoworks-api-gateway 4.2.0 reduced the PgBouncer pool size per pod (200 -> 50). Under production concurrency this exhausted connections. Staging did not reproduce.\n- Fix: rolled back to 4.1.7 via ArgoCD at 14:40; recovered 14:52.\n- Next: postmortem by Friday (Rohan owns), customer comms from CS at 15:30.\n\nThanks to Harish, Priya and Karthik for a fast rollback.\n\nVarun"
+      },
+      {
+        "from_employee_id": "EMP-001",
+        "from_name": "Arjun Venkataraman",
+        "to": [
+          "Eng-All"
+        ],
+        "date": "2026-03-17T16:02",
+        "body": "Thanks Varun and team. Two things I want in the postmortem: why our staging load profile didn't catch this, and whether pool-size changes should be flagged as high-risk in PR review. Blameless, but let's learn it properly.\n\nArjun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-021"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-03-17",
+      "last_referenced_date": "2026-03-17"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0021",
+    "event_id": "EVT-021",
+    "subject": "Customer comms draft - 17-Mar API incident",
+    "participant_employee_ids": [
+      "EMP-011",
+      "EMP-017",
+      "EMP-042"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-042",
+          "EMP-011"
+        ],
+        "date": "2026-03-17T15:05",
+        "body": "Sanya, Kavita - per the incident SOP, please review the wording below before we send to the 38 affected accounts (target 15:30):\n\n'Between 14:05 and 14:52 IST today the AlgoWorks Fleet API and portal experienced elevated errors following a platform update. The update was rolled back and service is fully restored. Driver app activity recorded during this window has synced automatically. We will share a root-cause summary within 24 hours. We apologise for the disruption.'\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-042",
+        "from_name": "Sanya Kapadia",
+        "to": [
+          "EMP-017",
+          "EMP-011"
+        ],
+        "date": "2026-03-17T15:18",
+        "body": "Looks good - one change: 'following a platform update' -> 'following a scheduled platform update' reads as more controlled. Approved from Marketing.\n\nSanya"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-042",
+          "EMP-011"
+        ],
+        "date": "2026-03-17T15:32",
+        "body": "Sent with that change. RCA summary tomorrow.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-021"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-03-17",
+      "last_referenced_date": "2026-03-17"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0052",
+    "event_id": "EVT-022",
+    "subject": "Chargebee -> NetSuite sync gap 24-27 May - root cause",
+    "participant_employee_ids": [
+      "EMP-009",
+      "EMP-063",
+      "EMP-067",
+      "EMP-077"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-067",
+        "from_name": "Daniel Fernandes",
+        "to": [
+          "EMP-063",
+          "EMP-009",
+          "EMP-077"
+        ],
+        "date": "2026-05-27T17:05",
+        "body": "Hi all,\n\nFound it. The webhook signing secret in Chargebee was rotated on 22 May; our sync service still had the old one in Secrets Manager, so every webhook since Sunday 03:10 failed signature validation and was dropped (Chargebee retries for 24h then gives up). I've updated the secret and replayed the 312 events from the Chargebee log - invoices are flowing again and I'll confirm the AR total tomorrow morning.\n\nSanjay - not a blame thing, the rotation was the right call for SOC 2; we just didn't have the dependency written down anywhere. I've added it to the rotation checklist and we're adding an alert.\n\nDaniel"
+      },
+      {
+        "from_employee_id": "EMP-077",
+        "from_name": "Sanjay Dutta",
+        "to": [
+          "EMP-067",
+          "EMP-063",
+          "EMP-009"
+        ],
+        "date": "2026-05-27T17:30",
+        "body": "Apologies - I rotated it from the Chargebee admin console and assumed the integration read it from Chargebee. I'll route future rotations through a ticket to Platform first.\n\nSanjay"
+      },
+      {
+        "from_employee_id": "EMP-009",
+        "from_name": "Deepa Subramanian",
+        "to": [
+          "EMP-067",
+          "EMP-063",
+          "EMP-077"
+        ],
+        "date": "2026-05-28T11:20",
+        "body": "AR reconciles this morning, thank you Daniel. Adding this to the revenue automation project risk log - the new pipeline must alert on any sync gap rather than fail silently.\n\nDeepa"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-022"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-05-27",
+      "last_referenced_date": "2026-05-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0074",
+    "event_id": "EVT-023",
+    "subject": "Zendesk login loop - incident summary",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-010",
+      "EMP-017"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-004",
+          "EMP-017"
+        ],
+        "date": "2026-07-15T14:30",
+        "body": "Sandeep, Anita,\n\nToday's Zendesk login loop (10:40-12:35) was caused by an Okta SAML setting change made during cleanup from the Q2 access review, without a change record. Lakshmi reverted it. No customer SLAs were missed thanks to CS working the two enterprise P1s by phone. Actions: Okta app-configuration changes go through a CHG from now on (they are in scope of the Change Management Policy already - we just didn't treat 'cleanup' as a change), and I'll review the Okta admin change log weekly.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-010",
+          "EMP-004"
+        ],
+        "date": "2026-07-15T14:50",
+        "body": "Thanks Nikhil - appreciated the fast rollback.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-023"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-07-15",
+      "last_referenced_date": "2026-07-15"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0012",
+    "event_id": "EVT-024",
+    "subject": "Pune payslips - root cause and fix",
+    "participant_employee_ids": [
+      "EMP-005",
+      "EMP-009",
+      "EMP-031"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-031",
+        "from_name": "Vijay Kumar",
+        "to": [
+          "EMP-009",
+          "EMP-005"
+        ],
+        "date": "2026-02-05T18:10",
+        "body": "Deepa, Geeta,\n\nRoot cause of the missing Pune payslips: Keka's 28-Jan release renamed our Pune branch entity code, and the Darwinbox push filters on that code. Keka support have remapped it; I'll re-run the January push tomorrow morning and verify all 12. For anyone who needs a payslip urgently before then I'm sending signed PDFs.\n\nI've also added a check to the post-payroll checklist so we catch a count mismatch before employees do.\n\nVijay"
+      },
+      {
+        "from_employee_id": "EMP-005",
+        "from_name": "Geeta Iyengar",
+        "to": [
+          "EMP-031",
+          "EMP-009"
+        ],
+        "date": "2026-02-05T18:30",
+        "body": "Thanks Vijay. HR Ops has had 11 queries on this; I'll post an update in #people-ops once you confirm tomorrow.\n\nGeeta"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-024"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "restricted",
+      "created_date": "2026-02-05",
+      "last_referenced_date": "2026-02-05"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0058",
+    "event_id": "EVT-025",
+    "subject": "CI runners restored - what happened",
+    "participant_employee_ids": [
+      "EMP-075"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-075",
+        "from_name": "Siddharth Jain",
+        "to": [
+          "Eng-All"
+        ],
+        "date": "2026-06-11T12:45",
+        "body": "All,\n\nThe self-hosted GitHub Actions runners were offline from 09:20 to 12:25 because the Docker layer cache filled their disks - the nightly prune was lost when the runner AMI was rebuilt in April. Queue has drained. Permanent fix (prune baked into the AMI + a disk alert) goes to Tuesday's CAB; the runner runbook is updated. Sorry for the lost morning.\n\nSiddharth"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-025"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-06-11",
+      "last_referenced_date": "2026-06-11"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0094",
+    "event_id": "EVT-026",
+    "subject": "Driver App 3.8.0 - Android 15 crash - hotfix status",
+    "participant_employee_ids": [
+      "EMP-013",
+      "EMP-017",
+      "EMP-042"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-017",
+          "EMP-042"
+        ],
+        "date": "2026-08-20T10:05",
+        "body": "Anita, Sanya - heads-up on the Driver App crash on Android 15 (only ~10% of drivers got 3.8.0 before we halted). Farhan has the cause; hotfix 3.8.1 targeted for this evening. Workaround for affected drivers: uninstall the update or use web check-in. We'll skip the 48-hour soak for the hotfix given it's a one-line fix with a clear repro - I'm approving that under the release SOP's emergency clause. Will update by 16:00.\n\nMeera"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-013",
+          "EMP-042"
+        ],
+        "date": "2026-08-20T10:20",
+        "body": "Thanks Meera. Comms with the workaround going out to the 9 affected accounts at 10:30.\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-017",
+          "EMP-042"
+        ],
+        "date": "2026-08-20T19:20",
+        "body": "3.8.1 is live on Play for the affected cohort; crash-free rate recovered. Full rollout resumes tomorrow.\n\nMeera"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-026"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-08-20",
+      "last_referenced_date": "2026-08-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0011",
+    "event_id": "EVT-027",
+    "subject": "Snowflake January overspend - cause and controls",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-019",
+      "EMP-047"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-019",
+          "EMP-047"
+        ],
+        "date": "2026-01-29T12:40",
+        "body": "Ashwin, Nithin,\n\nWe've exceeded the January Snowflake budget by roughly USD 7,200. One Metabase dashboard with a bad join was refreshing hourly on the large warehouse for nine days. It's killed and fixed. Controls going in today: Metabase pinned to an XS warehouse with a 5-minute timeout, and auto-suspend dropped to 60 seconds.\n\nI'd like to propose a proper cost project for Q2 - per-team warehouses and a credit budget FP&A owns. Can we discuss in the SaaS spend review?\n\nSuresh"
+      },
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-016",
+          "EMP-047"
+        ],
+        "date": "2026-01-29T14:05",
+        "body": "Yes - and I'd like Nithin on that project from our side. For now, please keep the resource monitor at the raised level only until month-end and drop it back on 1 Feb.\n\nAshwin"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-027"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-01-29",
+      "last_referenced_date": "2026-01-29"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0005",
+    "event_id": "EVT-028",
+    "subject": "Okta outage this morning (09:40-10:20) - what happened",
+    "participant_employee_ids": [
+      "EMP-004"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "All-Company"
+        ],
+        "date": "2025-11-18T12:30",
+        "body": "All,\n\nBetween 09:40 and 10:20 this morning Okta - our login provider - had a service outage in its Asia-Pacific region. During that window nobody could sign in to Slack, email, ServiceNow or other apps unless they were already signed in. Okta has confirmed the cause was on their side; no AlgoWorks systems or data were affected, and no action is needed from you.\n\nBecause our ticketing system is behind Okta too, the Service Desk took reports by phone and WhatsApp. If you are not in the office WhatsApp group, please ask your team lead to add you - it is our fallback channel for exactly this situation.\n\nSandeep\nHead of IT & Infrastructure"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-028"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-11-18",
+      "last_referenced_date": "2025-11-18"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0006",
+    "event_id": "EVT-028",
+    "subject": "Okta outage 18-Nov - post-incident note",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-010"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-004"
+        ],
+        "date": "2025-11-19T09:40",
+        "body": "Sandeep,\n\nPost-incident note for yesterday's Okta outage (09:38-10:19, vendor cell ap-1). What worked: the runbook, the WhatsApp fallback, phone logging by the Service Desk (5 tickets). What didn't: about a third of staff aren't in the WhatsApp group, and Slack/ServiceNow being behind Okta means we have no in-band channel. Proposals: (1) HR adds everyone to the group at onboarding; (2) we keep a static status page outside Okta; (3) Okta Verify enrolment drive so sessions survive longer. No config was touched; break-glass use is logged.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "EMP-010"
+        ],
+        "date": "2025-11-19T11:00",
+        "body": "Agree with all three. Please take (1) to Geeta and (2) to Rajesh.\n\nSandeep"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-028"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-11-19",
+      "last_referenced_date": "2025-11-19"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0034",
+    "event_id": "EVT-029",
+    "subject": "[Security] Phishing email impersonating the CFO - do not respond",
+    "participant_employee_ids": [
+      "EMP-002",
+      "EMP-041"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-041",
+        "from_name": "Amit Saxena",
+        "to": [
+          "All-Company"
+        ],
+        "date": "2026-04-22T09:50",
+        "body": "All,\n\nThis morning some of you received an email that appears to be from Vivek Anand with the subject 'URGENT: vendor bank change - action needed before 11am'. It is a phishing attempt from a lookalike domain (algoworks-finance.com). We have removed it from mailboxes and blocked the sender.\n\nIf you clicked the link or entered your password, please call the Service Desk now (ext. 200) - you will not be in trouble. Reminder: AlgoWorks will never ask for passwords or bank-detail changes by email; vendor bank changes go through Finance AP with a call-back check.\n\nUse the 'Report Phish' button in Outlook for anything suspicious.\n\nAmit Saxena\nSecurity Engineer"
+      },
+      {
+        "from_employee_id": "EMP-002",
+        "from_name": "Vivek Anand",
+        "to": [
+          "All-Company"
+        ],
+        "date": "2026-04-22T10:15",
+        "body": "To be clear: that email did not come from me, and I will never send payment instructions by email. Thank you Bhavana for reporting it quickly.\n\nVivek"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-029"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-04-22",
+      "last_referenced_date": "2026-04-22"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0054",
+    "event_id": "EVT-030",
+    "subject": "Certificate and token inventory - now on the IT Runbooks page",
+    "participant_employee_ids": [
+      "EMP-008",
+      "EMP-010",
+      "EMP-022",
+      "EMP-061"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-061",
+        "from_name": "Lakshmi Narayanan",
+        "to": [
+          "EMP-010",
+          "EMP-008",
+          "EMP-022"
+        ],
+        "date": "2026-06-04T16:20",
+        "body": "All,\n\nAfter yesterday's VPN certificate expiry I've created a certificate & token inventory on the IT Runbooks page: VPN portal/gateway certs, the Okta signing cert, Datadog and Vercel API tokens, and (added today at Rajesh's request) the Apple Business Manager token and APNs certificate for Intune. Each row has an owner and a backup, and Datadog synthetics now alert at 30 and 7 days for the public endpoints. Please add anything you own that I've missed.\n\nLakshmi"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-030"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-06-04",
+      "last_referenced_date": "2026-06-04"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0104",
+    "event_id": "EVT-031",
+    "subject": "ABM token expiry - added to the inventory",
+    "participant_employee_ids": [
+      "EMP-008",
+      "EMP-059"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-059",
+        "from_name": "Mohammed Irfan",
+        "to": [
+          "EMP-008"
+        ],
+        "date": "2026-09-09T13:10",
+        "body": "Rajesh,\n\nRoot cause of the Mac enrolment failures was the Apple Business Manager MDM token expiring on 8 September (annual). Renewed and uploaded; all three devices enrolled by noon. I've added the ABM token (next expiry 9 Sep 2027) and the APNs certificate (14 Nov 2026) to Lakshmi's certificate & token inventory with calendar reminders at 30 and 7 days - same failure pattern as the VPN cert in June, so same fix.\n\nMohammed"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-031"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-09-09",
+      "last_referenced_date": "2026-09-09"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0083",
+    "event_id": "EVT-032",
+    "subject": "Duplicate leads - regression from April mapping change",
+    "participant_employee_ids": [
+      "EMP-015",
+      "EMP-026",
+      "EMP-038",
+      "EMP-060"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-015",
+          "EMP-060",
+          "EMP-026"
+        ],
+        "date": "2026-07-29T16:40",
+        "body": "Vinod,\n\nThe duplicate leads are back - about 430 over three days. Cause is embarrassing: the APAC re-sync workflow we disabled in January got re-published when the connector mapping was changed in April. It's off again and Megha is merging. Two changes: Aparna gets an alert on any HubSpot workflow status change, and we'll enforce the Jira-ticket-plus-sandbox rule from the hygiene policy for every mapping change, including ours.\n\nManoj"
+      },
+      {
+        "from_employee_id": "EMP-015",
+        "from_name": "Vinod Krishnamurthy",
+        "to": [
+          "EMP-038",
+          "EMP-060",
+          "EMP-026"
+        ],
+        "date": "2026-07-29T17:15",
+        "body": "Thanks for the straight answer. SDRs have been double-calling prospects; Megha, please send the corrected ownership list to Natasha tonight so nobody calls the same person twice tomorrow.\n\nVinod"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-032"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-07-29",
+      "last_referenced_date": "2026-07-29"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0041",
+    "event_id": "EVT-033",
+    "subject": "Standby monitoring - redesign after the alert storm",
+    "participant_employee_ids": [
+      "EMP-022",
+      "EMP-046",
+      "EMP-064"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-064",
+        "from_name": "Nandini Rajan",
+        "to": [
+          "EMP-022",
+          "EMP-046"
+        ],
+        "date": "2026-05-08T16:30",
+        "body": "Varun, Harish,\n\nWrite-up of this morning: cloning the Mumbai monitors onto the Singapore standby produced ~340 pages in two hours because every throughput monitor fired against zero traffic. I've replaced them with a 12-monitor standby set (cluster health, node readiness, RDS replica lag, ArgoCD sync status, certificate expiry). The full set is re-enabled only by the failover runbook. Abhishek has been taken off pager for the rest of the day. Proposal for the SRE sync: any monitor that pages more than three times in a week without action gets reviewed.\n\nNandini"
+      },
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-064",
+          "EMP-046"
+        ],
+        "date": "2026-05-08T17:05",
+        "body": "Approved; put the three-times rule into the On-Call policy update.\n\nVarun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-033"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-05-08",
+      "last_referenced_date": "2026-05-08"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0015",
+    "event_id": "EVT-034",
+    "subject": "Slack outage - use Teams or email until further notice",
+    "participant_employee_ids": [
+      "EMP-008"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "All-Company"
+        ],
+        "date": "2026-02-19T13:30",
+        "body": "All,\n\nSlack is having a global outage (confirmed on status.slack.com) since about 13:10. This is on Slack's side and there is nothing to fix on your laptop. Until it recovers:\n- Urgent messages: Microsoft Teams chat or phone.\n- Incidents: the 'IT-Incidents' channel in Teams.\n- Approvals: email, so there is a record.\n\nWe'll send an all-clear when Slack is back.\n\nRajesh Kumar\nIT Service Desk"
+      },
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "All-Company"
+        ],
+        "date": "2026-02-19T15:25",
+        "body": "All-clear - Slack has recovered as of 15:20. Thanks for your patience.\n\nRajesh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-034"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-02-19",
+      "last_referenced_date": "2026-02-19"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0088",
+    "event_id": "EVT-035",
+    "subject": "July close - one day delay (Zoho integration duplicates)",
+    "participant_employee_ids": [
+      "EMP-002",
+      "EMP-014",
+      "EMP-019"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-019",
+          "EMP-002"
+        ],
+        "date": "2026-08-06T15:30",
+        "body": "Ashwin, Vivek,\n\nWe found duplicate expense journals for 3 and 4 August from the new Zoho integration (retry re-posted after a NetSuite timeout). Payal is reversing the duplicates this afternoon and Manish has a fix going in tomorrow morning. Net effect: the July close slips one day - BD+6 lock on Friday instead of Thursday. Amounts are small (Rs 2.14 lakh) and fully identified.\n\nShalini"
+      },
+      {
+        "from_employee_id": "EMP-002",
+        "from_name": "Vivek Anand",
+        "to": [
+          "EMP-014",
+          "EMP-019"
+        ],
+        "date": "2026-08-06T16:05",
+        "body": "Fine, one day is acceptable. Please add a duplicate check to the close checklist so this is caught at BD+2 every month, not by luck.\n\nVivek"
+      },
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-014",
+          "EMP-002"
+        ],
+        "date": "2026-08-06T16:20",
+        "body": "Adding it to v6 of the checklist now.\n\nAshwin"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-035"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "restricted",
+      "created_date": "2026-08-06",
+      "last_referenced_date": "2026-08-06"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0027",
+    "event_id": "EVT-036",
+    "subject": "Wi-Fi controller firmware - process change",
+    "participant_employee_ids": [
+      "EMP-008",
+      "EMP-023"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-023",
+        "from_name": "Shruti Joshi",
+        "to": [
+          "EMP-008"
+        ],
+        "date": "2026-03-31T14:20",
+        "body": "Rajesh,\n\nFloor 3 was down 09:00-11:35 because the wireless controller auto-installed 8.10.3 overnight and reset the floor-3 RADIUS profile (a known issue in the vendor release notes I hadn't read). Rolled back to 8.9.8. I've disabled auto-update; from now on controller firmware goes through a CHG with a CAB slot and gets tested on the floor-4 AP group first. Two spare docks went to FP&A as an interim and they'd like to keep them.\n\nShruti"
+      },
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "EMP-023"
+        ],
+        "date": "2026-03-31T14:45",
+        "body": "Good call on the CHG. They can keep the docks - update the asset records.\n\nRajesh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-036"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-03-31",
+      "last_referenced_date": "2026-03-31"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0008",
+    "event_id": "EVT-037",
+    "subject": "ADR-014 approved - v4 stays REST/OpenAPI-first",
+    "participant_employee_ids": [
+      "EMP-001",
+      "EMP-006",
+      "EMP-046"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-001",
+          "EMP-046"
+        ],
+        "date": "2026-01-20T17:30",
+        "body": "Arjun,\n\nWe closed the protocol question at today's review: v4 public API remains REST with OpenAPI-first contracts; gRPC only internally after GA. Sneha's write-up is on Confluence as ADR-014. Main driver is the 34 customers with direct REST integrations - we don't want to restart their migration clock. Harish, FYI for the gateway sizing.\n\nRohan"
+      },
+      {
+        "from_employee_id": "EMP-001",
+        "from_name": "Arjun Venkataraman",
+        "to": [
+          "EMP-006",
+          "EMP-046"
+        ],
+        "date": "2026-01-20T18:05",
+        "body": "Approved. Make the contract tests a required check before the first customer moves to v4.\n\nArjun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-037"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-01-20",
+      "last_referenced_date": "2026-01-20"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0004",
+    "event_id": "EVT-038",
+    "subject": "Multi-region: recommending warm standby (approx USD 9k/month)",
+    "participant_employee_ids": [
+      "EMP-002",
+      "EMP-004",
+      "EMP-022"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-004",
+          "EMP-002"
+        ],
+        "date": "2025-11-10T15:40",
+        "body": "Sandeep, Vivek,\n\nFor the Singapore build we recommend a warm standby rather than active-active: ~30 minute RTO, satisfies the residency requirement for APAC tenants, and roughly USD 9k/month versus USD 22k for active-active - which would also mean solving multi-writer consistency for telematics, a 6+ month engineering problem. Details in ADR-011 on Confluence. Vivek, I'd like this as its own cost line in the FY27 plan.\n\nVarun"
+      },
+      {
+        "from_employee_id": "EMP-002",
+        "from_name": "Vivek Anand",
+        "to": [
+          "EMP-022",
+          "EMP-004"
+        ],
+        "date": "2025-11-10T17:20",
+        "body": "Fine with 9k as a separate line. Please make sure the APAC pricing Rahul is building recovers it.\n\nVivek"
+      },
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "EMP-022",
+          "EMP-002"
+        ],
+        "date": "2025-11-11T09:00",
+        "body": "Approved. Go ahead with the CAB submission for the baseline.\n\nSandeep"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-038"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-11-10",
+      "last_referenced_date": "2025-11-11"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0031",
+    "event_id": "EVT-039",
+    "subject": "Meridian renewal - SSO with their Azure AD is now a hard requirement",
+    "participant_employee_ids": [
+      "EMP-013",
+      "EMP-027",
+      "EMP-036"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-036",
+        "from_name": "Aakash Bhatia",
+        "to": [
+          "EMP-013",
+          "EMP-027"
+        ],
+        "date": "2026-04-09T18:20",
+        "body": "Meera,\n\nMeridian's IT security team have added 'SSO with our Azure AD' as a condition of the October renewal (Rs 3.2 crore ARR). Two APAC RFPs ask for the same. Is there any way the portal revamp can include it? I know it's not in scope. Natasha is aware.\n\nAakash"
+      },
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-036",
+          "EMP-027"
+        ],
+        "date": "2026-04-10T09:45",
+        "body": "Not in scope today, and it's not small - SAML, per-tenant IdP config, JIT provisioning, security review. Rough estimate is six weeks of slip. Let's take it to the steering meeting on Wednesday with Arjun; I'd rather decide it properly than promise Meridian something.\n\nMeera"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-039"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-04-09",
+      "last_referenced_date": "2026-04-10"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0033",
+    "event_id": "EVT-039",
+    "subject": "Portal revamp launch moves to 2 November - SSO added to scope",
+    "participant_employee_ids": [
+      "EMP-001",
+      "EMP-011",
+      "EMP-013",
+      "EMP-042"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-001",
+          "EMP-011",
+          "EMP-042"
+        ],
+        "date": "2026-04-15T17:10",
+        "body": "All,\n\nSteering decision today: customer-IdP SAML SSO is now in the portal revamp scope (renewal and APAC pipeline dependency). Launch moves from 15 September to 2 November. Notes on Confluence. Sanya/Kavita - this affects the v4 campaign sequencing; happy to talk through options.\n\nMeera"
+      },
+      {
+        "from_employee_id": "EMP-011",
+        "from_name": "Kavita Bhatnagar",
+        "to": [
+          "EMP-013",
+          "EMP-001",
+          "EMP-042"
+        ],
+        "date": "2026-04-16T08:30",
+        "body": "Understood. Sanya will re-sequence - we may lead the campaign with the v4 API and follow with the portal.\n\nKavita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-039"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-04-15",
+      "last_referenced_date": "2026-04-16"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0002",
+    "event_id": "EVT-040",
+    "subject": "Offline mode - what Support needs to know",
+    "participant_employee_ids": [
+      "EMP-013",
+      "EMP-017",
+      "EMP-055"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-017",
+          "EMP-055"
+        ],
+        "date": "2025-09-24T11:15",
+        "body": "Anita, Preeti,\n\nHeads-up on a design decision for Driver App offline mode (shipping in 3.5, January): when two devices edit the same trip while offline, the later device timestamp wins and the overwritten value is kept in a server-side audit table. Support will occasionally see 'my delivery time changed by itself' - the audit row in the Admin Console will show what happened. We'll add a support note to the release. Design doc is on the ENG space.\n\nMeera"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-013",
+          "EMP-055"
+        ],
+        "date": "2025-09-24T12:00",
+        "body": "Thanks - please make sure the audit view is readable by console-readonly users.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-040"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2025-09-24",
+      "last_referenced_date": "2025-09-24"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0003",
+    "event_id": "EVT-041",
+    "subject": "SSO cutover on 15 December - what changes for your teams",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-005",
+      "EMP-007",
+      "EMP-010",
+      "EMP-017",
+      "EMP-038"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-007",
+          "EMP-017",
+          "EMP-038",
+          "EMP-005",
+          "EMP-004"
+        ],
+        "date": "2025-10-28T10:30",
+        "body": "All,\n\nFollowing yesterday's steering meeting: on Monday 15 December, Salesforce, Zendesk, HubSpot and Darwinbox move to Okta-only login. Local passwords stop working that morning. What your teams need to do before then: make sure everyone has Okta Verify enrolled (IAM will chase stragglers), and tell us about any shared or agency logins so we can convert them to sponsored accounts. The only agreed exception is the Sales demo account.\n\nDetails and the decision log are on Confluence.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-010",
+          "EMP-004"
+        ],
+        "date": "2025-10-28T12:15",
+        "body": "Thanks Nikhil. Vinod will send you the list of shared logins this week.\n\nRahul"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-041"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-10-28",
+      "last_referenced_date": "2025-10-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0001",
+    "event_id": "EVT-042",
+    "subject": "CAB decision: app deployments via GitOps PR from December",
+    "participant_employee_ids": [
+      "EMP-001",
+      "EMP-004",
+      "EMP-022"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-004",
+          "EMP-001"
+        ],
+        "date": "2025-09-02T16:45",
+        "body": "Sandeep, Arjun,\n\nCAB approved the GitOps proposal today: from the ArgoCD go-live, a reviewed PR in algoworks-deploy is the change approval for standard application deployments; CAB keeps infra, network, identity, DB and new services. Record and reasoning on Confluence. I'll update the Change Management Policy with the new category before go-live.\n\nVarun"
+      },
+      {
+        "from_employee_id": "EMP-001",
+        "from_name": "Arjun Venkataraman",
+        "to": [
+          "EMP-022",
+          "EMP-004"
+        ],
+        "date": "2025-09-02T17:30",
+        "body": "Good outcome. Please make the policy update visible - engineers read the policy, not CAB minutes.\n\nArjun"
+      },
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "EMP-022",
+          "EMP-001"
+        ],
+        "date": "2025-09-03T08:50",
+        "body": "Agreed on both counts.\n\nSandeep"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-042"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2025-09-02",
+      "last_referenced_date": "2025-09-03"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0055",
+    "event_id": "EVT-043",
+    "subject": "New: request application access through the ServiceNow catalog",
+    "participant_employee_ids": [
+      "EMP-008"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "All-Company"
+        ],
+        "date": "2026-06-08T09:30",
+        "body": "All,\n\nFrom today, requests for Salesforce, Zendesk, HubSpot, Metabase and GitHub access are made through the new 'Request Access' items in the ServiceNow Employee Service Portal. Your manager's approval is routed automatically (and to their delegate if they have set one in Darwinbox), then to the system owner where an admin role is requested. Free-text requests will be redirected to the catalog. More applications (VPN, shared mailboxes, laptops, software) follow in August.\n\nRajesh Kumar\nIT Service Desk"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-043"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-06-08",
+      "last_referenced_date": "2026-06-08"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0060",
+    "event_id": "EVT-044",
+    "subject": "Snowflake cost plan - decisions and budget ownership",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-019",
+      "EMP-047"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-019",
+          "EMP-047"
+        ],
+        "date": "2026-06-16T17:00",
+        "body": "Ashwin, Nithin,\n\nDecisions from today are on Confluence. The one that needs your sign-off: FP&A owns the monthly credit budget per warehouse (Nithin as named owner), with the resource monitors notifying you at 80%. Target is 4,500 credits/month by September, from 6,900 in January. CHG goes to Thursday's CAB.\n\nSuresh"
+      },
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-016",
+          "EMP-047"
+        ],
+        "date": "2026-06-17T09:10",
+        "body": "Signed off. Nithin will add the credit line to the monthly SaaS review pack.\n\nAshwin"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-044"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-06-16",
+      "last_referenced_date": "2026-06-17"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0025",
+    "event_id": "EVT-045",
+    "subject": "CPQ approval matrix - confirming the 20-30% step",
+    "participant_employee_ids": [
+      "EMP-002",
+      "EMP-007",
+      "EMP-015"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-015",
+        "from_name": "Vinod Krishnamurthy",
+        "to": [
+          "EMP-007",
+          "EMP-002"
+        ],
+        "date": "2026-03-23T14:20",
+        "body": "Rahul, Vivek,\n\nBefore Megha builds the CPQ approval steps I want to confirm in writing what you agreed in the February pipeline review: VP Sales approves discounts of 20-30% (CFO only above 30%, with a weekly report to Vivek of everything above 20%). The published matrix still says CFO for 20-30% - I'll raise a policy update once you both confirm.\n\nVinod"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-015",
+          "EMP-002"
+        ],
+        "date": "2026-03-23T15:05",
+        "body": "Confirmed from my side.\n\nRahul"
+      },
+      {
+        "from_employee_id": "EMP-002",
+        "from_name": "Vivek Anand",
+        "to": [
+          "EMP-015",
+          "EMP-007"
+        ],
+        "date": "2026-03-24T08:40",
+        "body": "Confirmed, with the weekly report. Please do update the matrix so Finance and Sales are reading the same document.\n\nVivek"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-045"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-03-23",
+      "last_referenced_date": "2026-03-24"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0078",
+    "event_id": "EVT-046",
+    "subject": "Role bundle table published - please review your department's rows",
+    "participant_employee_ids": [
+      "EMP-005",
+      "EMP-028",
+      "EMP-029",
+      "EMP-044"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-005",
+        "from_name": "Geeta Iyengar",
+        "to": [
+          "EMP-029",
+          "EMP-028",
+          "EMP-044"
+        ],
+        "date": "2026-07-21T16:10",
+        "body": "All,\n\nRakesh and Kavya have written down the role bundles the onboarding automation applies - until today this lived in Okta group rules only, and managers kept asking what their new joiners 'automatically' get. It's on the HR space. It's incomplete: several roles have no bundle yet, and the SOP still describes the old manual process. Swati, could you review the Engineering and IT rows with the team leads? I'll get the SOP updated once the table is stable.\n\nGeeta"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-005",
+          "EMP-028",
+          "EMP-044"
+        ],
+        "date": "2026-07-22T09:30",
+        "body": "One caveat: bundles only cover group-based apps. Anything licence-based (NetSuite, full Zendesk seats) still needs a request, which is where most of the 'my new joiner is missing X' tickets come from.\n\nKavya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-046"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-07-21",
+      "last_referenced_date": "2026-07-22"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0056",
+    "event_id": "EVT-047",
+    "subject": "Zoho-NetSuite posting design - summarised daily journals",
+    "participant_employee_ids": [
+      "EMP-014",
+      "EMP-019"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-019"
+        ],
+        "date": "2026-06-09T16:20",
+        "body": "Ashwin - we've agreed the posting design with Manish: one summarised journal per day grouped by cost centre, category and GST rate, detail stays in Zoho with a drill-back link. The auditors are fine with it. Parallel run in June, automated from 1 July. Doc on the Finance space.\n\nShalini"
+      },
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-014"
+        ],
+        "date": "2026-06-09T17:00",
+        "body": "Good. Please make sure the cost-centre mapping matches the AOP structure so we don't remap in October.\n\nAshwin"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-047"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-06-09",
+      "last_referenced_date": "2026-06-09"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0051",
+    "event_id": "EVT-048",
+    "subject": "Website stack decision - Vercel hosting (new vendor)",
+    "participant_employee_ids": [
+      "EMP-010",
+      "EMP-011",
+      "EMP-030",
+      "EMP-056"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-011",
+          "EMP-010",
+          "EMP-056"
+        ],
+        "date": "2026-05-26T17:40",
+        "body": "Kavita, Nikhil, Kritika,\n\nWe've settled the website stack: headless WordPress + Next.js on Vercel. Vercel is new to us and will be about Rs 6.2 lakh/year, so: Nikhil, could you do the security review (they support SAML SSO; only public content and form posts that go straight to HubSpot)? Kritika, I'll raise the purchase request - I understand new vendors over 5 lakh need the full onboarding. Decision doc on the Marketing space.\n\nAnkit"
+      },
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-030",
+          "EMP-011",
+          "EMP-056"
+        ],
+        "date": "2026-05-27T10:15",
+        "body": "Will review this week. If SSO is enforced and no PII lands on Vercel it should be straightforward.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-056",
+        "from_name": "Kritika Jain",
+        "to": [
+          "EMP-030",
+          "EMP-011",
+          "EMP-010"
+        ],
+        "date": "2026-05-27T11:00",
+        "body": "Thanks Ankit. Send me the vendor form and quotes when you have them; the PO needs Kavita + Shalini + Vivek at that value.\n\nKritika"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-048"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-05-26",
+      "last_referenced_date": "2026-05-27"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0089",
+    "event_id": "EVT-049",
+    "subject": "v4 launch date: 6 October (was 15 September)",
+    "participant_employee_ids": [
+      "EMP-001",
+      "EMP-006",
+      "EMP-011",
+      "EMP-042"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-042",
+          "EMP-001",
+          "EMP-011"
+        ],
+        "date": "2026-08-10T18:30",
+        "body": "Sanya, Kavita,\n\nWe need to move v4 GA to 6 October. Contract tests cover 70% of customer integrations and I won't ship without the load-test cycle we committed to after March. Sorry for the late notice - I'd rather tell you now than slip in September.\n\nRohan"
+      },
+      {
+        "from_employee_id": "EMP-042",
+        "from_name": "Sanya Kapadia",
+        "to": [
+          "EMP-006",
+          "EMP-001",
+          "EMP-011"
+        ],
+        "date": "2026-08-11T09:20",
+        "body": "Understood. We'll re-plan on Wednesday - webinars and analyst briefings shift three weeks; the website cutover follows the launch. I'll need the new date confirmed by Arjun before we tell the analysts.\n\nSanya"
+      },
+      {
+        "from_employee_id": "EMP-001",
+        "from_name": "Arjun Venkataraman",
+        "to": [
+          "EMP-042",
+          "EMP-006",
+          "EMP-011"
+        ],
+        "date": "2026-08-11T10:05",
+        "body": "6 October is confirmed.\n\nArjun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-049"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-08-10",
+      "last_referenced_date": "2026-08-11"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0091",
+    "event_id": "EVT-049",
+    "subject": "Re-planned launch timeline - approved",
+    "participant_employee_ids": [
+      "EMP-007",
+      "EMP-011",
+      "EMP-042"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-042",
+        "from_name": "Sanya Kapadia",
+        "to": [
+          "EMP-011",
+          "EMP-007"
+        ],
+        "date": "2026-08-12T16:45",
+        "body": "Kavita, Rahul - the re-planned timeline for the 6 October launch is on Confluence (v4 Launch Campaign space). Key change for Sales: enablement deck and battlecards land 29 September, webinars 8-22 October. Please confirm you're fine with analyst briefings on 1-2 October.\n\nSanya"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-042",
+          "EMP-011"
+        ],
+        "date": "2026-08-12T17:30",
+        "body": "Fine by me. Natasha will block the AEs for enablement on the 29th.\n\nRahul"
+      },
+      {
+        "from_employee_id": "EMP-011",
+        "from_name": "Kavita Bhatnagar",
+        "to": [
+          "EMP-042",
+          "EMP-007"
+        ],
+        "date": "2026-08-12T18:00",
+        "body": "Approved.\n\nKavita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-049"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-08-12",
+      "last_referenced_date": "2026-08-12"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0095",
+    "event_id": "EVT-050",
+    "subject": "RE: Salesforce access request stuck - manager on leave",
+    "participant_employee_ids": [
+      "EMP-029",
+      "EMP-096"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-096",
+        "from_name": "Ritika Sharma",
+        "to": [
+          "IT-Access-Team"
+        ],
+        "date": "2026-08-21T10:05",
+        "body": "Hi team,\n\nMy Salesforce request has been waiting since Monday because Natasha is on leave until the 28th. I can't work the lead queue without it. Is there someone else who can approve? Rahul Kapoor is the VP but I don't want to bother him for a login.\n\nRitika"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-096"
+        ],
+        "date": "2026-08-21T11:30",
+        "body": "Hi Ritika,\n\nNo problem - this happens a lot with leave. Our practice is: if a request has been waiting on an unavailable manager for 5 business days, we approve it ourselves with a quick confirmation from someone senior on your side that you're who the ticket says you are (your team's ops manager is fine). Yours hits 5 days on Monday; I've already asked Vinod in Slack. If you need it sooner, Rahul approving on the ticket would do it today.\n\nKavya\nIAM Analyst"
+      },
+      {
+        "from_employee_id": "EMP-096",
+        "from_name": "Ritika Sharma",
+        "to": [
+          "EMP-029"
+        ],
+        "date": "2026-08-21T11:45",
+        "body": "Monday is fine, thank you!\n\nRitika"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-050"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-08-21",
+      "last_referenced_date": "2026-08-21"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0097",
+    "event_id": "EVT-050",
+    "subject": "SLA override on access requests - we need to fix the policy or the practice",
+    "participant_employee_ids": [
+      "EMP-010",
+      "EMP-029"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-029"
+        ],
+        "date": "2026-08-26T09:15",
+        "body": "Kavya,\n\nI saw the notes on Ritika's and Sonal's tickets. I know we've been doing the 5-day override since the Phase 2 backlog last December - and honestly it keeps the queue moving - but the Access Request Policy still says 'escalate to Department Head' and 'IAM must not provision without recorded approval'. If the auditors sample either ticket we have a finding: approval by a peer, not in the chain.\n\nTwo options: (1) we stop and start escalating to Dept Heads, which they will hate; (2) we write the override into the policy properly (5 business days, confirmation from the requester's Dept Head *or* a manager in the same department, logged on the ticket). I prefer (2) and I'll take it to Sandeep. Until then, please at least get confirmation from a manager in the same department, not a peer.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-010"
+        ],
+        "date": "2026-08-26T09:50",
+        "body": "Agreed on (2). For the record, since January we've applied the override 14 times; 11 confirmations were from a manager in the requester's department, 3 from peers (all Sales Ops). I'll add the same-department-manager rule to the queue checklist today.\n\nKavya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-050"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "restricted",
+      "created_date": "2026-08-26",
+      "last_referenced_date": "2026-08-26"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0069",
+    "event_id": "EVT-051",
+    "subject": "Laptop stock and the 5-day SLA - proposal to update the SOP",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-008",
+      "EMP-059"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-059",
+        "from_name": "Mohammed Irfan",
+        "to": [
+          "EMP-008"
+        ],
+        "date": "2026-07-03T16:20",
+        "body": "Rajesh,\n\nWe have zero MacBook Pros and one ThinkPad in buffer stock, and Apple's lead time for the 14\" M-series is 3-4 weeks. Every replacement since May has been loaner-first and 2-3 weeks for the real device. The SOP still says 5 business days and a 4+4 buffer. Either we get budget to rebuild the buffer (about Rs 9 lakh) or we change the SOP to say what we actually do.\n\nMohammed"
+      },
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "EMP-004"
+        ],
+        "date": "2026-07-06T10:05",
+        "body": "Sandeep - forwarding Mohammed's note. Reality since May: loaner on day one, standard device in 2-3 weeks. The SOP promises 5 days. I'd like to (a) ask Finance for Rs 9 lakh to rebuild the buffer in the FY27 plan and (b) update the SOP now to 'loaner within 1 business day; standard device within 15 business days' so we stop setting expectations we can't meet.\n\nRajesh"
+      },
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "EMP-008"
+        ],
+        "date": "2026-07-06T14:30",
+        "body": "Put the buffer in the AOP request. On the SOP - draft the change and send it to me; let's not publish a 15-day SLA until we know whether the buffer gets funded.\n\nSandeep"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-051"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-07-03",
+      "last_referenced_date": "2026-07-06"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0066",
+    "event_id": "EVT-051",
+    "subject": "Approval needed: RITM-22125 - Laptop replacement",
+    "participant_employee_ids": [
+      "EMP-013",
+      "EMP-018"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-018",
+        "from_name": "Aditya Rao",
+        "to": [
+          "EMP-013"
+        ],
+        "date": "2026-06-29T11:50",
+        "body": "Meera - RITM-22125 needs your approval (Laptop replacement). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nAditya"
+      },
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-018"
+        ],
+        "date": "2026-06-29T16:55",
+        "body": "Done - approved just now. \n\nMeera"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-051",
+      "RITM-22125"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-06-29",
+      "last_referenced_date": "2026-06-29"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0038",
+    "event_id": "EVT-052",
+    "subject": "Do app deploys need a CHG? The policy and CAB disagree",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-022",
+      "EMP-043"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-043",
+        "from_name": "Karthik Iyer",
+        "to": [
+          "EMP-022",
+          "EMP-006"
+        ],
+        "date": "2026-04-30T15:40",
+        "body": "Varun, Rohan,\n\nI raised a CHG for the 1.3.0 deploy because the Change Management Policy on Confluence (v2) explicitly says 'all production application deployments' are Normal changes needing CAB. Varun cancelled it saying app deploys are covered by the GitOps PR. I'm fine either way, but the written policy says the opposite of what we do, and new joiners (Tanvi starts in August, plus the campus hires) will read the policy. Can we get it updated?\n\nKarthik"
+      },
+      {
+        "from_employee_id": "EMP-022",
+        "from_name": "Varun Chandra",
+        "to": [
+          "EMP-043",
+          "EMP-006"
+        ],
+        "date": "2026-04-30T16:25",
+        "body": "You're right, and it's on me - the CAB decision from September says I'd update the policy and I never did. Operating rule since 1 Dec: merged algoworks-deploy PR = approval for standard app deployments; CHG for Terraform/network/Okta/DB/new services. I'll draft v3 of the policy with a 'GitOps standard deployment' category this month.\n\nVarun"
+      },
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-022",
+          "EMP-043"
+        ],
+        "date": "2026-04-30T16:40",
+        "body": "Please do - I've answered this question in Slack at least five times. I'll add it to the engineering onboarding guide in the meantime.\n\nRohan"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-052"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-04-30",
+      "last_referenced_date": "2026-04-30"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0061",
+    "event_id": "EVT-053",
+    "subject": "Friday deploys - what is the actual rule?",
+    "participant_employee_ids": [
+      "EMP-001",
+      "EMP-006",
+      "EMP-013"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-013",
+        "from_name": "Meera Krishnan",
+        "to": [
+          "EMP-001",
+          "EMP-006"
+        ],
+        "date": "2026-06-19T12:10",
+        "body": "Arjun, Rohan,\n\nAditya shipped the portal export fix to production at 11:30 today (Friday). I asked him to hold and he said Friday deploys are fine before 2pm since March. The Deployment & Release SOP on Confluence says no Friday deploys, full stop. I don't mind either rule, but I need to know which one to hold my team to.\n\nMeera"
+      },
+      {
+        "from_employee_id": "EMP-001",
+        "from_name": "Arjun Venkataraman",
+        "to": [
+          "EMP-013",
+          "EMP-006"
+        ],
+        "date": "2026-06-19T12:45",
+        "body": "Aditya's right - at the 12 March all-hands we relaxed it: Friday deploys allowed before 14:00 IST if the change is behind a flag or trivially reversible, and the deployer stays online until 16:00. It's in the all-hands notes. The SOP wasn't updated, which is a fair complaint. Rohan, can Platform own an SOP v4 that reflects the ArgoCD world and the Friday rule?\n\nArjun"
+      },
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-001",
+          "EMP-013"
+        ],
+        "date": "2026-06-19T13:20",
+        "body": "Will do - I'll fold in the CHG/GitOps clarification at the same time since that's the other question I get weekly.\n\nRohan"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-053"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-06-19",
+      "last_referenced_date": "2026-06-19"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0042",
+    "event_id": "EVT-054",
+    "subject": "RE: DPO sign-off for PII access - who approves now?",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-038",
+      "EMP-086"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-086",
+        "from_name": "Chitra Mohan",
+        "to": [
+          "EMP-016",
+          "EMP-038"
+        ],
+        "date": "2026-05-11T15:20",
+        "body": "Hi Suresh,\n\nThe Snowflake Data Access Policy says PII schema access needs written sign-off from the Data Protection Officer on the DATA ticket. I can't find a DPO in the org chart - Pradeep Chauhan left in February. Who should I ask?\n\nChitra"
+      },
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-086",
+          "EMP-038"
+        ],
+        "date": "2026-05-12T09:40",
+        "body": "Hi Chitra,\n\nThere isn't one at the moment - the role wasn't backfilled and IT leadership hasn't named an interim for data-protection sign-offs. What the Data team has been doing since April: I approve PII access myself, on the condition that the ticket states the purpose and what leaves Snowflake, and the access expires in 6 months. It's not what the policy says, and Nikhil knows we're doing it. Your ticket is approved on that basis; Ananya will add you today.\n\nSuresh"
+      },
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-016",
+          "EMP-086"
+        ],
+        "date": "2026-05-12T10:05",
+        "body": "Thanks Suresh. Chitra, only hashed ids and segment labels go to HubSpot - nothing else.\n\nManoj"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-054"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "restricted",
+      "created_date": "2026-05-11",
+      "last_referenced_date": "2026-05-12"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0043",
+    "event_id": "EVT-054",
+    "subject": "Approval needed: RITM-21883 - Snowflake PII schema access (customer contacts)",
+    "participant_employee_ids": [
+      "EMP-032",
+      "EMP-038",
+      "EMP-086"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-086",
+        "from_name": "Chitra Mohan",
+        "to": [
+          "EMP-038"
+        ],
+        "date": "2026-05-12T09:05",
+        "body": "Manoj - RITM-21883 needs your approval (Snowflake PII schema access (customer contacts)). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nChitra"
+      },
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-086"
+        ],
+        "date": "2026-05-12T13:55",
+        "body": "Approved on the ticket.\n\nManoj"
+      },
+      {
+        "from_employee_id": "EMP-032",
+        "from_name": "Ananya Chatterjee",
+        "to": [
+          "EMP-086"
+        ],
+        "date": "2026-05-13T16:30",
+        "body": "Hi Chitra,\n\nRITM-21883 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nAnanya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-054",
+      "RITM-21883"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "restricted",
+      "created_date": "2026-05-12",
+      "last_referenced_date": "2026-05-13"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0087",
+    "event_id": "EVT-055",
+    "subject": "RE: Office days - policy vs what teams are doing",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-028",
+      "EMP-091"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-028"
+        ],
+        "date": "2026-08-06T09:30",
+        "body": "Swati,\n\nTanvi asked HR about office days and was told 3 days with Tue/Wed/Thu anchors. I've been running the team on 2 days (Tue/Thu) since April, when Arjun said leadership had agreed to relax it to 2 days with team discretion. Which is it? I don't want my new joiner getting a different answer from HR than from me.\n\nRohan"
+      },
+      {
+        "from_employee_id": "EMP-028",
+        "from_name": "Swati Kulkarni",
+        "to": [
+          "EMP-006",
+          "EMP-091"
+        ],
+        "date": "2026-08-07T11:10",
+        "body": "Rohan,\n\nYou're not wrong - in the April leadership meeting the CPO agreed to move to 2 days/week with team-chosen days, and Department Heads were told to apply it. The Hybrid Work Policy on Confluence was supposed to go to v3 but it's still with Sunita for sign-off, so HR Ops is answering from v2 (3 days). Ayesha - for now, please add a line to any hybrid-work answer that 'current practice is 2 days at team discretion pending the policy update'. I'll chase Sunita.\n\nSwati"
+      },
+      {
+        "from_employee_id": "EMP-091",
+        "from_name": "Ayesha Khan",
+        "to": [
+          "EMP-028",
+          "EMP-006"
+        ],
+        "date": "2026-08-07T11:25",
+        "body": "Will do. I answered three of these last month from the policy page - I'll go back to those people.\n\nAyesha"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-055"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-08-06",
+      "last_referenced_date": "2026-08-07"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0062",
+    "event_id": "EVT-056",
+    "subject": "RE: Expense rejected - 30 days?",
+    "participant_employee_ids": [
+      "EMP-014",
+      "EMP-020",
+      "EMP-036",
+      "EMP-073"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-036",
+        "from_name": "Aakash Bhatia",
+        "to": [
+          "Finance-AP"
+        ],
+        "date": "2026-06-24T10:20",
+        "body": "Hi Finance,\n\nZoho has auto-rejected my Chennai claim as over 30 days. The policy page does say 30 days, but Natasha said Finance accepts up to 60 now. Could someone confirm and approve? Receipts are all attached.\n\nAakash"
+      },
+      {
+        "from_employee_id": "EMP-020",
+        "from_name": "Ramesh Babu",
+        "to": [
+          "EMP-036"
+        ],
+        "date": "2026-06-25T09:35",
+        "body": "Hi Aakash,\n\nApproved manually - you're within the 60 days we've been accepting since year-end. The Zoho rule is still set to 30 because the policy hasn't been reissued; I've asked Shalini whether we change the rule or the policy. It'll be in the July reimbursement run.\n\nRamesh"
+      },
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-020",
+          "EMP-073"
+        ],
+        "date": "2026-06-30T17:40",
+        "body": "Both of you - I've now seen the 30-day override and the Rs 2,500 per-diem override in the same week. We're operating two rules that aren't written anywhere except Vivek's April email and our own habit. I'll draft T&E v6 (60 days, Rs 2,500 domestic per diem, Rs 1,000 receipt threshold to match the Zoho config) for Vivek. Until it's published, keep approving on appeal and note the reason on the claim.\n\nShalini"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-056"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-06-24",
+      "last_referenced_date": "2026-06-30"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0063",
+    "event_id": "EVT-056",
+    "subject": "Approval needed: RITM-22103 - Expense claim auto-rejected as 'older than 30 days'",
+    "participant_employee_ids": [
+      "EMP-020",
+      "EMP-027",
+      "EMP-036"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-036",
+        "from_name": "Aakash Bhatia",
+        "to": [
+          "EMP-027"
+        ],
+        "date": "2026-06-24T11:50",
+        "body": "Hi Natasha,\n\nGentle nudge on RITM-22103 (Expense claim auto-rejected as 'older than 30 days') - it's sitting in your approvals list. Happy to add any justification you need.\n\nAakash"
+      },
+      {
+        "from_employee_id": "EMP-027",
+        "from_name": "Natasha D'Souza",
+        "to": [
+          "EMP-036"
+        ],
+        "date": "2026-06-24T12:10",
+        "body": "Approved on the ticket.\n\nNatasha"
+      },
+      {
+        "from_employee_id": "EMP-020",
+        "from_name": "Ramesh Babu",
+        "to": [
+          "EMP-036"
+        ],
+        "date": "2026-06-25T16:45",
+        "body": "Aakash - your request RITM-22103 is done; you should see it after your next login. Closing the ticket.\n\nRamesh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-056",
+      "RITM-22103"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-06-24",
+      "last_referenced_date": "2026-06-25"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0073",
+    "event_id": "EVT-057",
+    "subject": "Discount approvals above 20% - matrix vs CPQ",
+    "participant_employee_ids": [
+      "EMP-002",
+      "EMP-007",
+      "EMP-015",
+      "EMP-069"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-069",
+        "from_name": "Arun Prasad",
+        "to": [
+          "EMP-015",
+          "EMP-007"
+        ],
+        "date": "2026-07-13T10:10",
+        "body": "Vinod, Rahul,\n\nGaurav's 27% Sunway deal went to Rahul via CPQ on Friday and is approved. Gaurav had written 'CFO approval' on the ticket because that's what the matrix on Confluence says, and he asked me which is right. I answered 'CPQ is the operating rule', but I'm uneasy putting that in writing on every ticket. Can we get the matrix reissued as v4? Vivek asked for that in March as well.\n\nArun"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-069",
+          "EMP-015"
+        ],
+        "date": "2026-07-13T11:30",
+        "body": "Vinod, please get v4 out - this is the third time it's come up. The weekly report to Vivek is going, so Finance has visibility; the document is just stale.\n\nRahul"
+      },
+      {
+        "from_employee_id": "EMP-015",
+        "from_name": "Vinod Krishnamurthy",
+        "to": [
+          "EMP-007",
+          "EMP-069",
+          "EMP-002"
+        ],
+        "date": "2026-07-13T12:15",
+        "body": "Drafting v4 this week: AE to 10%, Sales Manager to 20%, VP Sales to 30% with weekly CFO report, CEO above 30%. Vivek, you'll get it for sign-off by Friday.\n\nVinod"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-057"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-07-13",
+      "last_referenced_date": "2026-07-13"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0072",
+    "event_id": "EVT-057",
+    "subject": "Approval needed: RITM-22193 - Deal Desk: 27% discount",
+    "participant_employee_ids": [
+      "EMP-007",
+      "EMP-082"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-082",
+        "from_name": "Gaurav Thakur",
+        "to": [
+          "EMP-007"
+        ],
+        "date": "2026-07-10T09:20",
+        "body": "Hi Rahul,\n\nCould you approve RITM-22193 in ServiceNow when you have a minute? It's the Deal Desk: 27% discount. The IAM clock only starts once the approval is recorded.\n\nThanks,\nGaurav"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-082"
+        ],
+        "date": "2026-07-10T13:55",
+        "body": "Done - approved just now. Let me know if it doesn't come through in a couple of days.\n\nRahul"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-057",
+      "RITM-22193"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-07-10",
+      "last_referenced_date": "2026-07-10"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0053",
+    "event_id": "EVT-058",
+    "subject": "VPN policy needs a v3 - it now contradicts the contractor policy",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-010"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-004"
+        ],
+        "date": "2026-06-01T10:20",
+        "body": "Sandeep,\n\nWith the Contractor & Guest Access Policy v2 going live today, we have two policies that disagree: the VPN policy (v2, last May) says contractors are jump-host only and employees renew every 90 days; the contractor policy says vpn-contractors group with a security review, and in reality employees have been on 365-day auto-renewal since the Okta integration. I've raised a ticket for v3 - it's a documentation fix, no practice change. OK to proceed with the IAM & Security Lead approval route rather than a full review?\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-004",
+        "from_name": "Sandeep Malhotra",
+        "to": [
+          "EMP-010"
+        ],
+        "date": "2026-06-02T09:05",
+        "body": "Yes - keep it to a documentation update and note the contractor policy as the source for the contractor section. Please batch it with the BYOD and access-policy updates so I review them together.\n\nSandeep"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-058"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-06-01",
+      "last_referenced_date": "2026-06-02"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0090",
+    "event_id": "EVT-059",
+    "subject": "Onboarding SOP vs role bundles - which process do managers follow?",
+    "participant_employee_ids": [
+      "EMP-005",
+      "EMP-015",
+      "EMP-044"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-015",
+        "from_name": "Vinod Krishnamurthy",
+        "to": [
+          "EMP-005",
+          "EMP-044"
+        ],
+        "date": "2026-08-11T12:20",
+        "body": "Geeta, Rakesh,\n\nFor Dhruv's onboarding I followed the Employee Onboarding SOP: waited for Day 1 and prepared to raise requests for Salesforce, Metabase, Slack and the Sales Ops queue. Half of that appeared on its own (bundle), half didn't (Metabase). Nothing in the SOP mentions bundles, and HR didn't email IT - a ticket just appeared from Darwinbox two weeks before. Can the SOP be updated so managers know what's automatic and what isn't? I only found the bundle table because Kavya linked it.\n\nVinod"
+      },
+      {
+        "from_employee_id": "EMP-005",
+        "from_name": "Geeta Iyengar",
+        "to": [
+          "EMP-015",
+          "EMP-044"
+        ],
+        "date": "2026-08-11T15:05",
+        "body": "Vinod - fair. The automation went live in May and the bundle table only got written in July; the SOP is still the 2025 version. Rakesh is drafting v4 (Darwinbox-triggered ticket at start-10 days, role bundles, managers request only the exceptions, licence-based apps always manual). Target end of August. Meanwhile the July bundle page is the reference.\n\nGeeta"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-059"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-08-11",
+      "last_referenced_date": "2026-08-11"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0028",
+    "event_id": "EVT-060",
+    "subject": "BYOD policy v2 - proposal",
+    "participant_employee_ids": [
+      "EMP-004",
+      "EMP-008",
+      "EMP-010"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "EMP-004",
+          "EMP-010"
+        ],
+        "date": "2026-04-06T15:10",
+        "body": "Sandeep, Nikhil,\n\nThe BYOD policy still says personal phones may not access email. Since the P2 licences landed in February we've enrolled 31 personal phones with Intune app protection - Outlook and Teams in a managed container, selective wipe, no control over the rest of the phone. It's what every request asks for and it's more secure than people forwarding mail to Gmail. Ticket raised for v2; proposal attached. Nikhil, any security objection?\n\nRajesh"
+      },
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-008",
+          "EMP-004"
+        ],
+        "date": "2026-04-07T09:40",
+        "body": "No objection - MAM was always the plan once we had the licences. Add a line that Slack on personal phones stays through the Slack app's own MDM-less controls and that restricted data must not be opened in unmanaged apps.\n\nNikhil"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-060"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-04-06",
+      "last_referenced_date": "2026-04-07"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0080",
+    "event_id": "EVT-061",
+    "subject": "RE: AWS certification reimbursement without pre-approval",
+    "participant_employee_ids": [
+      "EMP-035",
+      "EMP-053",
+      "EMP-070"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-070",
+        "from_name": "Divya Menon",
+        "to": [
+          "EMP-053"
+        ],
+        "date": "2026-07-27T11:15",
+        "body": "Hi Tarun,\n\nI've submitted Rs 32,000 for my AWS SA Pro exam and prep course. I didn't do the LearnHub pre-approval - sorry, I decided to sit it mid-project. The policy page says Rs 25,000 cap and no reimbursement without pre-approval, so I'll understand if it's partly rejected.\n\nDivya"
+      },
+      {
+        "from_employee_id": "EMP-053",
+        "from_name": "Tarun Bhargava",
+        "to": [
+          "EMP-070",
+          "EMP-035"
+        ],
+        "date": "2026-07-28T10:00",
+        "body": "Hi Divya,\n\nApproved in full. Since April the certification cap is Rs 40,000 (FY27 budget) and we don't insist on pre-approval when the exam is passed and your manager confirms it's relevant - Suresh did. The policy page is the December version; Madhavi has the v3 draft. Congrats on the cert.\n\nTarun"
+      },
+      {
+        "from_employee_id": "EMP-035",
+        "from_name": "Madhavi Srinivasan",
+        "to": [
+          "EMP-053",
+          "EMP-070"
+        ],
+        "date": "2026-07-28T10:40",
+        "body": "Congrats Divya. Tarun - v3 is with Sunita; I'll push for it before the October review cycle so people stop reading Rs 25,000.\n\nMadhavi"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-061"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-07-27",
+      "last_referenced_date": "2026-07-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0081",
+    "event_id": "EVT-061",
+    "subject": "Approval needed: RITM-22295 - L&D reimbursement",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-053",
+      "EMP-070"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-070",
+        "from_name": "Divya Menon",
+        "to": [
+          "EMP-016"
+        ],
+        "date": "2026-07-27T11:35",
+        "body": "Hi Suresh,\n\nCould you approve RITM-22295 in ServiceNow when you have a minute? It's the L&D reimbursement. The IAM clock only starts once the approval is recorded.\n\nThanks,\nDivya"
+      },
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-070"
+        ],
+        "date": "2026-07-27T14:10",
+        "body": "Approved on the ticket.\n\nSuresh"
+      },
+      {
+        "from_employee_id": "EMP-053",
+        "from_name": "Tarun Bhargava",
+        "to": [
+          "EMP-070"
+        ],
+        "date": "2026-07-28T17:30",
+        "body": "Hi Divya,\n\nRITM-22295 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nTarun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-061",
+      "RITM-22295"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-07-27",
+      "last_referenced_date": "2026-07-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0092",
+    "event_id": "EVT-062",
+    "subject": "Vercel vendor onboarding - quotes and payment terms",
+    "participant_employee_ids": [
+      "EMP-014",
+      "EMP-030",
+      "EMP-056",
+      "EMP-097"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-056"
+        ],
+        "date": "2026-08-14T10:30",
+        "body": "Hi Kritika,\n\nVercel purchase request is in. I only have the one quote - it's the platform the agency built on, there isn't a like-for-like alternative without rebuilding. The SOP says three quotes above 5 lakh 'including SaaS and hosting'; do I need to do something for that? Also Vercel's terms are Net-30.\n\nAnkit"
+      },
+      {
+        "from_employee_id": "EMP-056",
+        "from_name": "Kritika Jain",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-08-14T14:05",
+        "body": "Hi Ankit,\n\nFor SaaS subscriptions we've generally not been enforcing the three quotes this year - there's rarely a real alternative and the SaaS approval policy already covers the security and budget checks. I'll add a single-source note to the ticket. Net-30 is fine at this size; we accept vendor-standard terms under 10 lakh. I'll need Kavita, Shalini and Vivek on the PO since it's over 5 lakh.\n\nKritika"
+      },
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-056",
+          "EMP-097"
+        ],
+        "date": "2026-08-25T16:20",
+        "body": "Kritika, Zara - I approved the Vercel PO last week, but note for both of you (Zara, as you learn the process): the SOP (v2, January) says three quotes for SaaS and hosting with a CFO-approved single-source justification, and Net-45 unless Vivek approves. We have been doing neither for SaaS since about February. If Vivek is comfortable with a SaaS exemption and a Net-30 threshold we should write it into v3; if not, we need to go back to the SOP. I'll raise it with him at the month-end review.\n\nShalini"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-062"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-08-14",
+      "last_referenced_date": "2026-08-25"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0093",
+    "event_id": "EVT-062",
+    "subject": "Approval needed: RITM-22419 - Purchase request: Vercel Pro hosting (new vendor)",
+    "participant_employee_ids": [
+      "EMP-011",
+      "EMP-030",
+      "EMP-056"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-011"
+        ],
+        "date": "2026-08-14T11:50",
+        "body": "Kavita - RITM-22419 needs your approval (Purchase request: Vercel Pro hosting (new vendor)). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nAnkit"
+      },
+      {
+        "from_employee_id": "EMP-011",
+        "from_name": "Kavita Bhatnagar",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-08-17T17:10",
+        "body": "Done - approved just now. \n\nKavita"
+      },
+      {
+        "from_employee_id": "EMP-056",
+        "from_name": "Kritika Jain",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-08-19T16:30",
+        "body": "Hi Ankit,\n\nRITM-22419 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nKritika"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-062",
+      "RITM-22419"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-08-14",
+      "last_referenced_date": "2026-08-19"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0085",
+    "event_id": "EVT-063",
+    "subject": "VPN drops - two tickets, two different fixes, still happening",
+    "participant_employee_ids": [
+      "EMP-039",
+      "EMP-047",
+      "EMP-061"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-047",
+        "from_name": "Nithin George",
+        "to": [
+          "EMP-039",
+          "IT-Helpdesk"
+        ],
+        "date": "2026-08-04T09:40",
+        "body": "Hi,\n\nPayal and I compared notes: her March ticket was closed as 'reinstall fixed it', mine in June as 'disable IPv6'. Both of us still get the 30-minute drop a couple of times a week (less often for me since the IPv6 change, but not zero). Could someone actually look at the root cause rather than closing on the first quiet afternoon? Happy to run a packet capture.\n\nNithin"
+      },
+      {
+        "from_employee_id": "EMP-061",
+        "from_name": "Lakshmi Narayanan",
+        "to": [
+          "EMP-047",
+          "EMP-039",
+          "IT-Helpdesk"
+        ],
+        "date": "2026-08-04T12:30",
+        "body": "Hi both - agreed this shouldn't have been closed twice with different answers. I'll take it from IAM's side: please both run the GP log collector the next time it drops and send me the timestamp. My current suspicion is the gateway's 30-minute rekey with certain home routers, which would explain the interval. Re-opening as a problem record rather than a new incident.\n\nLakshmi"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-063"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-08-04",
+      "last_referenced_date": "2026-08-04"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0039",
+    "event_id": "EVT-064",
+    "subject": "Salesforce export issue - routing note",
+    "participant_employee_ids": [
+      "EMP-015",
+      "EMP-026",
+      "EMP-034",
+      "EMP-079"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-026",
+        "from_name": "Megha Patil",
+        "to": [
+          "EMP-079",
+          "EMP-034",
+          "EMP-015"
+        ],
+        "date": "2026-05-05T15:20",
+        "body": "Hi Service Desk,\n\nFYI on Arun's export ticket: it was a missing 'Export Reports' permission, not a browser issue - and I think Sonal's February one was the same thing (I bulk-assigned the permission set that afternoon, which is why her cache clear 'worked'). For anything Salesforce that isn't a login problem, could you route straight to the Sales Ops queue? It'll save everyone a round trip.\n\nMegha"
+      },
+      {
+        "from_employee_id": "EMP-079",
+        "from_name": "Anjali Gupta",
+        "to": [
+          "EMP-026",
+          "EMP-034",
+          "EMP-015"
+        ],
+        "date": "2026-05-05T15:45",
+        "body": "Understood, will do. Sorry for the misdiagnosis - the cache clear looked like it fixed it.\n\nAnjali"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-064"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-05-05",
+      "last_referenced_date": "2026-05-05"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0068",
+    "event_id": "EVT-065",
+    "subject": "KB0041 updated - Okta Verify push troubleshooting",
+    "participant_employee_ids": [
+      "EMP-023",
+      "EMP-029",
+      "EMP-034",
+      "EMP-079"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-034",
+          "EMP-079",
+          "EMP-023"
+        ],
+        "date": "2026-07-02T14:30",
+        "body": "Hi all,\n\nKB0041 now starts with 'check the phone's automatic date & time' before re-enrolling Okta Verify. Bhavana's ticket yesterday was fixed in ten seconds that way; Riya's in April was 'fixed' by re-enrolment, which re-syncs the factor and hides the real cause. Please follow the new order and note which step fixed it on the ticket so we can see the pattern.\n\nKavya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-065"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-07-02",
+      "last_referenced_date": "2026-07-02"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0059",
+    "event_id": "EVT-066",
+    "subject": "Home internet claims - two different decisions",
+    "participant_employee_ids": [
+      "EMP-013",
+      "EMP-014",
+      "EMP-020",
+      "EMP-057",
+      "EMP-073"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-057",
+        "from_name": "Ishita Bose",
+        "to": [
+          "EMP-073",
+          "EMP-013"
+        ],
+        "date": "2026-06-12T16:10",
+        "body": "Hi Alok,\n\nMy broadband claim was rejected as not reimbursable, but Ethan Brooks (also designated remote) has been reimbursed Rs 1,500/month since March under the same policy. Either we both should or neither of us should - can Finance decide one way and tell remote employees?\n\nIshita"
+      },
+      {
+        "from_employee_id": "EMP-073",
+        "from_name": "Alok Mishra",
+        "to": [
+          "EMP-057",
+          "EMP-013",
+          "EMP-014"
+        ],
+        "date": "2026-06-15T10:20",
+        "body": "Hi Ishita,\n\nYou're right that it's inconsistent. The policy doesn't list home internet, and 3.4 says unlisted items need CFO pre-approval, which is why I rejected it; Ramesh approved Ethan's by analogy to the mobile cap. I've escalated to Shalini to get a proper answer rather than two analysts guessing.\n\nAlok"
+      },
+      {
+        "from_employee_id": "EMP-014",
+        "from_name": "Shalini Menon",
+        "to": [
+          "EMP-057",
+          "EMP-073",
+          "EMP-013",
+          "EMP-020"
+        ],
+        "date": "2026-06-16T12:00",
+        "body": "Thanks both. Position for now: Ethan's approval stands (we won't claw back a decision we made), Ishita's stays on hold, and I'll take 'remote connectivity allowance - yes/no, and how much' to Vivek for the T&E v6 draft. Until then no new home internet approvals please, Ramesh.\n\nShalini"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-066"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-01",
+      "sensitivity": "internal",
+      "created_date": "2026-06-12",
+      "last_referenced_date": "2026-06-16"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0026",
+    "event_id": "EVT-066",
+    "subject": "Approval needed: RITM-21675 - Home internet reimbursement",
+    "participant_employee_ids": [
+      "EMP-038",
+      "EMP-088"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-088",
+        "from_name": "Ethan Brooks",
+        "to": [
+          "EMP-038"
+        ],
+        "date": "2026-03-26T11:20",
+        "body": "Hi Manoj,\n\nCould you approve RITM-21675 in ServiceNow when you have a minute? It's the Home internet reimbursement. The IAM clock only starts once the approval is recorded.\n\nThanks,\nEthan"
+      },
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-088"
+        ],
+        "date": "2026-03-27T16:55",
+        "body": "Done - approved just now. FYI I've set a delegate in Darwinbox for next week in case anything else comes up.\n\nManoj"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-066",
+      "RITM-21675"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-03-26",
+      "last_referenced_date": "2026-03-27"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0035",
+    "event_id": "EVT-067",
+    "subject": "Admin Console access - inconsistent outcomes on the CS team",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-010",
+      "EMP-017"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-010",
+          "EMP-006"
+        ],
+        "date": "2026-04-23T09:30",
+        "body": "Nikhil, Rohan,\n\nSameer's console request was denied pending training, which I understand under the new version of the policy. But Preeti got the same access in January with just my attestation, and as far as I know she still hasn't done the course. So one of my Support Engineers has access without training and the other has training-pending and no access. Can we agree one rule for the team and apply it both ways?\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-010",
+        "from_name": "Nikhil Bhatt",
+        "to": [
+          "EMP-017",
+          "EMP-006"
+        ],
+        "date": "2026-04-23T11:15",
+        "body": "Fair point. Rule from v2 onward: training first, no attestations - that's why Sameer was denied. For Preeti I'd rather not revoke mid-quarter; Rohan, can you make sure she completes the course before the Q2 review or she comes out at the review? Sameer just needs to do the 40-minute course and re-raise.\n\nNikhil"
+      },
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-017",
+          "EMP-010"
+        ],
+        "date": "2026-04-23T12:00",
+        "body": "Agreed - I'll chase Preeti. In hindsight the attestation route was a mistake; glad v2 removes it.\n\nRohan"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-067"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "restricted",
+      "created_date": "2026-04-23",
+      "last_referenced_date": "2026-04-23"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0007",
+    "event_id": "EVT-067",
+    "subject": "Approval needed: RITM-21368 - AlgoWorks Admin Console read-only",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-029",
+      "EMP-055"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-055",
+        "from_name": "Preeti Nambiar",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-01-15T09:50",
+        "body": "Anita - RITM-21368 needs your approval (AlgoWorks Admin Console read-only). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nPreeti"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-055"
+        ],
+        "date": "2026-01-15T14:55",
+        "body": "Approved on the ticket.\n\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-055"
+        ],
+        "date": "2026-01-16T18:00",
+        "body": "Preeti - your request RITM-21368 is done; you should see it after your next login. Closing the ticket.\n\nKavya"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-067",
+      "RITM-21368"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "restricted",
+      "created_date": "2026-01-15",
+      "last_referenced_date": "2026-01-16"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0086",
+    "event_id": "EVT-068",
+    "subject": "Who creates Jira projects? Two answers in three months",
+    "participant_employee_ids": [
+      "EMP-006",
+      "EMP-008",
+      "EMP-038"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-038",
+        "from_name": "Manoj Venkatesh",
+        "to": [
+          "EMP-008",
+          "EMP-006"
+        ],
+        "date": "2026-08-05T09:50",
+        "body": "Rajesh, Rohan,\n\nIn May Ankit asked the Service Desk for a Jira project and had it the same day. I asked last Monday and was told Jira projects are 'Platform Backend only' and to wait for Rohan. Four days later, still no project and my team is logging campaign tasks in a spreadsheet again. I don't mind who does it - but could you agree between you and put it on the Jira page in the Systems Directory?\n\nManoj"
+      },
+      {
+        "from_employee_id": "EMP-006",
+        "from_name": "Rohan Mehta",
+        "to": [
+          "EMP-038",
+          "EMP-008"
+        ],
+        "date": "2026-08-05T13:30",
+        "body": "Manoj - creating DG now, sorry. Rajesh: Platform took Jira ownership in January but the Service Desk kept admin rights, so both of us can do it and each of us thinks the other should. Proposal: Service Desk creates projects from a standard template on request (it's a 5-minute task and you're staffed for tickets); Platform keeps schemes, workflows and integrations. I'll update the Systems Directory entry if you agree.\n\nRohan"
+      },
+      {
+        "from_employee_id": "EMP-008",
+        "from_name": "Rajesh Kumar",
+        "to": [
+          "EMP-006",
+          "EMP-038"
+        ],
+        "date": "2026-08-06T10:10",
+        "body": "Agree. Shruti will own it; please share the template. Until the directory is updated my team will keep routing to you, so let's do it this week.\n\nRajesh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-068"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-08-05",
+      "last_referenced_date": "2026-08-06"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0105",
+    "event_id": "EVT-069",
+    "subject": "FP&A Snowflake access - two analysts, two answers",
+    "participant_employee_ids": [
+      "EMP-016",
+      "EMP-019"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-019",
+        "from_name": "Ashwin Raman",
+        "to": [
+          "EMP-016"
+        ],
+        "date": "2026-09-14T09:20",
+        "body": "Suresh,\n\nHarsha got a bigger warehouse in June for the AOP query; Meenakshi asked for the same thing last week and was told to use a dashboard instead. Both are on my team doing the same work. Which is FP&A's actual entitlement - SQL on a warehouse we pay for, or dashboards only? I'm fine either way as long as it's one answer.\n\nAshwin"
+      },
+      {
+        "from_employee_id": "EMP-016",
+        "from_name": "Suresh Pillai",
+        "to": [
+          "EMP-019"
+        ],
+        "date": "2026-09-14T11:40",
+        "body": "You're right that it's inconsistent - Ananya's June fix predates the cost decisions and Manish applied them literally. Proposal: FP&A gets WH_FIN at M during the AOP window (Aug-Dec) with a 600-credit budget Nithin owns, both analysts on it; from January it drops back to S and the dashboards are the primary path. If you agree I'll raise the CHG. Not yet decided.\n\nSuresh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-069"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-09-14",
+      "last_referenced_date": "2026-09-14"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0079",
+    "event_id": "EVT-071",
+    "subject": "Welcome to Content & Brand - tools and first week",
+    "participant_employee_ids": [
+      "EMP-030",
+      "EMP-093"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-093"
+        ],
+        "date": "2026-07-27T08:40",
+        "body": "Hi Kabir,\n\nWelcome! Your role bundle gives you Confluence (MKT space) and Jira MKT; please raise HubSpot in the ServiceNow catalog today and I'll approve - that's the standard route and it takes a day. Social accounts are in the 1Password vault 'Brand-Social' (never in Slack or notes). Riya is your buddy; content calendar review is Mondays 11:00. First task: the v4 launch social plan with Sanya.\n\nAnkit"
+      },
+      {
+        "from_employee_id": "EMP-093",
+        "from_name": "Kabir Mehrotra",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-07-28T14:10",
+        "body": "Thanks Ankit - HubSpot came through already. Reading the launch plan.\n\nKabir"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-071"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-07-27",
+      "last_referenced_date": "2026-07-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0082",
+    "event_id": "EVT-071",
+    "subject": "Approval needed: RITM-22313 - HubSpot Marketing Hub access (social publishing)",
+    "participant_employee_ids": [
+      "EMP-029",
+      "EMP-030",
+      "EMP-093"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-093",
+        "from_name": "Kabir Mehrotra",
+        "to": [
+          "EMP-030"
+        ],
+        "date": "2026-07-28T09:20",
+        "body": "Ankit - RITM-22313 needs your approval (HubSpot Marketing Hub access (social publishing)). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nKabir"
+      },
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-093"
+        ],
+        "date": "2026-07-28T15:00",
+        "body": "Kabir - your request RITM-22313 is done; you should see it after your next login. Closing the ticket.\n\nKavya"
+      },
+      {
+        "from_employee_id": "EMP-030",
+        "from_name": "Ankit Chawla",
+        "to": [
+          "EMP-093"
+        ],
+        "date": "2026-07-28T16:25",
+        "body": "Approved. Please keep it to what you actually need.\n\nAnkit"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-071",
+      "RITM-22313"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-06",
+      "sensitivity": "internal",
+      "created_date": "2026-07-28",
+      "last_referenced_date": "2026-07-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0050",
+    "event_id": "EVT-072",
+    "subject": "RE: Mumbai trip claim - approved",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-020"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-020",
+        "from_name": "Ramesh Babu",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-05-21T15:10",
+        "body": "Hi Anita,\n\nApproved - everything's in order (receipts, caps, per diem). It's in this month's run, so it'll be with your May salary.\n\nRamesh"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-020"
+        ],
+        "date": "2026-05-21T15:20",
+        "body": "Great, thanks Ramesh.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-072"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-05-21",
+      "last_referenced_date": "2026-05-21"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0049",
+    "event_id": "EVT-072",
+    "subject": "Approval needed: RITM-21938 - Expense claim query: Mumbai customer visits 11-13 May",
+    "participant_employee_ids": [
+      "EMP-007",
+      "EMP-017",
+      "EMP-020"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-007"
+        ],
+        "date": "2026-05-21T11:35",
+        "body": "Rahul - RITM-21938 needs your approval (Expense claim query: Mumbai customer visits 11-13 May). The link is in the ServiceNow email from this morning; otherwise the portal > My Approvals.\n\nThanks!\nAnita"
+      },
+      {
+        "from_employee_id": "EMP-007",
+        "from_name": "Rahul Kapoor",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-05-21T14:25",
+        "body": "Approved on the ticket.\n\nRahul"
+      },
+      {
+        "from_employee_id": "EMP-020",
+        "from_name": "Ramesh Babu",
+        "to": [
+          "EMP-017"
+        ],
+        "date": "2026-05-21T18:45",
+        "body": "Hi Anita,\n\nRITM-21938 is fulfilled - details on the ticket. Please confirm you can get in and I'll close it.\n\nRamesh"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-072",
+      "RITM-21938"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-05-21",
+      "last_referenced_date": "2026-05-21"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0030",
+    "event_id": "EVT-073",
+    "subject": "Planned maintenance: production database resize, Sunday 12 April 02:00-03:00 IST",
+    "participant_employee_ids": [
+      "EMP-017",
+      "EMP-042",
+      "EMP-064"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-064",
+        "from_name": "Nandini Rajan",
+        "to": [
+          "EMP-017",
+          "EMP-042"
+        ],
+        "date": "2026-04-09T16:30",
+        "body": "Anita, Sanya,\n\nCAB approved a production database resize for Sunday 12 April 02:00-03:00 IST (about 2 minutes of failover; API requests may retry). Please post the standard maintenance notice on the status page 48 hours ahead and let the APAC accounts know, as it's 04:30 Singapore time. Change record: CHG-21750.\n\nNandini"
+      },
+      {
+        "from_employee_id": "EMP-017",
+        "from_name": "Anita Desai",
+        "to": [
+          "EMP-064",
+          "EMP-042"
+        ],
+        "date": "2026-04-09T17:00",
+        "body": "Notice scheduled for tomorrow 02:00; APAC CSMs informed.\n\nAnita"
+      }
+    ],
+    "referenced_ids": [
+      "CHG-21750",
+      "EVT-073"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-04-09",
+      "last_referenced_date": "2026-04-09"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0075",
+    "event_id": "EVT-074",
+    "subject": "Approval needed: RITM-22233 - Laptop refresh (4-year cycle)",
+    "participant_employee_ids": [
+      "EMP-024",
+      "EMP-033",
+      "EMP-034"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-033",
+        "from_name": "Nisha Pandey",
+        "to": [
+          "EMP-024"
+        ],
+        "date": "2026-07-16T11:35",
+        "body": "Hi Rohit,\n\nGentle nudge on RITM-22233 (Laptop refresh (4-year cycle)) - it's sitting in your approvals list. Happy to add any justification you need.\n\nNisha"
+      },
+      {
+        "from_employee_id": "EMP-024",
+        "from_name": "Rohit Sinha",
+        "to": [
+          "EMP-033"
+        ],
+        "date": "2026-07-16T13:40",
+        "body": "Approved. Let me know if it doesn't come through in a couple of days.\n\nRohit"
+      },
+      {
+        "from_employee_id": "EMP-034",
+        "from_name": "Deepak Verma",
+        "to": [
+          "EMP-033"
+        ],
+        "date": "2026-07-22T14:15",
+        "body": "Nisha - your request RITM-22233 is done; you should see it after your next login. Closing the ticket.\n\nDeepak"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-074",
+      "RITM-22233"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-07-16",
+      "last_referenced_date": "2026-07-22"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0100",
+    "event_id": "EVT-075",
+    "subject": "RE: Leave carry-forward question",
+    "participant_employee_ids": [
+      "EMP-074",
+      "EMP-091"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-091",
+        "from_name": "Ayesha Khan",
+        "to": [
+          "EMP-074"
+        ],
+        "date": "2026-08-28T14:20",
+        "body": "Hi Bhavana,\n\nShort version: 12 days carry forward, anything above lapses on 31 March; give 10 working days' notice for 5 days off; Rohit approves (Department Head only above 10 days). Darwinbox will apply the same rules when you submit. Full details are in the Leave & Time-Off Policy on the HR space.\n\nAyesha"
+      },
+      {
+        "from_employee_id": "EMP-074",
+        "from_name": "Bhavana Shetty",
+        "to": [
+          "EMP-091"
+        ],
+        "date": "2026-08-28T14:30",
+        "body": "Perfect, thank you - applying now.\n\nBhavana"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-075"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-08-28",
+      "last_referenced_date": "2026-08-28"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0020",
+    "event_id": "EVT-076",
+    "subject": "Contractor offboarding complete - TalentBridge recruiter",
+    "participant_employee_ids": [
+      "EMP-024",
+      "EMP-029"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-029",
+        "from_name": "Kavya Reddy",
+        "to": [
+          "EMP-024"
+        ],
+        "date": "2026-03-13T09:30",
+        "body": "Hi Rohit,\n\nDone - account disabled at 6pm yesterday, Greenhouse and Slack removed this morning. It'll be deleted in 30 days. Thanks for the advance notice, it makes this easy.\n\nKavya"
+      },
+      {
+        "from_employee_id": "EMP-024",
+        "from_name": "Rohit Sinha",
+        "to": [
+          "EMP-029"
+        ],
+        "date": "2026-03-13T09:40",
+        "body": "Thanks Kavya.\n\nRohit"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-076"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-02",
+      "sensitivity": "internal",
+      "created_date": "2026-03-13",
+      "last_referenced_date": "2026-03-13"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0016",
+    "event_id": "EVT-078",
+    "subject": "Figma seats - approved and ordered",
+    "participant_employee_ids": [
+      "EMP-030",
+      "EMP-045",
+      "EMP-056"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-056",
+        "from_name": "Kritika Jain",
+        "to": [
+          "EMP-045",
+          "EMP-030"
+        ],
+        "date": "2026-02-23T16:05",
+        "body": "Hi Omar, Ankit,\n\nFigma PO is raised (KT-PO-26-0214). Kavita approved, Amit's security review is on the ticket, and since it's under 5 lakh we didn't need additional quotes. Seats should be active tomorrow; Kavya will put Figma behind Okta.\n\nKritika"
+      },
+      {
+        "from_employee_id": "EMP-045",
+        "from_name": "Omar Farooq",
+        "to": [
+          "EMP-056",
+          "EMP-030"
+        ],
+        "date": "2026-02-24T10:15",
+        "body": "Seats are live and SSO works. Thanks Kritika!\n\nOmar"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-078"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-05",
+      "sensitivity": "internal",
+      "created_date": "2026-02-23",
+      "last_referenced_date": "2026-02-24"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0103",
+    "event_id": "EVT-079",
+    "subject": "RE: Instructional design course - claim approved",
+    "participant_employee_ids": [
+      "EMP-053",
+      "EMP-071"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-053",
+        "from_name": "Tarun Bhargava",
+        "to": [
+          "EMP-071"
+        ],
+        "date": "2026-09-04T10:20",
+        "body": "Approved - pre-approval, certificate and invoice all in order. It'll be in September payroll. Nice one on the distinction.\n\nTarun"
+      },
+      {
+        "from_employee_id": "EMP-071",
+        "from_name": "Leela Krishnan",
+        "to": [
+          "EMP-053"
+        ],
+        "date": "2026-09-04T10:25",
+        "body": "Thanks Tarun!\n\nLeela"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-079"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-04",
+      "sensitivity": "internal",
+      "created_date": "2026-09-04",
+      "last_referenced_date": "2026-09-04"
+    }
+  },
+  {
+    "thread_id": "EMAIL-0044",
+    "event_id": "EVT-080",
+    "subject": "Nimbus renewal - 15% approved",
+    "participant_employee_ids": [
+      "EMP-036",
+      "EMP-069"
+    ],
+    "messages": [
+      {
+        "from_employee_id": "EMP-069",
+        "from_name": "Arun Prasad",
+        "to": [
+          "EMP-036"
+        ],
+        "date": "2026-05-13T15:35",
+        "body": "Aakash - Natasha approved the 15% on the ticket and in CPQ; quote is generated and the Chargebee renewal will update from it. Nothing else needed at this level.\n\nArun"
+      }
+    ],
+    "referenced_ids": [
+      "EVT-080"
+    ],
+    "metadata": {
+      "source_type": "email",
+      "source_system": "outlook",
+      "department": "DEPT-03",
+      "sensitivity": "internal",
+      "created_date": "2026-05-13",
+      "last_referenced_date": "2026-05-13"
+    }
+  }
+]

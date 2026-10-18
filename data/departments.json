@@ -1,0 +1,65 @@
+[
+  {
+    "department_id": "DEPT-01",
+    "name": "Engineering",
+    "code": "ENG",
+    "description": "Builds and runs the AlgoWorks Fleet product: backend platform, web/mobile apps, data & analytics.",
+    "head_employee_id": "EMP-001"
+  },
+  {
+    "department_id": "DEPT-02",
+    "name": "IT & Infrastructure",
+    "code": "IT",
+    "description": "Corporate IT, identity & access, service desk, endpoints, cloud infrastructure and security operations.",
+    "head_employee_id": "EMP-004"
+  },
+  {
+    "department_id": "DEPT-03",
+    "name": "Sales",
+    "code": "SALES",
+    "description": "Enterprise sales, sales operations & deal desk, and customer success/support.",
+    "head_employee_id": "EMP-007"
+  },
+  {
+    "department_id": "DEPT-04",
+    "name": "Human Resources",
+    "code": "HR",
+    "description": "Talent acquisition, people operations (onboarding, HRBP, HR ops) and learning & development.",
+    "head_employee_id": "EMP-003"
+  },
+  {
+    "department_id": "DEPT-05",
+    "name": "Finance",
+    "code": "FIN",
+    "description": "Accounts payable & procurement, FP&A, billing, payroll and compliance.",
+    "head_employee_id": "EMP-002"
+  },
+  {
+    "department_id": "DEPT-06",
+    "name": "Marketing",
+    "code": "MKT",
+    "description": "Content & brand, demand generation and product marketing.",
+    "head_employee_id": "EMP-011"
+  },
+  {
+    "department_id": "DEPT-07",
+    "name": "Product Management",
+    "code": "PM",
+    "description": "Product strategy, roadmap, product design and user research for AlgoWorks Fleet.",
+    "head_employee_id": "EMP-239"
+  },
+  {
+    "department_id": "DEPT-08",
+    "name": "Legal & Compliance",
+    "code": "LEGAL",
+    "description": "Commercial contracts, privacy, regulatory compliance and internal audit.",
+    "head_employee_id": "EMP-304"
+  },
+  {
+    "department_id": "DEPT-09",
+    "name": "Executive Office",
+    "code": "EXEC",
+    "description": "CEO, COO and the office of the CEO.",
+    "head_employee_id": "EMP-103"
+  }
+]

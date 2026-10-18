@@ -1,0 +1,410 @@
+[
+  {
+    "system_id": "SYS-01",
+    "name": "AlgoWorks Fleet Production Platform",
+    "owner_team_id": "TEAM-01",
+    "category": "customer-facing",
+    "criticality": "critical",
+    "access_request_process_summary": "No direct end-user access. Engineers get non-prod access via GitHub team membership; production access is governed by the Production Access & Break-Glass Policy and granted through the AWS Production Account.",
+    "description": "The core multi-tenant SaaS platform (fleet tracking, dispatch, route optimisation, telematics ingestion) that customers buy. Runs on Kubernetes in AWS ap-south-1 with a warm standby in ap-southeast-1. Owned by Platform Backend; deployed via ArgoCD.",
+    "tags": [
+      "product",
+      "kubernetes",
+      "api"
+    ]
+  },
+  {
+    "system_id": "SYS-02",
+    "name": "AlgoWorks Fleet Customer Portal",
+    "owner_team_id": "TEAM-02",
+    "category": "customer-facing",
+    "criticality": "high",
+    "access_request_process_summary": "Customer users are provisioned by Customer Success from the AlgoWorks Admin Console. Internal staff log in with Okta SSO as 'impersonation viewers' after Customer Success approval.",
+    "description": "React web application customers use to manage fleets, drivers, geofences, reports and invoices. Currently being rebuilt under the Customer Portal Revamp project (new design system, SAML SSO for customer IdPs).",
+    "tags": [
+      "product",
+      "react",
+      "web"
+    ]
+  },
+  {
+    "system_id": "SYS-03",
+    "name": "AlgoWorks Fleet Driver Mobile App",
+    "owner_team_id": "TEAM-02",
+    "category": "customer-facing",
+    "criticality": "high",
+    "access_request_process_summary": "Public app (Play Store / App Store). Internal testers request TestFlight / Play internal-track access from the Frontend & Mobile team via Slack #eng-frontend.",
+    "description": "Android and iOS app used by customers' drivers for trip check-in, navigation, proof-of-delivery and offline trip capture. Released fortnightly; hotfixes as needed.",
+    "tags": [
+      "product",
+      "mobile",
+      "android",
+      "ios"
+    ]
+  },
+  {
+    "system_id": "SYS-04",
+    "name": "Salesforce CRM",
+    "owner_team_id": "TEAM-08",
+    "category": "customer-facing",
+    "criticality": "high",
+    "access_request_process_summary": "Raise an Access Request in ServiceNow (catalog: 'Salesforce access'). Line manager approval required; Sales Ops (Salesforce Administrator) assigns profile/permission sets; licence availability is checked first. Login is via Okta SSO.",
+    "description": "System of record for accounts, opportunities, quotes (CPQ implementation in progress) and renewals. Integrated with HubSpot (lead sync), Chargebee (subscriptions) and Zendesk (account context).",
+    "tags": [
+      "crm",
+      "sales",
+      "sso"
+    ]
+  },
+  {
+    "system_id": "SYS-05",
+    "name": "Zendesk Support Desk",
+    "owner_team_id": "TEAM-09",
+    "category": "customer-facing",
+    "criticality": "high",
+    "access_request_process_summary": "Agent seats are limited by licence count. Request via ServiceNow with Head of Customer Success approval; IT adds the Okta group; Customer Success assigns the agent role. Light-agent (view-only) seats are free and approved by any CS lead.",
+    "description": "Customer support ticketing and help centre. SSO-integrated with the Customer Portal since the Zendesk-Portal SSO project. Tier 1/2 support queues, SLA policies and the customer-facing knowledge base live here.",
+    "tags": [
+      "support",
+      "ticketing",
+      "sso"
+    ]
+  },
+  {
+    "system_id": "SYS-06",
+    "name": "Chargebee Billing",
+    "owner_team_id": "TEAM-15",
+    "category": "customer-facing",
+    "criticality": "high",
+    "access_request_process_summary": "Restricted to Finance by default. Non-Finance staff may request the 'Invoice Viewer (read-only)' role via ServiceNow with Payroll & Compliance Manager approval. Admin roles require CFO approval.",
+    "description": "Subscription billing, invoicing, dunning and payment collection for all AlgoWorks Fleet customers. Syncs invoices to NetSuite nightly; revenue-recognition automation project in progress.",
+    "tags": [
+      "billing",
+      "finance",
+      "restricted"
+    ]
+  },
+  {
+    "system_id": "SYS-07",
+    "name": "HubSpot Marketing Hub",
+    "owner_team_id": "TEAM-17",
+    "category": "customer-facing",
+    "criticality": "medium",
+    "access_request_process_summary": "Marketing users: request via ServiceNow with Demand Generation Manager approval. Sales users get 'Sales Hub Starter' seats automatically through the Sales Okta group. Admin (super-admin) rights limited to Marketing Ops.",
+    "description": "Marketing automation: forms, landing pages, email nurture, lead scoring and the website chat widget. Bidirectional lead/contact sync with Salesforce.",
+    "tags": [
+      "marketing",
+      "automation",
+      "sso"
+    ]
+  },
+  {
+    "system_id": "SYS-08",
+    "name": "Corporate Website CMS",
+    "owner_team_id": "TEAM-16",
+    "category": "customer-facing",
+    "criticality": "medium",
+    "access_request_process_summary": "WordPress editor/author roles are granted by the Content & Brand Manager directly (no ServiceNow ticket needed). External agencies get sponsored contractor accounts through IAM with a 90-day expiry.",
+    "description": "WordPress site at algoworks.io (marketing pages, blog, careers, pricing). Being migrated to a headless WordPress + Next.js stack under the Website Redesign project.",
+    "tags": [
+      "marketing",
+      "wordpress",
+      "public"
+    ]
+  },
+  {
+    "system_id": "SYS-09",
+    "name": "AlgoWorks Admin Console",
+    "owner_team_id": "TEAM-01",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "Governed by the Privileged Access & Admin Console Policy: requester must have completed the 'Handling Customer Data' training in LearnHub, the request needs Platform Engineering Manager approval, and IAM adds the user to the console-readonly or console-operator Okta group. Quarterly access review.",
+    "description": "Internal web tool for looking up customer tenants, feature flags, subscription state, driver devices and impersonating customer users for troubleshooting. Contains customer PII. Used by Engineering, Customer Success and (read-only) Sales Ops.",
+    "tags": [
+      "internal-tool",
+      "pii",
+      "privileged"
+    ]
+  },
+  {
+    "system_id": "SYS-10",
+    "name": "Okta SSO",
+    "owner_team_id": "TEAM-04",
+    "category": "internal",
+    "criticality": "critical",
+    "access_request_process_summary": "Every employee gets an Okta account on Day -1 via the Darwinbox -> Okta HR-driven provisioning flow. Application assignments are driven by Okta group membership; group changes are requested via ServiceNow and fulfilled by IAM.",
+    "description": "Identity provider for all SaaS and internal apps. Enforces MFA (Okta Verify push / FIDO2). Source of truth for app assignments via groups. Phase 2 rollout (2025) moved Salesforce, Zendesk, HubSpot and Darwinbox to SSO-only.",
+    "tags": [
+      "identity",
+      "sso",
+      "mfa"
+    ]
+  },
+  {
+    "system_id": "SYS-11",
+    "name": "GlobalProtect VPN",
+    "owner_team_id": "TEAM-04",
+    "category": "internal",
+    "criticality": "critical",
+    "access_request_process_summary": "Request via ServiceNow 'VPN access' catalog item with manager approval. IAM adds the user to the appropriate Okta VPN group. Contractors receive VPN through a sponsored account and must be explicitly scoped.",
+    "description": "Palo Alto GlobalProtect remote-access VPN. Required for the AlgoWorks Admin Console, Metabase, Snowflake private link, internal Confluence spaces flagged 'restricted' and the office file shares. Split-tunnel by default.",
+    "tags": [
+      "network",
+      "remote-access"
+    ]
+  },
+  {
+    "system_id": "SYS-12",
+    "name": "1Password Business",
+    "owner_team_id": "TEAM-04",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "All employees are auto-provisioned a personal vault. Shared team vaults are created by IAM on request (ServiceNow) with team lead approval; vault membership is managed by the vault's designated owner.",
+    "description": "Company password manager. Shared vaults hold service-account credentials, demo-environment logins and vendor portal passwords. Sharing credentials over Slack or email is prohibited by the Password & MFA Standard.",
+    "tags": [
+      "security",
+      "secrets"
+    ]
+  },
+  {
+    "system_id": "SYS-13",
+    "name": "Microsoft 365",
+    "owner_team_id": "TEAM-05",
+    "category": "internal",
+    "criticality": "critical",
+    "access_request_process_summary": "Mailbox, OneDrive and SharePoint access are provisioned automatically on joining. Shared mailboxes, distribution lists and SharePoint site access are requested via ServiceNow with the owning manager's approval.",
+    "description": "Outlook/Exchange Online email and calendar, OneDrive, SharePoint document libraries and Teams (used mainly for external meetings). Email is the formal channel for approvals, HR communications and vendor correspondence.",
+    "tags": [
+      "email",
+      "collaboration"
+    ]
+  },
+  {
+    "system_id": "SYS-14",
+    "name": "Slack",
+    "owner_team_id": "TEAM-05",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "Auto-provisioned via Okta on joining. Private channel creation and Slack Connect (external shared channels) are requested via ServiceNow; public channels can be created by anyone.",
+    "description": "Primary internal chat. Company-wide channels (#general, #it-helpdesk, #incidents), team channels, project channels and social channels. Retention: 2 years.",
+    "tags": [
+      "chat",
+      "collaboration"
+    ]
+  },
+  {
+    "system_id": "SYS-15",
+    "name": "ServiceNow ITSM",
+    "owner_team_id": "TEAM-05",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "All employees can raise tickets through the Employee Service Portal. Fulfiller (agent) roles for IT, HR and Finance queues are granted by the ServiceNow admin on request from the respective team lead.",
+    "description": "Ticketing system for IT incidents (INC), service requests (RITM), changes (CHG) and, since 2026, HR and Finance queues. The Self-Service Catalog project is adding access-request catalog items with automatic routing to system owners.",
+    "tags": [
+      "itsm",
+      "ticketing"
+    ]
+  },
+  {
+    "system_id": "SYS-16",
+    "name": "Confluence",
+    "owner_team_id": "TEAM-05",
+    "category": "internal",
+    "criticality": "medium",
+    "access_request_process_summary": "Auto-provisioned via Okta. Space-level permissions are managed by each space's owner; restricted spaces (Security, Payroll, Leadership) require the space owner's explicit approval.",
+    "description": "Company wiki: policies, runbooks, project pages, meeting notes, onboarding guides and decision logs. Spaces per department plus project spaces.",
+    "tags": [
+      "wiki",
+      "documentation"
+    ]
+  },
+  {
+    "system_id": "SYS-17",
+    "name": "Jira",
+    "owner_team_id": "TEAM-01",
+    "category": "dev-tooling",
+    "criticality": "high",
+    "access_request_process_summary": "Auto-provisioned for Engineering and IT via Okta groups. Other departments request a Jira licence via ServiceNow with team lead approval. New Jira projects are created by Platform Backend (the Jira admins) on request in #eng-platform or via a ServiceNow request.",
+    "description": "Issue tracking for engineering sprints, bugs, infra changes, data requests and, increasingly, cross-functional marketing and sales-ops projects.",
+    "tags": [
+      "issue-tracking",
+      "agile"
+    ]
+  },
+  {
+    "system_id": "SYS-18",
+    "name": "Microsoft Intune",
+    "owner_team_id": "TEAM-05",
+    "category": "internal",
+    "criticality": "medium",
+    "access_request_process_summary": "No end-user access. Devices are enrolled by the Endpoint Engineer at provisioning. Personal mobile devices needing Outlook are enrolled through the Intune Company Portal app on request to the Service Desk.",
+    "description": "Endpoint management and compliance for company laptops (macOS and Windows) and mobile devices. Enforces disk encryption, OS patch levels, screen lock and Defender. Compliance baseline project in progress.",
+    "tags": [
+      "endpoint",
+      "mdm",
+      "compliance"
+    ]
+  },
+  {
+    "system_id": "SYS-19",
+    "name": "Darwinbox HRMS",
+    "owner_team_id": "TEAM-11",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "All employees get self-service access on Day 1 (profile, leave, payslips, documents). Manager and HR admin roles are assigned by People Operations based on role in the org structure.",
+    "description": "HR system of record: employee master data, org structure, leave & attendance, onboarding workflows, performance reviews and letters. Drives Okta provisioning and (since 2026) auto-creates onboarding tickets in ServiceNow.",
+    "tags": [
+      "hr",
+      "hris",
+      "restricted"
+    ]
+  },
+  {
+    "system_id": "SYS-20",
+    "name": "Greenhouse ATS",
+    "owner_team_id": "TEAM-10",
+    "category": "internal",
+    "criticality": "medium",
+    "access_request_process_summary": "Recruiters and coordinators are provisioned by the Talent Acquisition Lead. Hiring managers and interviewers get 'Interviewer' access automatically when added to an interview plan. Site Admin is limited to TA leads.",
+    "description": "Applicant tracking: job postings, pipelines, interview scheduling, scorecards and offer approvals. Integrated with Darwinbox for hired-candidate handoff.",
+    "tags": [
+      "recruiting",
+      "hr"
+    ]
+  },
+  {
+    "system_id": "SYS-21",
+    "name": "Keka Payroll",
+    "owner_team_id": "TEAM-15",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "Restricted to the Payroll team and the CFO. No self-service; employees view payslips through Darwinbox. Any additional access requires CFO approval and is logged for audit.",
+    "description": "Payroll processing, statutory deductions (PF, PT, TDS), Form 16 generation and reimbursement payouts. Payslip data is pushed to Darwinbox monthly.",
+    "tags": [
+      "payroll",
+      "finance",
+      "restricted"
+    ]
+  },
+  {
+    "system_id": "SYS-22",
+    "name": "Zoho Expense",
+    "owner_team_id": "TEAM-13",
+    "category": "internal",
+    "criticality": "medium",
+    "access_request_process_summary": "Auto-provisioned for all employees. Approver roles follow the Darwinbox manager hierarchy. Finance admin roles are granted by the AP & Procurement Manager.",
+    "description": "Employee travel & expense claims, per-diem, corporate card reconciliation and reimbursement workflow. Being integrated with NetSuite for automated journal posting.",
+    "tags": [
+      "expenses",
+      "finance"
+    ]
+  },
+  {
+    "system_id": "SYS-23",
+    "name": "NetSuite ERP",
+    "owner_team_id": "TEAM-14",
+    "category": "internal",
+    "criticality": "high",
+    "access_request_process_summary": "Finance-only by default (limited licences). Read-only reporting access for non-Finance staff requires FP&A Manager approval plus CFO sign-off and is reviewed quarterly.",
+    "description": "General ledger, AP/AR, fixed assets, month-end close and management reporting. Receives invoices from Chargebee and (soon) expense journals from Zoho Expense.",
+    "tags": [
+      "erp",
+      "finance",
+      "restricted"
+    ]
+  },
+  {
+    "system_id": "SYS-24",
+    "name": "LearnHub LMS",
+    "owner_team_id": "TEAM-12",
+    "category": "internal",
+    "criticality": "low",
+    "access_request_process_summary": "All employees are auto-enrolled. Course authoring rights are granted by L&D. Mandatory trainings (security awareness, code of conduct, handling customer data) are assigned automatically.",
+    "description": "Learning management system (Docebo) hosting mandatory compliance training, the manager development programme, and self-paced technical courses.",
+    "tags": [
+      "learning",
+      "hr"
+    ]
+  },
+  {
+    "system_id": "SYS-25",
+    "name": "GitHub Enterprise",
+    "owner_team_id": "TEAM-01",
+    "category": "dev-tooling",
+    "criticality": "critical",
+    "access_request_process_summary": "Engineering and IT get access via Okta group on joining; repo/team membership is managed by the Platform Backend Jira/GitHub admins. Non-engineering users need an Engineering Manager's approval and a paid seat (checked against licence count).",
+    "description": "Source control, code review, GitHub Actions CI (self-hosted runners in AWS) and the container registry for all AlgoWorks software. Branch protection is enforced per the Code Review & Branch Protection Standard.",
+    "tags": [
+      "source-control",
+      "ci"
+    ]
+  },
+  {
+    "system_id": "SYS-26",
+    "name": "AWS Production Account",
+    "owner_team_id": "TEAM-06",
+    "category": "dev-tooling",
+    "criticality": "critical",
+    "access_request_process_summary": "Standing read-only access for Platform Backend and Cloud teams via Okta -> AWS IAM Identity Center. Write/admin access is time-bound and follows the Production Access & Break-Glass Policy (Cloud Infrastructure Lead approval, 4-hour sessions, post-hoc review).",
+    "description": "AWS Organisations account hosting production workloads (EKS, RDS PostgreSQL, ElastiCache, S3, Kinesis). Separate sandbox and staging accounts exist with broader developer access.",
+    "tags": [
+      "cloud",
+      "aws",
+      "privileged"
+    ]
+  },
+  {
+    "system_id": "SYS-27",
+    "name": "ArgoCD Deployment Platform",
+    "owner_team_id": "TEAM-06",
+    "category": "dev-tooling",
+    "criticality": "critical",
+    "access_request_process_summary": "Read access for all engineers via Okta. Sync/rollback rights per application are granted to the owning team's GitHub team automatically. Cluster-admin is restricted to Cloud Infrastructure.",
+    "description": "GitOps continuous delivery for all Kubernetes workloads. Production deployments happen by merging to the environment repo; ArgoCD reconciles automatically. Replaced Jenkins in late 2025.",
+    "tags": [
+      "cd",
+      "gitops",
+      "kubernetes"
+    ]
+  },
+  {
+    "system_id": "SYS-28",
+    "name": "Datadog Monitoring",
+    "owner_team_id": "TEAM-06",
+    "category": "dev-tooling",
+    "criticality": "high",
+    "access_request_process_summary": "Standard (read) role for all engineers via Okta group. Non-engineering viewer access (e.g. TAMs for customer dashboards) requires Cloud Infrastructure Lead approval. Admin restricted to Cloud Infrastructure.",
+    "description": "APM, infrastructure metrics, logs, synthetics and alerting for the production platform. Alerts route to PagerDuty schedules defined in the On-Call & Escalation Policy.",
+    "tags": [
+      "observability",
+      "alerting"
+    ]
+  },
+  {
+    "system_id": "SYS-29",
+    "name": "Snowflake Data Warehouse",
+    "owner_team_id": "TEAM-03",
+    "category": "dev-tooling",
+    "criticality": "high",
+    "access_request_process_summary": "Governed by the Snowflake Data Access Policy. Curated schemas: Data Engineering Manager approval via a Jira DATA ticket. PII-tagged schemas: additionally require Data Protection Officer sign-off. Access is role-based (Okta group -> Snowflake role).",
+    "description": "Central analytics warehouse: product telemetry, billing, CRM and support data modelled with dbt. Source for Metabase, the Customer 360 dashboard and FP&A reporting. Cost optimisation project in progress.",
+    "tags": [
+      "data",
+      "warehouse",
+      "pii"
+    ]
+  },
+  {
+    "system_id": "SYS-30",
+    "name": "Metabase BI",
+    "owner_team_id": "TEAM-03",
+    "category": "internal",
+    "criticality": "medium",
+    "access_request_process_summary": "Viewer access to curated collections is granted via ServiceNow with team lead approval; Data Engineering adds the Okta group. SQL/native-query access requires Data Engineering Manager approval.",
+    "description": "Self-service BI over curated Snowflake datasets: sales dashboards, support metrics, product usage, finance reporting. Accessible only over VPN.",
+    "tags": [
+      "bi",
+      "reporting"
+    ]
+  }
+]

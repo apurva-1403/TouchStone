@@ -1,0 +1,1049 @@
+[
+ {
+  "id": "DQ-01",
+  "query": "How do I get access to Salesforce?",
+  "drift": false,
+  "drift_exp": true,
+  "confl": false,
+  "confl_exp": false,
+  "pol": false,
+  "prec": 0.0,
+  "rec": 0.0,
+  "latency": 21.0,
+  "tools": 2,
+  "timing": {
+   "model": [
+    2.3,
+    11.1
+   ],
+   "tools": 7.3
+  },
+  "response": {
+   "answer": "You can get access to Salesforce by raising an Access Request in ServiceNow through the 'Salesforce access' catalog item [1][2].\n* Your line manager's approval is required [1].\n* Sales Operations assigns your profile and permission sets [1][3].\n* A license availability check is performed first [1].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "DOC-0101#0",
+     "record_id": "DOC-0101",
+     "title": "Salesforce CRM - user guide \u2014 What it is / How to get access / Common tasks / Known issues and gotchas / Support",
+     "source_system": "confluence",
+     "date": "2026-07-13",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 2,
+     "chunk_id": "EMAIL-0055#0",
+     "record_id": "EMAIL-0055",
+     "title": "New: request application access through the ServiceNow catalog",
+     "source_system": "outlook",
+     "date": "2026-06-08",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 3,
+     "chunk_id": "RITM-22604#0",
+     "record_id": "RITM-22604",
+     "title": "HubSpot (Marketing Hub user) + Salesforce read-only - Lavanya Bhat",
+     "source_system": "servicenow",
+     "date": "2026-09-16",
+     "confidential": false,
+     "access_basis": null
+    }
+   ],
+   "conflicts": [],
+   "staleness": [],
+   "fallback": {
+    "needed": true,
+    "contact_employee_id": "EMP-015",
+    "contact_name": "Vinod Krishnamurthy",
+    "contact_role": "Sales Operations Manager",
+    "reason": "Vinod Krishnamurthy is the Sales Operations Manager and can assist with Salesforce access."
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "How do I get access to Salesforce?"
+     },
+     "summary": "8 results, 6 linked",
+     "secs": 7.3
+    },
+    {
+     "tool": "find_owner",
+     "args": {
+      "system_or_policy": "Salesforce"
+     },
+     "summary": "Sales Operations & Deal Desk",
+     "secs": 0.0
+    }
+   ],
+   "meta": {
+    "model": "gemini-2.5-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 21.0,
+    "model_calls": 2,
+    "input_tokens": 10061,
+    "output_tokens": 606,
+    "dropped_citations": [],
+    "model_call_secs": [
+     2.3,
+     11.1
+    ],
+    "tool_secs": 7.3,
+    "cached": false,
+    "retrieved_record_ids": [
+     "DOC-0101",
+     "DOC-0128",
+     "DOC-0136",
+     "DOC-0138",
+     "DOC-0140",
+     "EMAIL-0055",
+     "POL-01",
+     "POL-19",
+     "RITM-20040",
+     "RITM-20278",
+     "RITM-20538",
+     "RITM-20781",
+     "RITM-21264",
+     "RITM-21590",
+     "RITM-22133",
+     "RITM-22406",
+     "RITM-22510",
+     "RITM-22604"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 1,
+   "missing": "The candidate answer misses all key facts from the reference, including the formal escalation policy (escalating to VP Sales after 2 business days), the actual undocumented practice (IAM's 5-business-day SLA override using informal Slack confirmations from other managers/peers), and the specific case examples (Ritika Sharma, Natasha D'Souza, Vinod Krishnamurthy, Sonal Mehra)."
+  }
+ },
+ {
+  "id": "DQ-03",
+  "query": "Do I need a change request (CHG) to deploy to production?",
+  "drift": true,
+  "drift_exp": true,
+  "confl": false,
+  "confl_exp": false,
+  "pol": true,
+  "prec": 1.0,
+  "rec": 0.14285714285714285,
+  "latency": 18.1,
+  "tools": 2,
+  "timing": {
+   "model": [
+    4.7,
+    12.9
+   ],
+   "tools": 0.5
+  },
+  "response": {
+   "answer": "No, a change request (CHG) is generally not needed for standard application deployments to production [1]. Such deployments are approved by a merged `algoworks-deploy` pull request [1]. The Change Management Policy [2] states that all production application deployments require a CHG, but this policy is outdated, and the current practice has been in effect since December 1, 2025 [1].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "DOC-0089#0",
+     "record_id": "DOC-0089",
+     "title": "Decision: GitOps pull-request approval as the change record for application deployments \u2014 Context / Decision / Open question (raised at CAB, not resolved) / Follow-ups",
+     "source_system": "confluence",
+     "date": "2025-09-02",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 2,
+     "chunk_id": "POL-09#0",
+     "record_id": "POL-09",
+     "title": "Change Management Policy \u2014 1. Purpose / 2. Scope / 3. Policy",
+     "source_system": "confluence",
+     "date": "2025-06-09",
+     "confidential": false,
+     "access_basis": null
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "policy_vs_practice",
+     "summary": "The Change Management Policy states all app deployments need a CHG, but current practice since Dec 2025 is that standard app deployments only need a merged GitOps PR.",
+     "record_ids": [
+      "POL-09",
+      "DOC-0089",
+      "EMAIL-0038"
+     ],
+     "current_view": "DOC-0089"
+    }
+   ],
+   "staleness": [
+    {
+     "record_id": "POL-09",
+     "reason": "Policy is outdated and does not reflect current practice regarding CHGs for application deployments."
+    }
+   ],
+   "fallback": {
+    "needed": false,
+    "contact_employee_id": "EMP-022",
+    "contact_name": "Varun Chandra",
+    "contact_role": "Cloud Infrastructure Lead",
+    "reason": "The policy owner is Varun Chandra (EMP-022) and an update request for POL-09 is in progress (RITM-21845)."
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "Do I need a change request (CHG) to deploy to production?"
+     },
+     "summary": "8 results, 6 linked",
+     "secs": 0.5
+    },
+    {
+     "tool": "lookup_person",
+     "args": {
+      "name_or_id": "Varun Chandra"
+     },
+     "summary": "Varun Chandra (active)",
+     "secs": 0.0
+    }
+   ],
+   "meta": {
+    "model": "gemini-2.5-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 18.1,
+    "model_calls": 2,
+    "input_tokens": 11392,
+    "output_tokens": 845,
+    "dropped_citations": [],
+    "model_call_secs": [
+     4.7,
+     12.9
+    ],
+    "tool_secs": 0.5,
+    "cached": false,
+    "retrieved_record_ids": [
+     "CHG-20783",
+     "CHG-21640",
+     "CHG-21840",
+     "CHG-22272",
+     "DOC-0089",
+     "DOC-0100",
+     "DOC-0111",
+     "EMAIL-0038",
+     "POL-09",
+     "POL-15",
+     "RITM-21845",
+     "RITM-22089",
+     "SLACK-0171",
+     "SLACK-0241"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 4,
+   "missing": "Does not mention that CHGs are still required for infrastructure deployments, nor the origin of the decision at CAB in September 2025 (EVT-042)."
+  }
+ },
+ {
+  "id": "DQ-05",
+  "query": "Who approves Snowflake PII access now that the DPO has left?",
+  "drift": true,
+  "drift_exp": true,
+  "confl": false,
+  "confl_exp": false,
+  "pol": true,
+  "prec": 1.0,
+  "rec": 0.3125,
+  "latency": 16.6,
+  "tools": 2,
+  "timing": {
+   "model": [
+    2.2,
+    12.0
+   ],
+   "tools": 2.3
+  },
+  "response": {
+   "answer": "The Data Engineering Manager approves Snowflake PII access while the DPO role remains vacant [1][2].\n\nThe policy says written sign-off from the Data Protection Officer is required [3], but in practice the Data Engineering Manager approves it directly since April 2026 [1][2][4].\n\n- Requests must state the specific business purpose and what data leaves Snowflake [1][2].\n- Access is granted with a strict 6-month expiry date [1][4].\n- A formal policy update naming an interim approver remains open [5].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "EMAIL-0042#0",
+     "record_id": "EMAIL-0042",
+     "title": "RE: DPO sign-off for PII access - who approves now?",
+     "source_system": "outlook",
+     "date": "2026-05-12",
+     "confidential": true,
+     "access_basis": "evaluation"
+    },
+    {
+     "n": 2,
+     "chunk_id": "RITM-21883#0",
+     "record_id": "RITM-21883",
+     "title": "Snowflake PII schema access (customer contacts) - Chitra Mohan - lifecycle email segmentation",
+     "source_system": "servicenow",
+     "date": "2026-05-13",
+     "confidential": true,
+     "access_basis": "evaluation"
+    },
+    {
+     "n": 3,
+     "chunk_id": "POL-18#0",
+     "record_id": "POL-18",
+     "title": "Snowflake Data Access Policy \u2014 1. Access model / 2. Requesting access / 3. Reviews / 4. Service accounts",
+     "source_system": "confluence",
+     "date": "2025-07-21",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 4,
+     "chunk_id": "RITM-22137#0",
+     "record_id": "RITM-22137",
+     "title": "Snowflake PII access - Ravi Shankar - churn model features (driver + account contacts)",
+     "source_system": "servicenow",
+     "date": "2026-07-01",
+     "confidential": true,
+     "access_basis": "evaluation"
+    },
+    {
+     "n": 5,
+     "chunk_id": "RITM-21899#0",
+     "record_id": "RITM-21899",
+     "title": "Policy update request: Snowflake Data Access Policy v3 - interim owner for PII sign-off",
+     "source_system": "servicenow",
+     "date": "2026-05-13",
+     "confidential": true,
+     "access_basis": "evaluation"
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "policy_vs_practice",
+     "summary": "POL-18 requires written DPO sign-off for Snowflake PII schema access, but since the DPO exited in February 2026, Data Engineering Manager Suresh Pillai approves requests directly with stated purpose and 6-month expiry.",
+     "record_ids": [
+      "POL-18",
+      "EMAIL-0042",
+      "RITM-21883",
+      "RITM-22137"
+     ],
+     "current_view": "EMAIL-0042"
+    }
+   ],
+   "staleness": [
+    {
+     "record_id": "POL-18",
+     "reason": "Lists the exited DPO (Pradeep Chauhan) as required approver for Snowflake PII schema access, which has been superseded in practice by Data Engineering Manager approval."
+    }
+   ],
+   "fallback": {
+    "needed": false,
+    "contact_employee_id": "EMP-016",
+    "contact_name": "Suresh Pillai",
+    "contact_role": "Data Engineering Manager",
+    "reason": "Suresh Pillai is the active Data Engineering Manager currently approving Snowflake PII access requests."
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "Who approves Snowflake PII access now that the DPO has left?"
+     },
+     "summary": "8 results, 6 linked, 1 similar-case group(s)",
+     "secs": 2.3
+    },
+    {
+     "tool": "lookup_person",
+     "args": {
+      "name_or_id": "Suresh Pillai"
+     },
+     "summary": "Suresh Pillai (active)",
+     "secs": 0.0
+    }
+   ],
+   "meta": {
+    "model": "gemini-3.8-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 16.6,
+    "model_calls": 2,
+    "input_tokens": 12614,
+    "output_tokens": 457,
+    "dropped_citations": [],
+    "model_call_secs": [
+     2.2,
+     12.0
+    ],
+    "tool_secs": 2.3,
+    "cached": false,
+    "retrieved_record_ids": [
+     "DOC-0070",
+     "DOC-0096",
+     "DOC-0102",
+     "DOC-0136",
+     "EMAIL-0017",
+     "EMAIL-0042",
+     "EMAIL-0043",
+     "POL-10",
+     "POL-18",
+     "RITM-21566",
+     "RITM-21567",
+     "RITM-21883",
+     "RITM-21899",
+     "RITM-22137",
+     "RITM-22256"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 5,
+   "missing": "none"
+  }
+ },
+ {
+  "id": "DQ-07",
+  "query": "What is the deadline for submitting expense claims?",
+  "drift": true,
+  "drift_exp": true,
+  "confl": false,
+  "confl_exp": false,
+  "pol": true,
+  "prec": 0.6,
+  "rec": 0.16666666666666666,
+  "latency": 19.4,
+  "tools": 2,
+  "timing": {
+   "model": [
+    2.8,
+    11.3,
+    3.7
+   ],
+   "tools": 1.7
+  },
+  "response": {
+   "answer": "The policy states expense claims must be submitted within 30 days of the expense date, but in practice, Finance accepts claims up to 60 days with manager approval since FY26 year-end [1][2].\n*   To make the current month's payroll, claims must be submitted by midnight on the 20th of the month [3][4].\n*   Claims older than 60 days will be rejected [1].\n*   A policy update to reflect the 60-day window is in progress [5].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "RITM-22103#0",
+     "record_id": "RITM-22103",
+     "title": "Expense claim auto-rejected as 'older than 30 days' - Aakash Bhatia - Chennai customer visit (May)",
+     "source_system": "servicenow",
+     "date": "2026-06-25",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 2,
+     "chunk_id": "POL-26#0",
+     "record_id": "POL-26",
+     "title": "Travel & Expense Reimbursement Policy \u2014 1. Submission / 2. Travel",
+     "source_system": "confluence",
+     "date": "2025-11-10",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 3,
+     "chunk_id": "SLACK-0286#0",
+     "record_id": "SLACK-0286",
+     "title": "#finance \u00b7 2026-09-11",
+     "source_system": "slack",
+     "date": "2026-09-11",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 4,
+     "chunk_id": "DOC-0110#0",
+     "record_id": "DOC-0110",
+     "title": "Working with Finance: month-end calendar, expenses and purchase requests \u2014 Monthly rhythm / Expenses (Zoho Expense) / Buying something / Contacts",
+     "source_system": "confluence",
+     "date": "2026-08-31",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 5,
+     "chunk_id": "RITM-22141#0",
+     "record_id": "RITM-22141",
+     "title": "Policy update request: Travel & Expense Reimbursement Policy v6 - 60-day window, Rs 2,500 per diem, Rs 1,000 receipt threshold",
+     "source_system": "servicenow",
+     "date": "2026-07-01",
+     "confidential": false,
+     "access_basis": null
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "policy_vs_practice",
+     "summary": "The Travel & Expense Reimbursement Policy [POL-26] states a 30-day submission deadline, but Finance has been accepting claims up to 60 days with manager approval since FY26 year-end, as evidenced by RITM-22103 dated 2026-06-25.",
+     "record_ids": [
+      "POL-26",
+      "RITM-22103"
+     ],
+     "current_view": "RITM-22103"
+    }
+   ],
+   "staleness": [
+    {
+     "record_id": "POL-26",
+     "reason": "Practice has diverged from policy, with claims being accepted up to 60 days instead of 30 days."
+    }
+   ],
+   "fallback": {
+    "needed": true,
+    "contact_employee_id": "EMP-020",
+    "contact_name": "Ramesh Babu",
+    "contact_role": "Accounts Payable Specialist",
+    "reason": "Ramesh Babu (EMP-020) handles expense claim exceptions and can provide more context on the 60-day practice."
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "What is the deadline for submitting expense claims?"
+     },
+     "summary": "8 results, 6 linked, 1 similar-case group(s) (1 with different outcomes)",
+     "secs": 1.7
+    },
+    {
+     "tool": "lookup_person",
+     "args": {
+      "name_or_id": "Ramesh Babu"
+     },
+     "summary": "Ramesh Babu (active)",
+     "secs": 0.0
+    }
+   ],
+   "meta": {
+    "model": "gemini-2.5-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 19.4,
+    "model_calls": 3,
+    "input_tokens": 17644,
+    "output_tokens": 1515,
+    "dropped_citations": [],
+    "model_call_secs": [
+     2.8,
+     11.3,
+     3.7
+    ],
+    "tool_secs": 1.7,
+    "cached": false,
+    "retrieved_record_ids": [
+     "DOC-0110",
+     "DOC-0137",
+     "EMAIL-0049",
+     "EMAIL-0063",
+     "POL-24",
+     "POL-26",
+     "POL-28",
+     "POL-30",
+     "RITM-21938",
+     "RITM-22103",
+     "RITM-22141",
+     "SLACK-0185",
+     "SLACK-0273",
+     "SLACK-0286"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 5,
+   "missing": "none"
+  }
+ },
+ {
+  "id": "DQ-14",
+  "query": "Has the VPN disconnecting every 30 minutes on Wi-Fi been solved before?",
+  "drift": false,
+  "drift_exp": false,
+  "confl": true,
+  "confl_exp": true,
+  "pol": false,
+  "prec": 1.0,
+  "rec": 0.5,
+  "latency": 18.5,
+  "tools": 1,
+  "timing": {
+   "model": [
+    12.1,
+    4.4
+   ],
+   "tools": 1.9
+  },
+  "response": {
+   "answer": "The VPN disconnecting every 30 minutes on Wi-Fi has been encountered and \"resolved\" in the past, but the solutions varied and the underlying issue is still under investigation. Initially, in March 2026, it was resolved for one user by reinstalling GlobalProtect [1]. In June 2026, another user found reinstalling did not work and it was resolved by disabling IPv6 on the Wi-Fi adapter [2]. A problem record was opened in August 2026 to consolidate these issues, as there is still no confirmed root cause and previous fixes have not been fully effective for all users [3].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "INC-21595#0",
+     "record_id": "INC-21595",
+     "title": "VPN disconnects every ~30 minutes on home Wi-Fi - Payal Shah",
+     "source_system": "servicenow",
+     "date": "2026-03-10",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 2,
+     "chunk_id": "INC-22069#0",
+     "record_id": "INC-22069",
+     "title": "GlobalProtect drops connection every 25-30 min on Wi-Fi - Nithin George",
+     "source_system": "servicenow",
+     "date": "2026-06-17",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 3,
+     "chunk_id": "INC-22356#0",
+     "record_id": "INC-22356",
+     "title": "PROBLEM: GlobalProtect periodic disconnects (~30 min) on home Wi-Fi - multiple users, no confirmed root cause",
+     "source_system": "servicenow",
+     "date": "2026-08-04",
+     "confidential": false,
+     "access_basis": null
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "conflicting_resolutions",
+     "summary": "INC-21595 was resolved by reinstalling GlobalProtect, while INC-22069 found reinstalling ineffective and resolved it by disabling IPv6.",
+     "record_ids": [
+      "INC-21595",
+      "INC-22069"
+     ],
+     "current_view": "INC-22069"
+    }
+   ],
+   "staleness": [],
+   "fallback": {
+    "needed": true,
+    "contact_employee_id": null,
+    "contact_name": null,
+    "contact_role": null,
+    "reason": "The problem is still under investigation by Lakshmi Narayanan, who opened problem record INC-22356."
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "Has the VPN disconnecting every 30 minutes on Wi-Fi been solved before?"
+     },
+     "summary": "8 results, 5 linked, 1 similar-case group(s) (1 with different outcomes)",
+     "secs": 1.9
+    }
+   ],
+   "meta": {
+    "model": "gemini-2.5-flash",
+    "user_id": "SYSTEM",
+    "confidence": "medium",
+    "latency_s": 18.5,
+    "model_calls": 2,
+    "input_tokens": 10877,
+    "output_tokens": 1363,
+    "dropped_citations": [],
+    "model_call_secs": [
+     12.1,
+     4.4
+    ],
+    "tool_secs": 1.9,
+    "cached": false,
+    "retrieved_record_ids": [
+     "DOC-0099",
+     "EMAIL-0053",
+     "INC-20034",
+     "INC-20096",
+     "INC-20102",
+     "INC-20129",
+     "INC-20227",
+     "INC-21021",
+     "INC-21388",
+     "INC-21595",
+     "INC-21722",
+     "INC-22069",
+     "INC-22356",
+     "POL-02",
+     "POL-13",
+     "RITM-21992",
+     "RITM-22230",
+     "SLACK-0249"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 4,
+   "missing": "Does not mention the specific users (Payal Shah, Nithin George) or department (Finance), or specifically that both users reported the issue still recurred intermittently after their tickets were closed."
+  }
+ },
+ {
+  "id": "DQ-18",
+  "query": "Can Customer Success get access to the AlgoWorks Admin Console?",
+  "drift": false,
+  "drift_exp": false,
+  "confl": false,
+  "confl_exp": true,
+  "pol": true,
+  "prec": 0.5,
+  "rec": 0.18181818181818182,
+  "latency": 11.8,
+  "tools": 3,
+  "timing": {
+   "model": [
+    1.9,
+    2.3,
+    2.9
+   ],
+   "tools": 4.6
+  },
+  "response": {
+   "answer": "Yes, Customer Success team members can get access to the AlgoWorks Admin Console [1][2].\n\n- Access is typically granted at the `console-readonly` level (or `console-operator` for designated Tier 2 staff) [2][3].\n- Requesters must first complete the \"Handling Customer Data\" course in LearnHub within the last 12 months with no exceptions allowed [2][4].\n- Requests require ServiceNow approval from both the line manager and the Platform Engineering Manager, plus IAM & Security Lead approval for operator access [2][4].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "DOC-0106#0",
+     "record_id": "DOC-0106",
+     "title": "AlgoWorks Admin Console - user guide \u2014 What it is / How to get access / Common tasks / Known issues and gotchas / Support",
+     "source_system": "confluence",
+     "date": "2026-04-27",
+     "confidential": true,
+     "access_basis": "evaluation"
+    },
+    {
+     "n": 2,
+     "chunk_id": "POL-11#0",
+     "record_id": "POL-11",
+     "title": "Privileged Access & Admin Console Policy \u2014 1. Scope / 2. Access levels / 3. Requirements for access / 4. Review and revocation",
+     "source_system": "confluence",
+     "date": "2026-04-27",
+     "confidential": true,
+     "access_basis": "evaluation"
+    },
+    {
+     "n": 3,
+     "chunk_id": "POL-33#0",
+     "record_id": "POL-33",
+     "title": "Customer Support SLA & Escalation Policy \u2014 1. Priorities and SLAs (Zendesk) / 2. Escalation to Engineering / 3. Customer communication",
+     "source_system": "confluence",
+     "date": "2026-05-04",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 4,
+     "chunk_id": "RITM-21908#0",
+     "record_id": "RITM-21908",
+     "title": "AlgoWorks Admin Console read-only access - Kunal Shah (Customer Success)",
+     "source_system": "servicenow",
+     "date": "2026-05-20",
+     "confidential": true,
+     "access_basis": "evaluation"
+    }
+   ],
+   "conflicts": [],
+   "staleness": [],
+   "fallback": {
+    "needed": false,
+    "contact_employee_id": "EMP-029",
+    "contact_name": "Kavya Reddy",
+    "contact_role": "IAM Analyst",
+    "reason": null
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "Can Customer Success get access to the AlgoWorks Admin Console?"
+     },
+     "summary": "8 results, 6 linked, 1 similar-case group(s)",
+     "secs": 4.6
+    },
+    {
+     "tool": "lookup_person",
+     "args": {
+      "name_or_id": "Kavya Reddy"
+     },
+     "summary": "Kavya Reddy (active)",
+     "secs": 0.0
+    },
+    {
+     "tool": "lookup_person",
+     "args": {
+      "name_or_id": "Rohan Mehta"
+     },
+     "summary": "Rohan Mehta (active)",
+     "secs": 0.0
+    }
+   ],
+   "meta": {
+    "model": "gemini-3.8-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 11.8,
+    "model_calls": 3,
+    "input_tokens": 18610,
+    "output_tokens": 255,
+    "dropped_citations": [],
+    "model_call_secs": [
+     1.9,
+     2.3,
+     2.9
+    ],
+    "tool_secs": 4.6,
+    "cached": false,
+    "retrieved_record_ids": [
+     "DOC-0096",
+     "DOC-0106",
+     "DOC-0112",
+     "DOC-0113",
+     "DOC-0140",
+     "EMAIL-0007",
+     "EMAIL-0045",
+     "EMAIL-0046",
+     "POL-11",
+     "POL-31",
+     "POL-33",
+     "RITM-21368",
+     "RITM-21799",
+     "RITM-21908",
+     "RITM-22532"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 1,
+   "missing": "Misses all specific facts, individuals, and case history from the reference: Preeti Nambiar obtaining access under policy v1 via manager attestation without training, Sameer Khan being denied access under policy v2 pending training, Kunal Shah's May request, and the resulting discrepancy where one team member has access without training while another lacks access."
+  }
+ },
+ {
+  "id": "DQ-25",
+  "query": "How many leave days can I carry forward to next year?",
+  "drift": false,
+  "drift_exp": false,
+  "confl": false,
+  "confl_exp": false,
+  "pol": true,
+  "prec": 1.0,
+  "rec": 0.75,
+  "latency": 4.2,
+  "tools": 1,
+  "timing": {
+   "model": [
+    2.8
+   ],
+   "tools": 1.4
+  },
+  "response": {
+   "answer": "You can carry forward up to **12 Privilege Leave (PL) days** to the next financial year [1].\n\n- Any PL balance exceeding 12 days automatically lapses on 31 March [1][2].\n- Leave must be applied for and tracked via Darwinbox [1][3].\n- Encashment of accumulated leave is permitted only upon exit from the company [1].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "POL-20#0",
+     "record_id": "POL-20",
+     "title": "Leave & Time-Off Policy \u2014 1. Entitlements (per financial year, April-March) / 2. Applying / 3. Approvals / 4. Comp-off",
+     "source_system": "confluence",
+     "date": "2026-04-13",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 2,
+     "chunk_id": "RITM-22512#0",
+     "record_id": "RITM-22512",
+     "title": "HR query: PL carry-forward and notice period for a 5-day leave in October",
+     "source_system": "servicenow",
+     "date": "2026-08-28",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 3,
+     "chunk_id": "EMAIL-0100#0",
+     "record_id": "EMAIL-0100",
+     "title": "RE: Leave carry-forward question",
+     "source_system": "outlook",
+     "date": "2026-08-28",
+     "confidential": false,
+     "access_basis": null
+    }
+   ],
+   "conflicts": [],
+   "staleness": [],
+   "fallback": {
+    "needed": false,
+    "contact_employee_id": null,
+    "contact_name": null,
+    "contact_role": null,
+    "reason": null
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "How many leave days can I carry forward to next year?"
+     },
+     "summary": "8 results, 1 linked",
+     "secs": 1.4
+    }
+   ],
+   "meta": {
+    "model": "gemini-3.8-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 4.2,
+    "model_calls": 1,
+    "input_tokens": 3759,
+    "output_tokens": 158,
+    "dropped_citations": [],
+    "model_call_secs": [
+     2.8
+    ],
+    "tool_secs": 1.4,
+    "cached": false,
+    "retrieved_record_ids": [
+     "EMAIL-0100",
+     "POL-20",
+     "POL-24",
+     "POL-26",
+     "RITM-21088",
+     "RITM-21124",
+     "RITM-21257",
+     "RITM-21296",
+     "RITM-22512",
+     "SLACK-0275"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 5,
+   "missing": "none"
+  }
+ },
+ {
+  "id": "OUTAGE",
+  "query": "What caused the March API outage and how was it fixed?",
+  "drift": false,
+  "drift_exp": false,
+  "confl": false,
+  "confl_exp": false,
+  "pol": null,
+  "prec": 0.3333333333333333,
+  "rec": 0.1111111111111111,
+  "latency": 4.8,
+  "tools": 1,
+  "timing": {
+   "model": [
+    3.1
+   ],
+   "tools": 1.6
+  },
+  "response": {
+   "answer": "The 17 March 2026 Fleet API outage was caused by a configuration change in `algoworks-api-gateway` 4.2.0 that reduced the PgBouncer pool size per pod from 200 to 50, exhausting database connections under production concurrency [1], [2].\n\n- **Impact**: ~60% of API requests failed between 14:05 and 14:52 IST, affecting 38 customers [3], [2].\n- **Fix**: The team rolled back the gateway service to version 4.1.7 via ArgoCD at 14:40 IST [2], [1].\n- **Recovery**: Error rates dropped below 1% and service recovered by 14:52 IST [2].",
+   "citations": [
+    {
+     "n": 1,
+     "chunk_id": "DOC-0122#0",
+     "record_id": "DOC-0122",
+     "title": "Postmortem: 17 March 2026 - AlgoWorks Fleet API outage (Sev1) \u2014 Summary / Timeline (IST) / Root cause / What went well",
+     "source_system": "confluence",
+     "date": "2026-03-20",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 2,
+     "chunk_id": "INC-21632#0",
+     "record_id": "INC-21632",
+     "title": "SEV1 - AlgoWorks Fleet API 5xx errors / platform degraded (17-Mar-2026 14:05-14:52 IST)",
+     "source_system": "servicenow",
+     "date": "2026-03-17",
+     "confidential": false,
+     "access_basis": null
+    },
+    {
+     "n": 3,
+     "chunk_id": "EMAIL-0022#0",
+     "record_id": "EMAIL-0022",
+     "title": "[RESOLVED] Sev1 - AlgoWorks Fleet API outage 17-Mar 14:05-14:52 IST",
+     "source_system": "outlook",
+     "date": "2026-03-17",
+     "confidential": false,
+     "access_basis": null
+    }
+   ],
+   "conflicts": [],
+   "staleness": [],
+   "fallback": {
+    "needed": false,
+    "contact_employee_id": null,
+    "contact_name": null,
+    "contact_role": null,
+    "reason": null
+   },
+   "access_note": null,
+   "trace": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "What caused the March API outage and how was it fixed?"
+     },
+     "summary": "8 results, 5 linked, 1 similar-case group(s)",
+     "secs": 1.6
+    }
+   ],
+   "meta": {
+    "model": "gemini-3.8-flash",
+    "user_id": "SYSTEM",
+    "confidence": "high",
+    "latency_s": 4.8,
+    "model_calls": 1,
+    "input_tokens": 5849,
+    "output_tokens": 260,
+    "dropped_citations": [],
+    "model_call_secs": [
+     3.1
+    ],
+    "tool_secs": 1.6,
+    "cached": false,
+    "retrieved_record_ids": [
+     "DOC-0093",
+     "DOC-0112",
+     "DOC-0122",
+     "DOC-0127",
+     "EMAIL-0005",
+     "EMAIL-0021",
+     "EMAIL-0022",
+     "INC-21632",
+     "INC-21635",
+     "INC-21637",
+     "POL-08",
+     "POL-16",
+     "RITM-21647"
+    ]
+   },
+   "chat_id": null
+  },
+  "judge": {
+   "score": 5,
+   "missing": "none"
+  }
+ }
+]

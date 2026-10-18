@@ -1,0 +1,491 @@
+[
+  {
+    "project_id": "PROJ-01",
+    "name": "AlgoWorks Fleet v4 API Platform Migration",
+    "team_id": "TEAM-01",
+    "staffed_employee_ids": [
+      "EMP-006",
+      "EMP-025",
+      "EMP-012",
+      "EMP-043",
+      "EMP-067",
+      "EMP-046"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-01-12",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-01",
+      "SYS-25",
+      "SYS-27",
+      "SYS-28"
+    ],
+    "description": "Re-platforming the public and internal APIs from the v3 monolith to versioned v4 services (Go + PostgreSQL), with a compatibility layer so customers can migrate over 12 months. Includes connection-pooling changes, OpenAPI-first contracts and a new rate-limiting tier. Target GA: October 2026."
+  },
+  {
+    "project_id": "PROJ-02",
+    "name": "Multi-Region AWS Deployment",
+    "team_id": "TEAM-06",
+    "staffed_employee_ids": [
+      "EMP-022",
+      "EMP-064",
+      "EMP-075",
+      "EMP-046",
+      "EMP-012"
+    ],
+    "status": "in_progress",
+    "start_date": "2025-11-03",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-26",
+      "SYS-27",
+      "SYS-28",
+      "SYS-01"
+    ],
+    "description": "Standing up a warm-standby production environment in ap-southeast-1 (Singapore) alongside ap-south-1 (Mumbai) to meet APAC customer data-residency asks and a 30-minute RTO. Active-passive design chosen over active-active for cost. Includes cross-region RDS replication and Route 53 failover."
+  },
+  {
+    "project_id": "PROJ-03",
+    "name": "Customer Portal Revamp",
+    "team_id": "TEAM-02",
+    "staffed_employee_ids": [
+      "EMP-013",
+      "EMP-018",
+      "EMP-057",
+      "EMP-072",
+      "EMP-025",
+      "EMP-065"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-02-02",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-02",
+      "SYS-01",
+      "SYS-10"
+    ],
+    "description": "Rebuilding the customer web portal on the new design system with a focus on reporting performance and accessibility. Scope expanded in April 2026 to include SAML SSO with customers' own identity providers after enterprise deal feedback, which moved the launch from September to November 2026."
+  },
+  {
+    "project_id": "PROJ-04",
+    "name": "Driver App Offline Mode",
+    "team_id": "TEAM-02",
+    "staffed_employee_ids": [
+      "EMP-013",
+      "EMP-037",
+      "EMP-048",
+      "EMP-043"
+    ],
+    "status": "completed",
+    "start_date": "2025-09-01",
+    "end_date": "2026-01-30",
+    "related_system_ids": [
+      "SYS-03",
+      "SYS-01"
+    ],
+    "description": "Allowed drivers to capture trip events and proof-of-delivery without connectivity, syncing when back online. Uses a local SQLite queue with last-write-wins conflict resolution. Shipped in Driver App 3.5."
+  },
+  {
+    "project_id": "PROJ-05",
+    "name": "Okta SSO Rollout Phase 2",
+    "team_id": "TEAM-04",
+    "staffed_employee_ids": [
+      "EMP-010",
+      "EMP-029",
+      "EMP-061",
+      "EMP-026",
+      "EMP-044"
+    ],
+    "status": "completed",
+    "start_date": "2025-10-06",
+    "end_date": "2025-12-19",
+    "related_system_ids": [
+      "SYS-10",
+      "SYS-04",
+      "SYS-05",
+      "SYS-07",
+      "SYS-19"
+    ],
+    "description": "Moved the remaining business SaaS applications (Salesforce, Zendesk, HubSpot, Darwinbox) behind Okta SSO with local passwords disabled, group-based app assignment, and HR-driven provisioning from Darwinbox to Okta."
+  },
+  {
+    "project_id": "PROJ-06",
+    "name": "ArgoCD GitOps Migration",
+    "team_id": "TEAM-06",
+    "staffed_employee_ids": [
+      "EMP-022",
+      "EMP-075",
+      "EMP-046",
+      "EMP-006"
+    ],
+    "status": "completed",
+    "start_date": "2025-08-04",
+    "end_date": "2025-11-28",
+    "related_system_ids": [
+      "SYS-27",
+      "SYS-25",
+      "SYS-26"
+    ],
+    "description": "Replaced Jenkins-driven deployments with ArgoCD GitOps: every environment is described in the algoworks-deploy repo, changes ship via reviewed pull requests, and ArgoCD reconciles clusters automatically. Went live for all production services on 1 December 2025."
+  },
+  {
+    "project_id": "PROJ-07",
+    "name": "ServiceNow Self-Service Catalog",
+    "team_id": "TEAM-05",
+    "staffed_employee_ids": [
+      "EMP-008",
+      "EMP-023",
+      "EMP-034",
+      "EMP-029"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-04-06",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-15",
+      "SYS-10"
+    ],
+    "description": "Building catalog items for the 40 most common requests (application access, laptop, VPN, shared mailbox, software install) with approval routing derived from the system-owner table, so requests stop arriving as free-text incidents."
+  },
+  {
+    "project_id": "PROJ-08",
+    "name": "Intune Endpoint Compliance Baseline",
+    "team_id": "TEAM-05",
+    "staffed_employee_ids": [
+      "EMP-008",
+      "EMP-059",
+      "EMP-079",
+      "EMP-041"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-05-11",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-18",
+      "SYS-13"
+    ],
+    "description": "Defining and enforcing a device compliance baseline (FileVault/BitLocker, OS N-1, screen lock, Defender) with conditional access in Okta so non-compliant devices lose access to M365 and Slack after a grace period."
+  },
+  {
+    "project_id": "PROJ-09",
+    "name": "Snowflake Cost Optimization",
+    "team_id": "TEAM-03",
+    "staffed_employee_ids": [
+      "EMP-016",
+      "EMP-032",
+      "EMP-070",
+      "EMP-047"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-06-01",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-29",
+      "SYS-30"
+    ],
+    "description": "Reducing Snowflake spend by ~35% after the January 2026 credit overrun: per-team warehouses, 60-second auto-suspend, query-timeout limits for Metabase, dbt model pruning and a monthly credit budget owned by FP&A."
+  },
+  {
+    "project_id": "PROJ-10",
+    "name": "Unified Customer 360 Dashboard",
+    "team_id": "TEAM-03",
+    "staffed_employee_ids": [
+      "EMP-016",
+      "EMP-051",
+      "EMP-083",
+      "EMP-092",
+      "EMP-062"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-03-09",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-30",
+      "SYS-29",
+      "SYS-04",
+      "SYS-05"
+    ],
+    "description": "A single Metabase collection joining product usage, support tickets, billing status and CRM data per customer, for Customer Success and Sales. Feeds the planned Customer Health Score programme."
+  },
+  {
+    "project_id": "PROJ-11",
+    "name": "Salesforce CPQ Implementation",
+    "team_id": "TEAM-08",
+    "staffed_employee_ids": [
+      "EMP-015",
+      "EMP-026",
+      "EMP-069",
+      "EMP-063",
+      "EMP-027"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-02-16",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-04",
+      "SYS-06"
+    ],
+    "description": "Implementing Salesforce CPQ for quoting, price books and discount approval workflows, replacing spreadsheet quotes. Discount approval steps are configured to mirror the Deal Desk approval matrix; quotes push to Chargebee."
+  },
+  {
+    "project_id": "PROJ-12",
+    "name": "APAC Enterprise Expansion",
+    "team_id": "TEAM-07",
+    "staffed_employee_ids": [
+      "EMP-007",
+      "EMP-027",
+      "EMP-082",
+      "EMP-087",
+      "EMP-081"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-01-05",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-04",
+      "SYS-07"
+    ],
+    "description": "Go-to-market programme for Singapore, Malaysia and Indonesia logistics operators: territory setup in Salesforce, localised pricing, partner channel and the Singapore data-residency dependency on the multi-region deployment."
+  },
+  {
+    "project_id": "PROJ-13",
+    "name": "Zendesk-Customer Portal SSO Integration",
+    "team_id": "TEAM-09",
+    "staffed_employee_ids": [
+      "EMP-017",
+      "EMP-055",
+      "EMP-049",
+      "EMP-018",
+      "EMP-061"
+    ],
+    "status": "completed",
+    "start_date": "2025-12-01",
+    "end_date": "2026-02-27",
+    "related_system_ids": [
+      "SYS-05",
+      "SYS-02",
+      "SYS-10"
+    ],
+    "description": "Let customer portal users open and track Zendesk tickets without a second login by federating Zendesk with the portal's identity. Also moved internal agent login to Okta."
+  },
+  {
+    "project_id": "PROJ-14",
+    "name": "Customer Health Score Program",
+    "team_id": "TEAM-09",
+    "staffed_employee_ids": [
+      "EMP-017",
+      "EMP-040",
+      "EMP-049",
+      "EMP-083"
+    ],
+    "status": "planned",
+    "start_date": "2026-10-01",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-05",
+      "SYS-30",
+      "SYS-04"
+    ],
+    "description": "Define a composite health score (usage, support load, billing health, NPS) surfaced in Salesforce for CSMs, built on the Customer 360 dataset. Kick-off planned for October 2026."
+  },
+  {
+    "project_id": "PROJ-15",
+    "name": "Campus Hiring Drive 2026",
+    "team_id": "TEAM-10",
+    "staffed_employee_ids": [
+      "EMP-024",
+      "EMP-033",
+      "EMP-066",
+      "EMP-074"
+    ],
+    "status": "completed",
+    "start_date": "2026-01-19",
+    "end_date": "2026-04-30",
+    "related_system_ids": [
+      "SYS-20",
+      "SYS-19"
+    ],
+    "description": "Hired 8 graduate engineers and 2 analysts from 6 campuses; ran Greenhouse pipelines, coding assessments and offer approvals; joiners start July-September 2026."
+  },
+  {
+    "project_id": "PROJ-16",
+    "name": "Darwinbox Onboarding Workflow Automation",
+    "team_id": "TEAM-11",
+    "staffed_employee_ids": [
+      "EMP-005",
+      "EMP-044",
+      "EMP-028",
+      "EMP-029",
+      "EMP-023"
+    ],
+    "status": "completed",
+    "start_date": "2026-02-09",
+    "end_date": "2026-05-29",
+    "related_system_ids": [
+      "SYS-19",
+      "SYS-15",
+      "SYS-10"
+    ],
+    "description": "Automated new-joiner setup: Darwinbox pre-boarding triggers a ServiceNow onboarding ticket 10 days before the start date and creates the Okta account with a role-based application bundle, replacing the manual HR email to IT."
+  },
+  {
+    "project_id": "PROJ-17",
+    "name": "Manager Development Program",
+    "team_id": "TEAM-12",
+    "staffed_employee_ids": [
+      "EMP-035",
+      "EMP-053",
+      "EMP-071",
+      "EMP-085",
+      "EMP-028"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-04-13",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-24"
+    ],
+    "description": "Six-month cohort programme for the 18 team leads: feedback, hiring, performance conversations and hybrid team management. Blended LearnHub modules and monthly in-person workshops."
+  },
+  {
+    "project_id": "PROJ-18",
+    "name": "Zoho Expense to NetSuite Integration",
+    "team_id": "TEAM-13",
+    "staffed_employee_ids": [
+      "EMP-014",
+      "EMP-073",
+      "EMP-056",
+      "EMP-039",
+      "EMP-051"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-05-04",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-22",
+      "SYS-23"
+    ],
+    "description": "Replacing the monthly manual expense journal upload with an automated daily summarised posting from Zoho Expense into NetSuite, including GST breakouts and cost-centre mapping."
+  },
+  {
+    "project_id": "PROJ-19",
+    "name": "FY27 Annual Operating Plan",
+    "team_id": "TEAM-14",
+    "staffed_employee_ids": [
+      "EMP-019",
+      "EMP-039",
+      "EMP-047",
+      "EMP-080",
+      "EMP-099",
+      "EMP-051"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-07-01",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-23",
+      "SYS-30"
+    ],
+    "description": "Building the FY27 (April 2027 - March 2028) operating plan: headcount, SaaS spend, cloud cost and revenue model, with department budget reviews in October and board approval in December 2026."
+  },
+  {
+    "project_id": "PROJ-20",
+    "name": "Chargebee Revenue Recognition Automation",
+    "team_id": "TEAM-15",
+    "staffed_employee_ids": [
+      "EMP-009",
+      "EMP-063",
+      "EMP-077",
+      "EMP-047"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-03-02",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-06",
+      "SYS-23"
+    ],
+    "description": "Automating ASC 606 / Ind AS 115 revenue schedules from Chargebee subscriptions into NetSuite, replacing the quarterly spreadsheet, and fixing the invoice-sync gaps found during the May 2026 webhook incident."
+  },
+  {
+    "project_id": "PROJ-21",
+    "name": "Website Redesign & CMS Migration",
+    "team_id": "TEAM-16",
+    "staffed_employee_ids": [
+      "EMP-030",
+      "EMP-045",
+      "EMP-054",
+      "EMP-084",
+      "EMP-057",
+      "EMP-060"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-04-20",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-08",
+      "SYS-07"
+    ],
+    "description": "New brand site on headless WordPress + Next.js hosted on Vercel, with HubSpot forms embedded. Agency (Pixelcraft Studio) doing design production; launch aligned with the v4 campaign."
+  },
+  {
+    "project_id": "PROJ-22",
+    "name": "HubSpot-Salesforce Lead Sync Cleanup",
+    "team_id": "TEAM-17",
+    "staffed_employee_ids": [
+      "EMP-038",
+      "EMP-060",
+      "EMP-026",
+      "EMP-078"
+    ],
+    "status": "completed",
+    "start_date": "2025-10-13",
+    "end_date": "2026-01-16",
+    "related_system_ids": [
+      "SYS-07",
+      "SYS-04"
+    ],
+    "description": "De-duplicated 14,000 contacts, fixed the field mapping that created duplicate leads, and documented ownership rules between Marketing and Sales Ops for the HubSpot-Salesforce connector."
+  },
+  {
+    "project_id": "PROJ-23",
+    "name": "AlgoWorks Fleet v4 Launch Campaign",
+    "team_id": "TEAM-18",
+    "staffed_employee_ids": [
+      "EMP-042",
+      "EMP-065",
+      "EMP-076",
+      "EMP-100",
+      "EMP-093",
+      "EMP-068"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-06-15",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-07",
+      "SYS-08"
+    ],
+    "description": "Launch positioning, customer webinar series, analyst briefings and sales enablement for the v4 API platform. Launch date moved from 15 September to 6 October 2026 to follow the engineering GA date."
+  },
+  {
+    "project_id": "PROJ-24",
+    "name": "Security Awareness & Phishing Simulation Program",
+    "team_id": "TEAM-04",
+    "staffed_employee_ids": [
+      "EMP-010",
+      "EMP-041",
+      "EMP-089",
+      "EMP-071"
+    ],
+    "status": "in_progress",
+    "start_date": "2026-03-16",
+    "end_date": null,
+    "related_system_ids": [
+      "SYS-13",
+      "SYS-24",
+      "SYS-10"
+    ],
+    "description": "Quarterly phishing simulations, a refreshed security awareness course in LearnHub and a report-phish button in Outlook, started after the April 2026 CFO-impersonation phishing incident."
+  }
+]

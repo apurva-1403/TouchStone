@@ -1,0 +1,33 @@
+﻿### eval_retrieval 2026-10-18T00:19:36
+mode: hybrid (Gemini + BM25) · k=8 · as=system
+
+id     type       pol@k prac@5  rec@k  rec+x  query
+DQ-01  policy_dri     Y      -   0.08   0.23  How do I get access to Salesforce?
+DQ-02  policy_dri     Y      Y   0.43   0.71  How long does a replacement laptop take?
+DQ-03  policy_dri     Y      Y   0.50   0.64  Do I need a change request (CHG) to deploy to production?
+DQ-04  policy_dri     Y      Y   1.00   1.00  Are we allowed to deploy to production on a Friday?
+DQ-05  policy_dri     Y      Y   0.44   0.56  Who approves Snowflake PII access now that the DPO has left?
+DQ-06  policy_dri     Y      Y   1.00   1.00  How many days a week do I need to be in the office?
+DQ-07  policy_dri     Y      Y   0.17   0.39  What is the deadline for submitting expense claims?
+DQ-08  policy_dri     Y      Y   0.46   0.54  Who needs to approve a 25% discount?
+DQ-09  policy_dri     Y      Y   0.55   0.55  How do I renew my VPN access, and can contractors use the VP
+DQ-10  policy_dri     Y      -   0.07   0.29  What does a new joiner get automatically and what do I need 
+DQ-11  policy_dri     Y      Y   1.00   1.00  Can I get work email on my personal phone?
+DQ-12  policy_dri     Y      Y   0.86   1.00  What is the L&D reimbursement limit and do I need pre-approv
+DQ-13  policy_dri     Y      Y   0.54   0.62  Do I need three quotes to buy a new SaaS tool?
+DQ-14  contradict     -      Y   0.50   0.67  Has the VPN disconnecting every 30 minutes on Wi-Fi been sol
+DQ-15  contradict     Y      Y   1.00   1.00  Why can't I export reports from Salesforce?
+DQ-16  contradict     Y      Y   0.67   0.83  Okta Verify push notifications are not arriving - what fixes
+DQ-17  contradict     Y      Y   0.43   0.64  Can remote employees claim home internet on expenses?
+DQ-18  contradict     Y      Y   0.36   0.55  Can Customer Success get access to the AlgoWorks Admin Conso
+DQ-19  contradict     -      Y   0.33   0.50  How do I get a new Jira project created?
+DQ-20  contradict     Y      Y   0.50   0.60  My Snowflake query for FP&A times out after 5 minutes - what
+DQ-21  contradict     Y      Y   1.00   1.00  When is the referral bonus paid?
+DQ-22  routine_ba     Y      Y   0.31   0.46  How do I get access to HubSpot?
+DQ-23  routine_ba     Y      Y   0.25   0.58  How do I submit a travel expense claim?
+DQ-24  routine_ba     Y      Y   0.30   0.40  How do I get an infrastructure change approved?
+DQ-25  routine_ba     Y      Y   1.00   1.00  How many leave days can I carry forward to next year?
+DQ-26  routine_ba     Y      Y   0.50   0.60  What approvals do I need to buy a new SaaS tool under 5 lakh
+DQ-27  routine_ba     Y      Y   0.50   0.70  Who approves a 15% discount?
+
+ALL                 93%    93%   0.55   0.67

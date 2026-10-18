@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in · TouchStone</title>
+<script>
+  try { var t = localStorage.getItem("kc-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t; } catch (e) { document.documentElement.dataset.theme = "light"; }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/app.css?v=20261012a">
+</head>
+<body>
+<div class="signin">
+  <section class="si-hero" aria-label="About TouchStone">
+    <div class="si-top">
+      <div class="brand"><span class="logo" id="logo-mark"></span>
+        <span><span class="brand-name">TouchStone</span><span class="brand-sub">AlgoWorks · internal</span></span></div>
+      <span class="spacer"></span>
+      <button class="btn icon" type="button" data-theme-toggle></button>
+    </div>
+
+    <div class="si-body">
+      <div>
+        <h1 class="si-h display">Ask how things really work at AlgoWorks.</h1>
+        <p class="si-lede">Answers from policies, Confluence, ServiceNow, email and Slack, limited to what you're allowed
+          to see, with every source one click away.</p>
+      </div>
+      <div class="bot-stage" id="hero-bot" aria-hidden="true"></div>
+    </div>
+
+    <ul class="si-feats" id="feats" aria-label="What makes it different"></ul>
+  </section>
+
+  <section class="si-col" aria-label="Sign in">
+    <form class="si-card" id="form" novalidate>
+      <div>
+        <h2 class="display">Sign in</h2>
+      </div>
+      <div class="field">
+        <label for="who">Employee</label>
+        <div class="input"><span id="who-ic"></span><input id="who" list="people" placeholder="Start typing a name" autocomplete="off"></div>
+        <datalist id="people"></datalist>
+      </div>
+      <div class="field">
+        <label for="pw">Password</label>
+        <div class="input"><span id="pw-ic"></span><input id="pw" type="password" autocomplete="current-password" aria-describedby="pw-help">
+          <button class="pw-toggle" id="pw-toggle" type="button" aria-label="Show password" aria-pressed="false"></button></div>
+        <span class="help" id="pw-help">What you see depends on your role and access.</span>
+      </div>
+      <button class="btn primary" id="go" type="submit">Sign in</button>
+      <div class="alert" id="err" role="alert" hidden></div>
+    </form>
+    <p class="si-foot">Employees who have left AlgoWorks can't sign in. Every sign-in and every confidential record opened is logged.</p>
+  </section>
+</div>
+
+<script src="/ui.js?v=20261012a"></script>
+<script>
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const { esc, icon } = UI;
+  let byName = {};  // lower-cased name -> employee_id, so "lily bloom" finds Lily Bloom
+  const norm = (s) => s.trim().replace(/\s+/g, " ").toLowerCase();
+
+  // Static pieces: icons, the hero character with source pills around it, the four differentiators.
+  $("logo-mark").innerHTML = icon("logo", "ic lg");
+  $("who-ic").innerHTML = icon("search");
+  $("pw-ic").innerHTML = icon("key");
+  // Show / hide password, so a typo can be spotted before signing in again.
+  const setPwVisible = (show) => {
+    $("pw").type = show ? "text" : "password";
+    $("pw-toggle").innerHTML = icon(show ? "eyeoff" : "eye");
+    $("pw-toggle").setAttribute("aria-label", show ? "Hide password" : "Show password");
+    $("pw-toggle").setAttribute("aria-pressed", String(show));
+  };
+  setPwVisible(false);
+  $("pw-toggle").addEventListener("click", () => { setPwVisible($("pw").type === "password"); $("pw").focus(); });
+  document.querySelectorAll("[data-theme-toggle]").forEach((b) => { b.innerHTML = UI.themeButtonInner(); });
+  UI.syncToggles();
+  const PILLS = [["policy", "Policies", "left:4px;top:52px"], ["book", "Confluence", "right:0;top:30px"],
+                 ["ticket", "ServiceNow", "left:-14px;top:206px"], ["mail", "Email", "right:-6px;top:184px"], ["hash", "Slack", "right:46px;top:300px"]];
+  $("hero-bot").innerHTML = PILLS.map(([i, t, pos], n) => `<span class="si-pill" style="${pos};animation-delay:${n * 1.2}s">${icon(i)}${t}</span>`).join("") + UI.bot();
+  $("feats").innerHTML = [
+    ["amber", "scale", "Policy vs practice", "Flags when what happens differs from what's written."],
+    ["red", "split", "Conflicting past answers", "Shows when the same question was answered differently."],
+    ["teal", "user", "Who to ask", "Names a current owner, never someone who has left."],
+    ["violet", "lock", "Access-aware", "Says when records are withheld, and who can grant access."],
+  ].map(([c, i, b, s]) => `<li class="si-feat"><span class="si-fi ${c}" aria-hidden="true">${icon(i)}</span><div><b>${b}</b><span>${s}</span></div></li>`).join("");
+
+  async function load() {
+    const me = await fetch("/api/me");
+    if (me.ok) { location.replace("/"); return; }
+    const d = await (await fetch("/api/directory")).json();
+    byName = Object.fromEntries(d.employees.map((p) => [norm(p.name), p.employee_id]));
+    $("people").innerHTML = d.employees.map((p) => `<option value="${esc(p.name)}">${esc(p.title)} · ${esc(p.department)}</option>`).join("");
+  }
+
+  $("form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    $("err").hidden = true;
+    const id = byName[norm($("who").value)];
+    if (!id) { $("err").textContent = "Pick an employee from the list."; $("err").hidden = false; $("who").focus(); return; }
+    $("go").disabled = true;
+    try {
+      const r = await fetch("/api/login", { method: "POST", headers: { "Content-Type": "application/json" },
+                                            body: JSON.stringify({ employee_id: id, password: $("pw").value }) });
+      const j = await r.json();
+      if (!r.ok) throw new Error(j.detail || "Sign-in failed.");
+      location.replace("/");
+    } catch (err) {
+      $("err").textContent = err.message; $("err").hidden = false;
+    } finally { $("go").disabled = false; }
+  });
+
+  if (!location.protocol.startsWith("http")) {
+    $("err").textContent = "Open this page through the app server (http://localhost:8010), not as a file.";
+    $("err").hidden = false; $("go").disabled = true;
+  } else { load(); }
+</script>
+</body>
+</html>

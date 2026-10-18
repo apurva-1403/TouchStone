@@ -1,0 +1,35 @@
+### eval_agent, 8 demo questions, recorded 2026-10-08T15:38:39.361Z (8 Oct 2026, before pre-retrieval and hedged calls)
+### (the fictional company was still called Kestrel then; renamed AlgoWorks later)
+### columns: id  drift  conflict  policy-cited  precision  recall  judge  seconds  tool-calls  question
+== gemini-2.5-flash
+FAILED DQ-25: 499 CANCELLED. {'error': {'code': 499, 'message': 'The operation was cancelled.', 'status': 'CANCELLED'}}
+DQ-01   MISS   ok     N     0.00  0.00     1  30.9     1  How do I get access to Salesforce?
+DQ-03   ok     ok     Y     1.00  0.43     4   7.6     1  Do I need a change request (CHG) to deploy to productio
+DQ-05   ok     ok     Y     1.00  0.25     5   8.6     1  Who approves Snowflake PII access now that the DPO has 
+DQ-07   ok     ok     Y     0.60  0.17     5   9.0     1  What is the deadline for submitting expense claims?
+DQ-14   ok     ok     N     1.00  0.50     5  10.3     1  Has the VPN disconnecting every 30 minutes on Wi-Fi bee
+DQ-18   ok     ok     Y     0.67  0.18     3  57.8     1  Can Customer Success get access to the Kestrel Admin Co
+OUTAGE  ok     ok     -     0.50  0.11     5   6.6     1  What caused the March API outage and how was it fixed?
+flags correct 6/7 · policy cited 4/6 · precision 0.68 · recall 0.23 · judge 4.0/5 · median latency 9.0s
+== gemini-3.5-flash
+DQ-01   MISS   ok     N     0.00  0.00     1  26.2     2  How do I get access to Salesforce?
+DQ-03   ok     ok     Y     0.80  0.29     4  11.0     2  Do I need a change request (CHG) to deploy to productio
+DQ-05   ok     ok     Y     1.00  0.31     5  10.3     2  Who approves Snowflake PII access now that the DPO has 
+DQ-07   ok     ok     Y     0.67  0.11     5  15.7     3  What is the deadline for submitting expense claims?
+DQ-14   ok     MISS   N     1.00  0.50     4  74.2     2  Has the VPN disconnecting every 30 minutes on Wi-Fi bee
+DQ-18   ok     ok     Y     0.75  0.27     2  11.5     3  Can Customer Success get access to the Kestrel Admin Co
+DQ-25   ok     ok     Y     1.00  0.25     5  53.9     3  How many leave days can I carry forward to next year?
+OUTAGE  ok     ok     -     0.33  0.11     5   9.3     2  What caused the March API outage and how was it fixed?
+flags correct 6/8 · policy cited 5/7 · precision 0.69 · recall 0.23 · judge 3.9/5 · median latency 15.7s
+== gemini-3.8-flash
+DQ-01   ok     ok     Y     0.60  0.23     4  71.3     3  How do I get access to Salesforce?
+DQ-03   ok     ok     Y     1.00  0.36     5  40.1     2  Do I need a change request (CHG) to deploy to productio
+DQ-05   ok     ok     Y     1.00  0.25     5  78.6     2  Who approves Snowflake PII access now that the DPO has 
+DQ-07   ok     ok     Y     0.67  0.11     5  63.4     3  What is the deadline for submitting expense claims?
+DQ-14   ok     ok     N     1.00  0.50     4 125.9     3  Has the VPN disconnecting every 30 minutes on Wi-Fi bee
+DQ-18   ok     ok     Y     0.40  0.18     3  50.0     2  Can Customer Success get access to the Kestrel Admin Co
+DQ-25   ok     ok     Y     1.00  0.75     5 103.5     2  How many leave days can I carry forward to next year?
+OUTAGE  ok     ok     -     0.33  0.11     5   7.0     1  What caused the March API outage and how was it fixed?
+flags correct 8/8 · policy cited 6/7 · precision 0.75 · recall 0.31 · judge 4.5/5 · median latency 71.3s
+
+[exited with code 0]

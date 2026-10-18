@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TouchStone</title>
+<script>
+  // Apply the saved (or system) theme before first paint.
+  try { var t = localStorage.getItem("kc-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t; } catch (e) { document.documentElement.dataset.theme = "light"; }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/app.css?v=20261012a">
+</head>
+<body>
+<div class="app" id="app">
+  <button class="scrim" id="scrim" type="button" aria-label="Close menu" tabindex="-1" hidden></button>
+
+  <nav class="sidebar" id="sidebar" aria-label="Chats and account">
+    <div class="brand">
+      <span class="logo" id="logo-mark"></span>
+      <span style="min-width:0"><span class="brand-name">TouchStone</span><span class="brand-sub">Knowledge for AlgoWorks</span></span>
+      <button class="btn icon ghost close-nav" id="close-nav" type="button" aria-label="Close menu"></button>
+    </div>
+
+    <button class="btn primary new-chat" id="new-chat" type="button"></button>
+
+    <section class="chats" aria-labelledby="chats-label">
+      <div class="chats-head"><p class="label" id="chats-label">Chats</p>
+        <button class="link-btn" id="clear-history" type="button" hidden>Clear all</button></div>
+      <ul class="chat-list" id="chat-list"></ul>
+      <p class="note" id="chats-empty" style="padding:8px 10px">Your conversations will appear here.</p>
+    </section>
+
+    <section class="account" aria-label="Your account">
+      <div class="account-head">
+        <span class="avatar me" id="me-avatar" aria-hidden="true">·</span>
+        <div style="min-width:0">
+          <p class="me-name" id="me-name">…</p>
+          <p class="me-title" id="me-title"></p>
+        </div>
+      </div>
+      <div class="roles" id="me-roles" aria-label="Access roles"></div>
+      <div class="scope" id="me-scope"></div>
+      <details class="access">
+        <summary>What your roles allow <svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <ul class="role-list" id="me-grants"></ul>
+      </details>
+      <div class="account-actions">
+        <button class="btn sm" id="signout" type="button"></button>
+      </div>
+    </section>
+  </nav>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="btn icon ghost nav-toggle" id="nav-toggle" type="button" aria-label="Open chats and account"
+              aria-controls="sidebar" aria-expanded="false"></button>
+      <div style="flex:1;min-width:0">
+        <h1 class="display" id="chat-title">New chat</h1>
+        <div class="sub"><span id="chat-count"></span><span class="srcs" id="srcs"></span></div>
+      </div>
+      <button class="btn icon" type="button" data-theme-toggle></button>
+    </header>
+
+    <div class="thread" id="thread">
+      <div class="thread-inner" id="thread-inner">
+        <div class="empty" id="empty">
+          <div class="bot-stage" id="empty-bot"></div>
+          <h2 class="display">Ask how things really work at AlgoWorks</h2>
+          <p>Answers come from policies, Confluence, ServiceNow tickets, email and Slack, limited to what you're allowed
+            to see. You'll be told when practice differs from policy, when past answers conflict, and who to ask.</p>
+          <div class="suggest" id="suggest" aria-label="Example questions"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="composer">
+      <form id="ask-form">
+        <label for="q" class="sr">Your question</label>
+        <textarea id="q" rows="1" placeholder="Ask about a policy, process or past issue…" maxlength="1000"></textarea>
+        <button class="btn primary" id="ask" type="submit"></button>
+      </form>
+      <div class="hint">
+        <span id="hint-lock">Answers only use records you're allowed to see.</span>
+        <span class="keys">Enter to ask · Shift + Enter for a new line · Follow-ups keep this chat's context</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="drawer-wrap" id="drawer-wrap" hidden>
+  <button class="scrim" id="d-scrim" type="button" aria-label="Close source viewer" tabindex="-1"></button>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title">
+    <header>
+      <span class="src" id="d-icon" aria-hidden="true"></span>
+      <div style="flex:1;min-width:0">
+        <p class="kicker" id="d-kind"></p>
+        <h2 class="display" id="d-title"></h2>
+        <div class="tags" id="d-tags"></div>
+      </div>
+      <button class="btn icon ghost" id="d-close" type="button" aria-label="Close source viewer"></button>
+    </header>
+    <div class="body" id="d-body" aria-live="polite"></div>
+    <footer>
+      <button class="btn sm" id="d-copy" type="button"></button>
+      <small>Esc to close</small>
+    </footer>
+  </aside>
+</div>
+
+<script src="/ui.js?v=20261012a"></script>
+<script src="/app.js?v=20261012a"></script>
+</body>
+</html>

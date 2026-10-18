@@ -1,0 +1,66 @@
+{
+  "dataset": "AlgoWorks Pvt. Ltd. - synthetic enterprise knowledge dataset",
+  "generated_at": "2026-10-07T01:23",
+  "simulated_today": "2026-09-24",
+  "seed": 20260924,
+  "counts": {
+    "departments": 9,
+    "employees": 1000,
+    "teams": 63,
+    "systems": 30,
+    "projects": 24,
+    "policies": 36,
+    "policies_stale_by_design": 13,
+    "events": 80,
+    "tickets_total": 1324,
+    "tickets_event_derived": 148,
+    "tickets_noise": 1176,
+    "email_threads": 106,
+    "slack_conversations_total": 291,
+    "slack_event_derived": 84,
+    "slack_noise": 207,
+    "confluence_docs_total": 140,
+    "confluence_event_referencing": 20,
+    "confluence_standalone": 120,
+    "demo_queries": 27
+  },
+  "event_type_distribution": {
+    "access_request": 20,
+    "incident": 16,
+    "project_decision": 13,
+    "policy_drift": 13,
+    "contradictory_resolution": 8,
+    "routine_baseline": 10
+  },
+  "drift_events": 13,
+  "ticket_type_distribution": {
+    "request": 794,
+    "change": 12,
+    "incident": 518
+  },
+  "sensitivity_distribution": {
+    "internal": 1728,
+    "restricted": 167,
+    "public": 2
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": []
+  },
+  "files": [
+    "departments.json",
+    "employees.json",
+    "teams.json",
+    "systems.json",
+    "projects.json",
+    "policies.json",
+    "events.json",
+    "tickets.json",
+    "emails.json",
+    "slack.json",
+    "confluence.json",
+    "demo_queries.json",
+    "demo_queries.md",
+    "manifest.json"
+  ]
+}
